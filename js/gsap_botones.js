@@ -1,27 +1,31 @@
 // Portada pregunta
 const navBotonHilando = document.querySelector('.portada_btn_hilando');
 const navBotonNosotros = document.querySelector('.portada_btn_contacto');
-const navBotonMainImg = document.querySelectorAll('.btn-main img');
-const navBotonXdata = document.querySelector('.portada_btn-xdata img');
+const navBotonXdata = document.querySelector('.portada_btn-xdata');
 
 function navBotonClaro(){
-  navBotonHilando.style.filter='invert(80%)';
-  navBotonNosotros.style.filter='invert(80%)';
+    navBotonHilando.classList.remove('btn_hilando_blanco');
+    navBotonHilando.classList.add('btn_hilando_negro');
 
-  navBotonXdata.style.filter='invert(80%)';
+    navBotonNosotros.classList.remove('btn_contacto_blanco');
+    navBotonNosotros.classList.add('btn_contacto_negro');
 
-  navBotonHilando.style.color='#fffff';
-  navBotonNosotros.style.color='#fffff';
+    navBotonXdata.classList.remove('btn_xdata_blanco');
+    navBotonXdata.classList.add('btn_xdata_negro');
+    // alert('claro')
 }
 
 function navBotonOscuro(){
-  navBotonHilando.style.filter='invert(0%)';
-  navBotonNosotros.style.filter='invert(0%)';
+    navBotonHilando.classList.remove('btn_hilando_negro');
+    navBotonHilando.classList.add('btn_hilando_blanco');
 
-  navBotonXdata.style.filter='invert(0%)';
+    navBotonNosotros.classList.remove('btn_contacto_negro');
+    navBotonNosotros.classList.add('btn_contacto_blanco');
 
-  navBotonHilando.style.color='#383838';
-  navBotonNosotros.style.color='#383838';
+    navBotonXdata.classList.remove('btn_xdata_negro');
+    navBotonXdata.classList.add('btn_xdata_blanco');
+    // alert('oscuro')
+
 }
 
   const gsapBotonesIntro = gsap.timeline({

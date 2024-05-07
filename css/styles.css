@@ -144,71 +144,7 @@
 		left: 0;
 	}
 
-/* Botones */
-	.portada_pregunta-botones{
-		display: flex;
-		position: fixed;
-		z-index: 100;
-		top: 1rem;
-		padding: 0 2rem;
-		width: 100%;
-		justify-content: space-between;
-		font-family: FilsonProMedium, sans-serif;
-		opacity: 1;
-		transition: all 1s ease;
-	}
-	.btn-main{
-		background-color: rgba(255, 255, 255, .1);
-		border-radius: 2rem;
-		/*width: 9rem;*/
-		text-align: center;
-		font-size: .9rem;
-		height: 1rem;
-		width: max-content;
-		padding: 6px 18px;
-		box-sizing: content-box;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-transform: uppercase;
-		letter-spacing: 1.5px;
-		font-size: .8rem;
-		font-family: FilsonProRegular, sans-serif;
-		transition: all .5s ease;
-		border: none;
-		z-index: 100;
-	}
-	.portada_btn_hilando{
-		color: #Fff;
-	}
-	.portada_btn_contacto{
-		color: #fff !important;
-	}
 
-	.btn-main img{
-		height: 100%;
-		filter: invert(0%);
-		transition: all .5s ease;
-
-	}
-	/*.portada_btn-xdata{
-		transition: all .2s ease;
-	}*/
-	.portada_btn-xdata img{
-		/*filter: invert(80%);*/
-		height: 1.5rem;
-		transition: all .5s ease;
-		opacity: 1;
-
-	}
-	.btn-main:hover{
-		cursor: pointer;
-		background-color: var(--naranja);
-	}
-	.portada_btn-xdata img:hover{
-		height: 1.6rem;
-		transform-origin: center;
-	}
 
 /* Overlay */
 
