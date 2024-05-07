@@ -1,0 +1,4486 @@
+.kaleidoscope {
+  width: 100%;
+  height: 100%;
+  transform: rotate(30deg);
+}
+.kaleidoscope .tile {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  z-index: 0;
+  overflow: hidden;
+  height: 38%;
+  width: 38%;
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+  /*border: solid red;*/
+
+}
+.kaleidoscope .tile .image {
+  position: relative;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/ciclo/fibra.png);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+.kaleidoscope.n0 .tile {
+  display: block;
+
+}
+.kaleidoscope.n0 .tile .image {
+  -webkit-transform: rotate(calc(infinity * 1deg));
+  transform: rotate(calc(infinity * 1deg));
+}
+.kaleidoscope.n1 .tile {
+  display: block;
+}
+.kaleidoscope.n1 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n1 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n1 .tile .image {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n2 .tile {
+  display: block;
+}
+.kaleidoscope.n2 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n2 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n2 .tile.t2 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n2 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n2 .tile .image {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n3 .tile {
+  display: block;
+}
+.kaleidoscope.n3 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n3 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n3 .tile.t2 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n3 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n3 .tile.t4 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n3 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n3 .tile .image {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.kaleidoscope.n4 .tile {
+  display: block;
+}
+.kaleidoscope.n4 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n4 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n4 .tile.t2 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n4 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
+}
+.kaleidoscope.n4 .tile.t4 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n4 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n4 .tile.t6 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kaleidoscope.n4 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(270deg);
+  transform: scale(-1, 1) rotate(270deg);
+}
+.kaleidoscope.n4 .tile .image {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.kaleidoscope.n5 .tile {
+  display: block;
+}
+.kaleidoscope.n5 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n5 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n5 .tile.t2 {
+  -webkit-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.kaleidoscope.n5 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(72deg);
+  transform: scale(-1, 1) rotate(72deg);
+}
+.kaleidoscope.n5 .tile.t4 {
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.kaleidoscope.n5 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(144deg);
+  transform: scale(-1, 1) rotate(144deg);
+}
+.kaleidoscope.n5 .tile.t6 {
+  -webkit-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.kaleidoscope.n5 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(216deg);
+  transform: scale(-1, 1) rotate(216deg);
+}
+.kaleidoscope.n5 .tile.t8 {
+  -webkit-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.kaleidoscope.n5 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(288deg);
+  transform: scale(-1, 1) rotate(288deg);
+}
+.kaleidoscope.n5 .tile .image {
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.kaleidoscope.n6 .tile {
+  display: block;
+}
+.kaleidoscope.n6 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n6 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n6 .tile.t2 {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.kaleidoscope.n6 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(60deg);
+  transform: scale(-1, 1) rotate(60deg);
+}
+.kaleidoscope.n6 .tile.t4 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n6 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n6 .tile.t6 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n6 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n6 .tile.t8 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n6 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n6 .tile.t10 {
+  -webkit-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.kaleidoscope.n6 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(300deg);
+  transform: scale(-1, 1) rotate(300deg);
+}
+.kaleidoscope.n6 .tile .image {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.kaleidoscope.n7 .tile {
+  display: block;
+}
+.kaleidoscope.n7 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n7 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n7 .tile.t2 {
+  -webkit-transform: rotate(51.4285714286deg);
+  transform: rotate(51.4285714286deg);
+}
+.kaleidoscope.n7 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(51.4285714286deg);
+  transform: scale(-1, 1) rotate(51.4285714286deg);
+}
+.kaleidoscope.n7 .tile.t4 {
+  -webkit-transform: rotate(102.8571428571deg);
+  transform: rotate(102.8571428571deg);
+}
+.kaleidoscope.n7 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(102.8571428571deg);
+  transform: scale(-1, 1) rotate(102.8571428571deg);
+}
+.kaleidoscope.n7 .tile.t6 {
+  -webkit-transform: rotate(154.2857142857deg);
+  transform: rotate(154.2857142857deg);
+}
+.kaleidoscope.n7 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(154.2857142857deg);
+  transform: scale(-1, 1) rotate(154.2857142857deg);
+}
+.kaleidoscope.n7 .tile.t8 {
+  -webkit-transform: rotate(205.7142857143deg);
+  transform: rotate(205.7142857143deg);
+}
+.kaleidoscope.n7 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(205.7142857143deg);
+  transform: scale(-1, 1) rotate(205.7142857143deg);
+}
+.kaleidoscope.n7 .tile.t10 {
+  -webkit-transform: rotate(257.1428571429deg);
+  transform: rotate(257.1428571429deg);
+}
+.kaleidoscope.n7 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(257.1428571429deg);
+  transform: scale(-1, 1) rotate(257.1428571429deg);
+}
+.kaleidoscope.n7 .tile.t12 {
+  -webkit-transform: rotate(308.5714285714deg);
+  transform: rotate(308.5714285714deg);
+}
+.kaleidoscope.n7 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(308.5714285714deg);
+  transform: scale(-1, 1) rotate(308.5714285714deg);
+}
+.kaleidoscope.n7 .tile .image {
+  -webkit-transform: rotate(25.7142857143deg);
+  transform: rotate(25.7142857143deg);
+}
+.kaleidoscope.n8 .tile {
+  display: block;
+}
+.kaleidoscope.n8 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n8 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n8 .tile.t2 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.kaleidoscope.n8 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(45deg);
+  transform: scale(-1, 1) rotate(45deg);
+}
+.kaleidoscope.n8 .tile.t4 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n8 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
+}
+.kaleidoscope.n8 .tile.t6 {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.kaleidoscope.n8 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(135deg);
+  transform: scale(-1, 1) rotate(135deg);
+}
+.kaleidoscope.n8 .tile.t8 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n8 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n8 .tile.t10 {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.kaleidoscope.n8 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(225deg);
+  transform: scale(-1, 1) rotate(225deg);
+}
+.kaleidoscope.n8 .tile.t12 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kaleidoscope.n8 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(270deg);
+  transform: scale(-1, 1) rotate(270deg);
+}
+.kaleidoscope.n8 .tile.t14 {
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+.kaleidoscope.n8 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(315deg);
+  transform: scale(-1, 1) rotate(315deg);
+}
+.kaleidoscope.n8 .tile .image {
+  -webkit-transform: rotate(22.5deg);
+  transform: rotate(22.5deg);
+}
+.kaleidoscope.n9 .tile {
+  display: block;
+}
+.kaleidoscope.n9 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n9 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n9 .tile.t2 {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.kaleidoscope.n9 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(40deg);
+  transform: scale(-1, 1) rotate(40deg);
+}
+.kaleidoscope.n9 .tile.t4 {
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+.kaleidoscope.n9 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(80deg);
+  transform: scale(-1, 1) rotate(80deg);
+}
+.kaleidoscope.n9 .tile.t6 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n9 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n9 .tile.t8 {
+  -webkit-transform: rotate(160deg);
+  transform: rotate(160deg);
+}
+.kaleidoscope.n9 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(160deg);
+  transform: scale(-1, 1) rotate(160deg);
+}
+.kaleidoscope.n9 .tile.t10 {
+  -webkit-transform: rotate(200deg);
+  transform: rotate(200deg);
+}
+.kaleidoscope.n9 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(200deg);
+  transform: scale(-1, 1) rotate(200deg);
+}
+.kaleidoscope.n9 .tile.t12 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n9 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n9 .tile.t14 {
+  -webkit-transform: rotate(280deg);
+  transform: rotate(280deg);
+}
+.kaleidoscope.n9 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(280deg);
+  transform: scale(-1, 1) rotate(280deg);
+}
+.kaleidoscope.n9 .tile.t16 {
+  -webkit-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+.kaleidoscope.n9 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(320deg);
+  transform: scale(-1, 1) rotate(320deg);
+}
+.kaleidoscope.n9 .tile .image {
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.kaleidoscope.n10 .tile {
+  display: block;
+}
+.kaleidoscope.n10 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n10 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n10 .tile.t2 {
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.kaleidoscope.n10 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(36deg);
+  transform: scale(-1, 1) rotate(36deg);
+}
+.kaleidoscope.n10 .tile.t4 {
+  -webkit-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.kaleidoscope.n10 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(72deg);
+  transform: scale(-1, 1) rotate(72deg);
+}
+.kaleidoscope.n10 .tile.t6 {
+  -webkit-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+.kaleidoscope.n10 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(108deg);
+  transform: scale(-1, 1) rotate(108deg);
+}
+.kaleidoscope.n10 .tile.t8 {
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.kaleidoscope.n10 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(144deg);
+  transform: scale(-1, 1) rotate(144deg);
+}
+.kaleidoscope.n10 .tile.t10 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n10 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n10 .tile.t12 {
+  -webkit-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.kaleidoscope.n10 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(216deg);
+  transform: scale(-1, 1) rotate(216deg);
+}
+.kaleidoscope.n10 .tile.t14 {
+  -webkit-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+.kaleidoscope.n10 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(252deg);
+  transform: scale(-1, 1) rotate(252deg);
+}
+.kaleidoscope.n10 .tile.t16 {
+  -webkit-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.kaleidoscope.n10 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(288deg);
+  transform: scale(-1, 1) rotate(288deg);
+}
+.kaleidoscope.n10 .tile.t18 {
+  -webkit-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+.kaleidoscope.n10 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(324deg);
+  transform: scale(-1, 1) rotate(324deg);
+}
+.kaleidoscope.n10 .tile .image {
+  -webkit-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+.kaleidoscope.n11 .tile {
+  display: block;
+}
+.kaleidoscope.n11 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n11 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n11 .tile.t2 {
+  -webkit-transform: rotate(32.7272727273deg);
+  transform: rotate(32.7272727273deg);
+}
+.kaleidoscope.n11 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(32.7272727273deg);
+  transform: scale(-1, 1) rotate(32.7272727273deg);
+}
+.kaleidoscope.n11 .tile.t4 {
+  -webkit-transform: rotate(65.4545454545deg);
+  transform: rotate(65.4545454545deg);
+}
+.kaleidoscope.n11 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(65.4545454545deg);
+  transform: scale(-1, 1) rotate(65.4545454545deg);
+}
+.kaleidoscope.n11 .tile.t6 {
+  -webkit-transform: rotate(98.1818181818deg);
+  transform: rotate(98.1818181818deg);
+}
+.kaleidoscope.n11 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(98.1818181818deg);
+  transform: scale(-1, 1) rotate(98.1818181818deg);
+}
+.kaleidoscope.n11 .tile.t8 {
+  -webkit-transform: rotate(130.9090909091deg);
+  transform: rotate(130.9090909091deg);
+}
+.kaleidoscope.n11 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(130.9090909091deg);
+  transform: scale(-1, 1) rotate(130.9090909091deg);
+}
+.kaleidoscope.n11 .tile.t10 {
+  -webkit-transform: rotate(163.6363636364deg);
+  transform: rotate(163.6363636364deg);
+}
+.kaleidoscope.n11 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(163.6363636364deg);
+  transform: scale(-1, 1) rotate(163.6363636364deg);
+}
+.kaleidoscope.n11 .tile.t12 {
+  -webkit-transform: rotate(196.3636363636deg);
+  transform: rotate(196.3636363636deg);
+}
+.kaleidoscope.n11 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(196.3636363636deg);
+  transform: scale(-1, 1) rotate(196.3636363636deg);
+}
+.kaleidoscope.n11 .tile.t14 {
+  -webkit-transform: rotate(229.0909090909deg);
+  transform: rotate(229.0909090909deg);
+}
+.kaleidoscope.n11 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(229.0909090909deg);
+  transform: scale(-1, 1) rotate(229.0909090909deg);
+}
+.kaleidoscope.n11 .tile.t16 {
+  -webkit-transform: rotate(261.8181818182deg);
+  transform: rotate(261.8181818182deg);
+}
+.kaleidoscope.n11 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(261.8181818182deg);
+  transform: scale(-1, 1) rotate(261.8181818182deg);
+}
+.kaleidoscope.n11 .tile.t18 {
+  -webkit-transform: rotate(294.5454545455deg);
+  transform: rotate(294.5454545455deg);
+}
+.kaleidoscope.n11 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(294.5454545455deg);
+  transform: scale(-1, 1) rotate(294.5454545455deg);
+}
+.kaleidoscope.n11 .tile.t20 {
+  -webkit-transform: rotate(327.2727272727deg);
+  transform: rotate(327.2727272727deg);
+}
+.kaleidoscope.n11 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(327.2727272727deg);
+  transform: scale(-1, 1) rotate(327.2727272727deg);
+}
+.kaleidoscope.n11 .tile .image {
+  -webkit-transform: rotate(16.3636363636deg);
+  transform: rotate(16.3636363636deg);
+}
+.kaleidoscope.n12 .tile {
+  display: block;
+}
+.kaleidoscope.n12 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n12 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n12 .tile.t2 {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.kaleidoscope.n12 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(30deg);
+  transform: scale(-1, 1) rotate(30deg);
+}
+.kaleidoscope.n12 .tile.t4 {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.kaleidoscope.n12 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(60deg);
+  transform: scale(-1, 1) rotate(60deg);
+}
+.kaleidoscope.n12 .tile.t6 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n12 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
+}
+.kaleidoscope.n12 .tile.t8 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n12 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n12 .tile.t10 {
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.kaleidoscope.n12 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(150deg);
+  transform: scale(-1, 1) rotate(150deg);
+}
+.kaleidoscope.n12 .tile.t12 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n12 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n12 .tile.t14 {
+  -webkit-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+.kaleidoscope.n12 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(210deg);
+  transform: scale(-1, 1) rotate(210deg);
+}
+.kaleidoscope.n12 .tile.t16 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n12 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n12 .tile.t18 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kaleidoscope.n12 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(270deg);
+  transform: scale(-1, 1) rotate(270deg);
+}
+.kaleidoscope.n12 .tile.t20 {
+  -webkit-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.kaleidoscope.n12 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(300deg);
+  transform: scale(-1, 1) rotate(300deg);
+}
+.kaleidoscope.n12 .tile.t22 {
+  -webkit-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+.kaleidoscope.n12 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(330deg);
+  transform: scale(-1, 1) rotate(330deg);
+}
+.kaleidoscope.n12 .tile .image {
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.kaleidoscope.n13 .tile {
+  display: block;
+}
+.kaleidoscope.n13 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n13 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n13 .tile.t2 {
+  -webkit-transform: rotate(27.6923076923deg);
+  transform: rotate(27.6923076923deg);
+}
+.kaleidoscope.n13 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(27.6923076923deg);
+  transform: scale(-1, 1) rotate(27.6923076923deg);
+}
+.kaleidoscope.n13 .tile.t4 {
+  -webkit-transform: rotate(55.3846153846deg);
+  transform: rotate(55.3846153846deg);
+}
+.kaleidoscope.n13 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(55.3846153846deg);
+  transform: scale(-1, 1) rotate(55.3846153846deg);
+}
+.kaleidoscope.n13 .tile.t6 {
+  -webkit-transform: rotate(83.0769230769deg);
+  transform: rotate(83.0769230769deg);
+}
+.kaleidoscope.n13 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(83.0769230769deg);
+  transform: scale(-1, 1) rotate(83.0769230769deg);
+}
+.kaleidoscope.n13 .tile.t8 {
+  -webkit-transform: rotate(110.7692307692deg);
+  transform: rotate(110.7692307692deg);
+}
+.kaleidoscope.n13 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(110.7692307692deg);
+  transform: scale(-1, 1) rotate(110.7692307692deg);
+}
+.kaleidoscope.n13 .tile.t10 {
+  -webkit-transform: rotate(138.4615384615deg);
+  transform: rotate(138.4615384615deg);
+}
+.kaleidoscope.n13 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(138.4615384615deg);
+  transform: scale(-1, 1) rotate(138.4615384615deg);
+}
+.kaleidoscope.n13 .tile.t12 {
+  -webkit-transform: rotate(166.1538461538deg);
+  transform: rotate(166.1538461538deg);
+}
+.kaleidoscope.n13 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(166.1538461538deg);
+  transform: scale(-1, 1) rotate(166.1538461538deg);
+}
+.kaleidoscope.n13 .tile.t14 {
+  -webkit-transform: rotate(193.8461538462deg);
+  transform: rotate(193.8461538462deg);
+}
+.kaleidoscope.n13 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(193.8461538462deg);
+  transform: scale(-1, 1) rotate(193.8461538462deg);
+}
+.kaleidoscope.n13 .tile.t16 {
+  -webkit-transform: rotate(221.5384615385deg);
+  transform: rotate(221.5384615385deg);
+}
+.kaleidoscope.n13 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(221.5384615385deg);
+  transform: scale(-1, 1) rotate(221.5384615385deg);
+}
+.kaleidoscope.n13 .tile.t18 {
+  -webkit-transform: rotate(249.2307692308deg);
+  transform: rotate(249.2307692308deg);
+}
+.kaleidoscope.n13 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(249.2307692308deg);
+  transform: scale(-1, 1) rotate(249.2307692308deg);
+}
+.kaleidoscope.n13 .tile.t20 {
+  -webkit-transform: rotate(276.9230769231deg);
+  transform: rotate(276.9230769231deg);
+}
+.kaleidoscope.n13 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(276.9230769231deg);
+  transform: scale(-1, 1) rotate(276.9230769231deg);
+}
+.kaleidoscope.n13 .tile.t22 {
+  -webkit-transform: rotate(304.6153846154deg);
+  transform: rotate(304.6153846154deg);
+}
+.kaleidoscope.n13 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(304.6153846154deg);
+  transform: scale(-1, 1) rotate(304.6153846154deg);
+}
+.kaleidoscope.n13 .tile.t24 {
+  -webkit-transform: rotate(332.3076923077deg);
+  transform: rotate(332.3076923077deg);
+}
+.kaleidoscope.n13 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(332.3076923077deg);
+  transform: scale(-1, 1) rotate(332.3076923077deg);
+}
+.kaleidoscope.n13 .tile .image {
+  -webkit-transform: rotate(13.8461538462deg);
+  transform: rotate(13.8461538462deg);
+}
+.kaleidoscope.n14 .tile {
+  display: block;
+}
+.kaleidoscope.n14 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n14 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n14 .tile.t2 {
+  -webkit-transform: rotate(25.7142857143deg);
+  transform: rotate(25.7142857143deg);
+}
+.kaleidoscope.n14 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(25.7142857143deg);
+  transform: scale(-1, 1) rotate(25.7142857143deg);
+}
+.kaleidoscope.n14 .tile.t4 {
+  -webkit-transform: rotate(51.4285714286deg);
+  transform: rotate(51.4285714286deg);
+}
+.kaleidoscope.n14 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(51.4285714286deg);
+  transform: scale(-1, 1) rotate(51.4285714286deg);
+}
+.kaleidoscope.n14 .tile.t6 {
+  -webkit-transform: rotate(77.1428571429deg);
+  transform: rotate(77.1428571429deg);
+}
+.kaleidoscope.n14 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(77.1428571429deg);
+  transform: scale(-1, 1) rotate(77.1428571429deg);
+}
+.kaleidoscope.n14 .tile.t8 {
+  -webkit-transform: rotate(102.8571428571deg);
+  transform: rotate(102.8571428571deg);
+}
+.kaleidoscope.n14 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(102.8571428571deg);
+  transform: scale(-1, 1) rotate(102.8571428571deg);
+}
+.kaleidoscope.n14 .tile.t10 {
+  -webkit-transform: rotate(128.5714285714deg);
+  transform: rotate(128.5714285714deg);
+}
+.kaleidoscope.n14 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(128.5714285714deg);
+  transform: scale(-1, 1) rotate(128.5714285714deg);
+}
+.kaleidoscope.n14 .tile.t12 {
+  -webkit-transform: rotate(154.2857142857deg);
+  transform: rotate(154.2857142857deg);
+}
+.kaleidoscope.n14 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(154.2857142857deg);
+  transform: scale(-1, 1) rotate(154.2857142857deg);
+}
+.kaleidoscope.n14 .tile.t14 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n14 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n14 .tile.t16 {
+  -webkit-transform: rotate(205.7142857143deg);
+  transform: rotate(205.7142857143deg);
+}
+.kaleidoscope.n14 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(205.7142857143deg);
+  transform: scale(-1, 1) rotate(205.7142857143deg);
+}
+.kaleidoscope.n14 .tile.t18 {
+  -webkit-transform: rotate(231.4285714286deg);
+  transform: rotate(231.4285714286deg);
+}
+.kaleidoscope.n14 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(231.4285714286deg);
+  transform: scale(-1, 1) rotate(231.4285714286deg);
+}
+.kaleidoscope.n14 .tile.t20 {
+  -webkit-transform: rotate(257.1428571429deg);
+  transform: rotate(257.1428571429deg);
+}
+.kaleidoscope.n14 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(257.1428571429deg);
+  transform: scale(-1, 1) rotate(257.1428571429deg);
+}
+.kaleidoscope.n14 .tile.t22 {
+  -webkit-transform: rotate(282.8571428571deg);
+  transform: rotate(282.8571428571deg);
+}
+.kaleidoscope.n14 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(282.8571428571deg);
+  transform: scale(-1, 1) rotate(282.8571428571deg);
+}
+.kaleidoscope.n14 .tile.t24 {
+  -webkit-transform: rotate(308.5714285714deg);
+  transform: rotate(308.5714285714deg);
+}
+.kaleidoscope.n14 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(308.5714285714deg);
+  transform: scale(-1, 1) rotate(308.5714285714deg);
+}
+.kaleidoscope.n14 .tile.t26 {
+  -webkit-transform: rotate(334.2857142857deg);
+  transform: rotate(334.2857142857deg);
+}
+.kaleidoscope.n14 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(334.2857142857deg);
+  transform: scale(-1, 1) rotate(334.2857142857deg);
+}
+.kaleidoscope.n14 .tile .image {
+  -webkit-transform: rotate(12.8571428571deg);
+  transform: rotate(12.8571428571deg);
+}
+.kaleidoscope.n15 .tile {
+  display: block;
+}
+.kaleidoscope.n15 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n15 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n15 .tile.t2 {
+  -webkit-transform: rotate(24deg);
+  transform: rotate(24deg);
+}
+.kaleidoscope.n15 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(24deg);
+  transform: scale(-1, 1) rotate(24deg);
+}
+.kaleidoscope.n15 .tile.t4 {
+  -webkit-transform: rotate(48deg);
+  transform: rotate(48deg);
+}
+.kaleidoscope.n15 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(48deg);
+  transform: scale(-1, 1) rotate(48deg);
+}
+.kaleidoscope.n15 .tile.t6 {
+  -webkit-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.kaleidoscope.n15 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(72deg);
+  transform: scale(-1, 1) rotate(72deg);
+}
+.kaleidoscope.n15 .tile.t8 {
+  -webkit-transform: rotate(96deg);
+  transform: rotate(96deg);
+}
+.kaleidoscope.n15 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(96deg);
+  transform: scale(-1, 1) rotate(96deg);
+}
+.kaleidoscope.n15 .tile.t10 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n15 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n15 .tile.t12 {
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.kaleidoscope.n15 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(144deg);
+  transform: scale(-1, 1) rotate(144deg);
+}
+.kaleidoscope.n15 .tile.t14 {
+  -webkit-transform: rotate(168deg);
+  transform: rotate(168deg);
+}
+.kaleidoscope.n15 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(168deg);
+  transform: scale(-1, 1) rotate(168deg);
+}
+.kaleidoscope.n15 .tile.t16 {
+  -webkit-transform: rotate(192deg);
+  transform: rotate(192deg);
+}
+.kaleidoscope.n15 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(192deg);
+  transform: scale(-1, 1) rotate(192deg);
+}
+.kaleidoscope.n15 .tile.t18 {
+  -webkit-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.kaleidoscope.n15 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(216deg);
+  transform: scale(-1, 1) rotate(216deg);
+}
+.kaleidoscope.n15 .tile.t20 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n15 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n15 .tile.t22 {
+  -webkit-transform: rotate(264deg);
+  transform: rotate(264deg);
+}
+.kaleidoscope.n15 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(264deg);
+  transform: scale(-1, 1) rotate(264deg);
+}
+.kaleidoscope.n15 .tile.t24 {
+  -webkit-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.kaleidoscope.n15 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(288deg);
+  transform: scale(-1, 1) rotate(288deg);
+}
+.kaleidoscope.n15 .tile.t26 {
+  -webkit-transform: rotate(312deg);
+  transform: rotate(312deg);
+}
+.kaleidoscope.n15 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(312deg);
+  transform: scale(-1, 1) rotate(312deg);
+}
+.kaleidoscope.n15 .tile.t28 {
+  -webkit-transform: rotate(336deg);
+  transform: rotate(336deg);
+}
+.kaleidoscope.n15 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(336deg);
+  transform: scale(-1, 1) rotate(336deg);
+}
+.kaleidoscope.n15 .tile .image {
+  -webkit-transform: rotate(12deg);
+  transform: rotate(12deg);
+}
+.kaleidoscope.n16 .tile {
+  display: block;
+}
+.kaleidoscope.n16 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n16 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n16 .tile.t2 {
+  -webkit-transform: rotate(22.5deg);
+  transform: rotate(22.5deg);
+}
+.kaleidoscope.n16 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(22.5deg);
+  transform: scale(-1, 1) rotate(22.5deg);
+}
+.kaleidoscope.n16 .tile.t4 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.kaleidoscope.n16 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(45deg);
+  transform: scale(-1, 1) rotate(45deg);
+}
+.kaleidoscope.n16 .tile.t6 {
+  -webkit-transform: rotate(67.5deg);
+  transform: rotate(67.5deg);
+}
+.kaleidoscope.n16 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(67.5deg);
+  transform: scale(-1, 1) rotate(67.5deg);
+}
+.kaleidoscope.n16 .tile.t8 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n16 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
+}
+.kaleidoscope.n16 .tile.t10 {
+  -webkit-transform: rotate(112.5deg);
+  transform: rotate(112.5deg);
+}
+.kaleidoscope.n16 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(112.5deg);
+  transform: scale(-1, 1) rotate(112.5deg);
+}
+.kaleidoscope.n16 .tile.t12 {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.kaleidoscope.n16 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(135deg);
+  transform: scale(-1, 1) rotate(135deg);
+}
+.kaleidoscope.n16 .tile.t14 {
+  -webkit-transform: rotate(157.5deg);
+  transform: rotate(157.5deg);
+}
+.kaleidoscope.n16 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(157.5deg);
+  transform: scale(-1, 1) rotate(157.5deg);
+}
+.kaleidoscope.n16 .tile.t16 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n16 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n16 .tile.t18 {
+  -webkit-transform: rotate(202.5deg);
+  transform: rotate(202.5deg);
+}
+.kaleidoscope.n16 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(202.5deg);
+  transform: scale(-1, 1) rotate(202.5deg);
+}
+.kaleidoscope.n16 .tile.t20 {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.kaleidoscope.n16 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(225deg);
+  transform: scale(-1, 1) rotate(225deg);
+}
+.kaleidoscope.n16 .tile.t22 {
+  -webkit-transform: rotate(247.5deg);
+  transform: rotate(247.5deg);
+}
+.kaleidoscope.n16 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(247.5deg);
+  transform: scale(-1, 1) rotate(247.5deg);
+}
+.kaleidoscope.n16 .tile.t24 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kaleidoscope.n16 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(270deg);
+  transform: scale(-1, 1) rotate(270deg);
+}
+.kaleidoscope.n16 .tile.t26 {
+  -webkit-transform: rotate(292.5deg);
+  transform: rotate(292.5deg);
+}
+.kaleidoscope.n16 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(292.5deg);
+  transform: scale(-1, 1) rotate(292.5deg);
+}
+.kaleidoscope.n16 .tile.t28 {
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+.kaleidoscope.n16 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(315deg);
+  transform: scale(-1, 1) rotate(315deg);
+}
+.kaleidoscope.n16 .tile.t30 {
+  -webkit-transform: rotate(337.5deg);
+  transform: rotate(337.5deg);
+}
+.kaleidoscope.n16 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(337.5deg);
+  transform: scale(-1, 1) rotate(337.5deg);
+}
+.kaleidoscope.n16 .tile .image {
+  -webkit-transform: rotate(11.25deg);
+  transform: rotate(11.25deg);
+}
+.kaleidoscope.n17 .tile {
+  display: block;
+}
+.kaleidoscope.n17 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n17 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n17 .tile.t2 {
+  -webkit-transform: rotate(21.1764705882deg);
+  transform: rotate(21.1764705882deg);
+}
+.kaleidoscope.n17 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(21.1764705882deg);
+  transform: scale(-1, 1) rotate(21.1764705882deg);
+}
+.kaleidoscope.n17 .tile.t4 {
+  -webkit-transform: rotate(42.3529411765deg);
+  transform: rotate(42.3529411765deg);
+}
+.kaleidoscope.n17 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(42.3529411765deg);
+  transform: scale(-1, 1) rotate(42.3529411765deg);
+}
+.kaleidoscope.n17 .tile.t6 {
+  -webkit-transform: rotate(63.5294117647deg);
+  transform: rotate(63.5294117647deg);
+}
+.kaleidoscope.n17 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(63.5294117647deg);
+  transform: scale(-1, 1) rotate(63.5294117647deg);
+}
+.kaleidoscope.n17 .tile.t8 {
+  -webkit-transform: rotate(84.7058823529deg);
+  transform: rotate(84.7058823529deg);
+}
+.kaleidoscope.n17 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(84.7058823529deg);
+  transform: scale(-1, 1) rotate(84.7058823529deg);
+}
+.kaleidoscope.n17 .tile.t10 {
+  -webkit-transform: rotate(105.8823529412deg);
+  transform: rotate(105.8823529412deg);
+}
+.kaleidoscope.n17 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(105.8823529412deg);
+  transform: scale(-1, 1) rotate(105.8823529412deg);
+}
+.kaleidoscope.n17 .tile.t12 {
+  -webkit-transform: rotate(127.0588235294deg);
+  transform: rotate(127.0588235294deg);
+}
+.kaleidoscope.n17 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(127.0588235294deg);
+  transform: scale(-1, 1) rotate(127.0588235294deg);
+}
+.kaleidoscope.n17 .tile.t14 {
+  -webkit-transform: rotate(148.2352941176deg);
+  transform: rotate(148.2352941176deg);
+}
+.kaleidoscope.n17 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(148.2352941176deg);
+  transform: scale(-1, 1) rotate(148.2352941176deg);
+}
+.kaleidoscope.n17 .tile.t16 {
+  -webkit-transform: rotate(169.4117647059deg);
+  transform: rotate(169.4117647059deg);
+}
+.kaleidoscope.n17 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(169.4117647059deg);
+  transform: scale(-1, 1) rotate(169.4117647059deg);
+}
+.kaleidoscope.n17 .tile.t18 {
+  -webkit-transform: rotate(190.5882352941deg);
+  transform: rotate(190.5882352941deg);
+}
+.kaleidoscope.n17 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(190.5882352941deg);
+  transform: scale(-1, 1) rotate(190.5882352941deg);
+}
+.kaleidoscope.n17 .tile.t20 {
+  -webkit-transform: rotate(211.7647058824deg);
+  transform: rotate(211.7647058824deg);
+}
+.kaleidoscope.n17 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(211.7647058824deg);
+  transform: scale(-1, 1) rotate(211.7647058824deg);
+}
+.kaleidoscope.n17 .tile.t22 {
+  -webkit-transform: rotate(232.9411764706deg);
+  transform: rotate(232.9411764706deg);
+}
+.kaleidoscope.n17 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(232.9411764706deg);
+  transform: scale(-1, 1) rotate(232.9411764706deg);
+}
+.kaleidoscope.n17 .tile.t24 {
+  -webkit-transform: rotate(254.1176470588deg);
+  transform: rotate(254.1176470588deg);
+}
+.kaleidoscope.n17 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(254.1176470588deg);
+  transform: scale(-1, 1) rotate(254.1176470588deg);
+}
+.kaleidoscope.n17 .tile.t26 {
+  -webkit-transform: rotate(275.2941176471deg);
+  transform: rotate(275.2941176471deg);
+}
+.kaleidoscope.n17 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(275.2941176471deg);
+  transform: scale(-1, 1) rotate(275.2941176471deg);
+}
+.kaleidoscope.n17 .tile.t28 {
+  -webkit-transform: rotate(296.4705882353deg);
+  transform: rotate(296.4705882353deg);
+}
+.kaleidoscope.n17 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(296.4705882353deg);
+  transform: scale(-1, 1) rotate(296.4705882353deg);
+}
+.kaleidoscope.n17 .tile.t30 {
+  -webkit-transform: rotate(317.6470588235deg);
+  transform: rotate(317.6470588235deg);
+}
+.kaleidoscope.n17 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(317.6470588235deg);
+  transform: scale(-1, 1) rotate(317.6470588235deg);
+}
+.kaleidoscope.n17 .tile.t32 {
+  -webkit-transform: rotate(338.8235294118deg);
+  transform: rotate(338.8235294118deg);
+}
+.kaleidoscope.n17 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(338.8235294118deg);
+  transform: scale(-1, 1) rotate(338.8235294118deg);
+}
+.kaleidoscope.n17 .tile .image {
+  -webkit-transform: rotate(10.5882352941deg);
+  transform: rotate(10.5882352941deg);
+}
+.kaleidoscope.n18 .tile {
+  display: block;
+}
+.kaleidoscope.n18 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n18 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n18 .tile.t2 {
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.kaleidoscope.n18 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(20deg);
+  transform: scale(-1, 1) rotate(20deg);
+}
+.kaleidoscope.n18 .tile.t4 {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.kaleidoscope.n18 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(40deg);
+  transform: scale(-1, 1) rotate(40deg);
+}
+.kaleidoscope.n18 .tile.t6 {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.kaleidoscope.n18 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(60deg);
+  transform: scale(-1, 1) rotate(60deg);
+}
+.kaleidoscope.n18 .tile.t8 {
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+.kaleidoscope.n18 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(80deg);
+  transform: scale(-1, 1) rotate(80deg);
+}
+.kaleidoscope.n18 .tile.t10 {
+  -webkit-transform: rotate(100deg);
+  transform: rotate(100deg);
+}
+.kaleidoscope.n18 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(100deg);
+  transform: scale(-1, 1) rotate(100deg);
+}
+.kaleidoscope.n18 .tile.t12 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n18 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n18 .tile.t14 {
+  -webkit-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+.kaleidoscope.n18 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(140deg);
+  transform: scale(-1, 1) rotate(140deg);
+}
+.kaleidoscope.n18 .tile.t16 {
+  -webkit-transform: rotate(160deg);
+  transform: rotate(160deg);
+}
+.kaleidoscope.n18 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(160deg);
+  transform: scale(-1, 1) rotate(160deg);
+}
+.kaleidoscope.n18 .tile.t18 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n18 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n18 .tile.t20 {
+  -webkit-transform: rotate(200deg);
+  transform: rotate(200deg);
+}
+.kaleidoscope.n18 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(200deg);
+  transform: scale(-1, 1) rotate(200deg);
+}
+.kaleidoscope.n18 .tile.t22 {
+  -webkit-transform: rotate(220deg);
+  transform: rotate(220deg);
+}
+.kaleidoscope.n18 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(220deg);
+  transform: scale(-1, 1) rotate(220deg);
+}
+.kaleidoscope.n18 .tile.t24 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n18 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n18 .tile.t26 {
+  -webkit-transform: rotate(260deg);
+  transform: rotate(260deg);
+}
+.kaleidoscope.n18 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(260deg);
+  transform: scale(-1, 1) rotate(260deg);
+}
+.kaleidoscope.n18 .tile.t28 {
+  -webkit-transform: rotate(280deg);
+  transform: rotate(280deg);
+}
+.kaleidoscope.n18 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(280deg);
+  transform: scale(-1, 1) rotate(280deg);
+}
+.kaleidoscope.n18 .tile.t30 {
+  -webkit-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.kaleidoscope.n18 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(300deg);
+  transform: scale(-1, 1) rotate(300deg);
+}
+.kaleidoscope.n18 .tile.t32 {
+  -webkit-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+.kaleidoscope.n18 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(320deg);
+  transform: scale(-1, 1) rotate(320deg);
+}
+.kaleidoscope.n18 .tile.t34 {
+  -webkit-transform: rotate(340deg);
+  transform: rotate(340deg);
+}
+.kaleidoscope.n18 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(340deg);
+  transform: scale(-1, 1) rotate(340deg);
+}
+.kaleidoscope.n18 .tile .image {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+.kaleidoscope.n19 .tile {
+  display: block;
+}
+.kaleidoscope.n19 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n19 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n19 .tile.t2 {
+  -webkit-transform: rotate(18.9473684211deg);
+  transform: rotate(18.9473684211deg);
+}
+.kaleidoscope.n19 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(18.9473684211deg);
+  transform: scale(-1, 1) rotate(18.9473684211deg);
+}
+.kaleidoscope.n19 .tile.t4 {
+  -webkit-transform: rotate(37.8947368421deg);
+  transform: rotate(37.8947368421deg);
+}
+.kaleidoscope.n19 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(37.8947368421deg);
+  transform: scale(-1, 1) rotate(37.8947368421deg);
+}
+.kaleidoscope.n19 .tile.t6 {
+  -webkit-transform: rotate(56.8421052632deg);
+  transform: rotate(56.8421052632deg);
+}
+.kaleidoscope.n19 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(56.8421052632deg);
+  transform: scale(-1, 1) rotate(56.8421052632deg);
+}
+.kaleidoscope.n19 .tile.t8 {
+  -webkit-transform: rotate(75.7894736842deg);
+  transform: rotate(75.7894736842deg);
+}
+.kaleidoscope.n19 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(75.7894736842deg);
+  transform: scale(-1, 1) rotate(75.7894736842deg);
+}
+.kaleidoscope.n19 .tile.t10 {
+  -webkit-transform: rotate(94.7368421053deg);
+  transform: rotate(94.7368421053deg);
+}
+.kaleidoscope.n19 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(94.7368421053deg);
+  transform: scale(-1, 1) rotate(94.7368421053deg);
+}
+.kaleidoscope.n19 .tile.t12 {
+  -webkit-transform: rotate(113.6842105263deg);
+  transform: rotate(113.6842105263deg);
+}
+.kaleidoscope.n19 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(113.6842105263deg);
+  transform: scale(-1, 1) rotate(113.6842105263deg);
+}
+.kaleidoscope.n19 .tile.t14 {
+  -webkit-transform: rotate(132.6315789474deg);
+  transform: rotate(132.6315789474deg);
+}
+.kaleidoscope.n19 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(132.6315789474deg);
+  transform: scale(-1, 1) rotate(132.6315789474deg);
+}
+.kaleidoscope.n19 .tile.t16 {
+  -webkit-transform: rotate(151.5789473684deg);
+  transform: rotate(151.5789473684deg);
+}
+.kaleidoscope.n19 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(151.5789473684deg);
+  transform: scale(-1, 1) rotate(151.5789473684deg);
+}
+.kaleidoscope.n19 .tile.t18 {
+  -webkit-transform: rotate(170.5263157895deg);
+  transform: rotate(170.5263157895deg);
+}
+.kaleidoscope.n19 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(170.5263157895deg);
+  transform: scale(-1, 1) rotate(170.5263157895deg);
+}
+.kaleidoscope.n19 .tile.t20 {
+  -webkit-transform: rotate(189.4736842105deg);
+  transform: rotate(189.4736842105deg);
+}
+.kaleidoscope.n19 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(189.4736842105deg);
+  transform: scale(-1, 1) rotate(189.4736842105deg);
+}
+.kaleidoscope.n19 .tile.t22 {
+  -webkit-transform: rotate(208.4210526316deg);
+  transform: rotate(208.4210526316deg);
+}
+.kaleidoscope.n19 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(208.4210526316deg);
+  transform: scale(-1, 1) rotate(208.4210526316deg);
+}
+.kaleidoscope.n19 .tile.t24 {
+  -webkit-transform: rotate(227.3684210526deg);
+  transform: rotate(227.3684210526deg);
+}
+.kaleidoscope.n19 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(227.3684210526deg);
+  transform: scale(-1, 1) rotate(227.3684210526deg);
+}
+.kaleidoscope.n19 .tile.t26 {
+  -webkit-transform: rotate(246.3157894737deg);
+  transform: rotate(246.3157894737deg);
+}
+.kaleidoscope.n19 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(246.3157894737deg);
+  transform: scale(-1, 1) rotate(246.3157894737deg);
+}
+.kaleidoscope.n19 .tile.t28 {
+  -webkit-transform: rotate(265.2631578947deg);
+  transform: rotate(265.2631578947deg);
+}
+.kaleidoscope.n19 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(265.2631578947deg);
+  transform: scale(-1, 1) rotate(265.2631578947deg);
+}
+.kaleidoscope.n19 .tile.t30 {
+  -webkit-transform: rotate(284.2105263158deg);
+  transform: rotate(284.2105263158deg);
+}
+.kaleidoscope.n19 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(284.2105263158deg);
+  transform: scale(-1, 1) rotate(284.2105263158deg);
+}
+.kaleidoscope.n19 .tile.t32 {
+  -webkit-transform: rotate(303.1578947368deg);
+  transform: rotate(303.1578947368deg);
+}
+.kaleidoscope.n19 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(303.1578947368deg);
+  transform: scale(-1, 1) rotate(303.1578947368deg);
+}
+.kaleidoscope.n19 .tile.t34 {
+  -webkit-transform: rotate(322.1052631579deg);
+  transform: rotate(322.1052631579deg);
+}
+.kaleidoscope.n19 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(322.1052631579deg);
+  transform: scale(-1, 1) rotate(322.1052631579deg);
+}
+.kaleidoscope.n19 .tile.t36 {
+  -webkit-transform: rotate(341.0526315789deg);
+  transform: rotate(341.0526315789deg);
+}
+.kaleidoscope.n19 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(341.0526315789deg);
+  transform: scale(-1, 1) rotate(341.0526315789deg);
+}
+.kaleidoscope.n19 .tile .image {
+  -webkit-transform: rotate(9.4736842105deg);
+  transform: rotate(9.4736842105deg);
+}
+.kaleidoscope.n20 .tile {
+  display: block;
+}
+.kaleidoscope.n20 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n20 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n20 .tile.t2 {
+  -webkit-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+.kaleidoscope.n20 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(18deg);
+  transform: scale(-1, 1) rotate(18deg);
+}
+.kaleidoscope.n20 .tile.t4 {
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.kaleidoscope.n20 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(36deg);
+  transform: scale(-1, 1) rotate(36deg);
+}
+.kaleidoscope.n20 .tile.t6 {
+  -webkit-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+.kaleidoscope.n20 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(54deg);
+  transform: scale(-1, 1) rotate(54deg);
+}
+.kaleidoscope.n20 .tile.t8 {
+  -webkit-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.kaleidoscope.n20 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(72deg);
+  transform: scale(-1, 1) rotate(72deg);
+}
+.kaleidoscope.n20 .tile.t10 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n20 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
+}
+.kaleidoscope.n20 .tile.t12 {
+  -webkit-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+.kaleidoscope.n20 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(108deg);
+  transform: scale(-1, 1) rotate(108deg);
+}
+.kaleidoscope.n20 .tile.t14 {
+  -webkit-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+.kaleidoscope.n20 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(126deg);
+  transform: scale(-1, 1) rotate(126deg);
+}
+.kaleidoscope.n20 .tile.t16 {
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.kaleidoscope.n20 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(144deg);
+  transform: scale(-1, 1) rotate(144deg);
+}
+.kaleidoscope.n20 .tile.t18 {
+  -webkit-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+.kaleidoscope.n20 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(162deg);
+  transform: scale(-1, 1) rotate(162deg);
+}
+.kaleidoscope.n20 .tile.t20 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n20 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n20 .tile.t22 {
+  -webkit-transform: rotate(198deg);
+  transform: rotate(198deg);
+}
+.kaleidoscope.n20 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(198deg);
+  transform: scale(-1, 1) rotate(198deg);
+}
+.kaleidoscope.n20 .tile.t24 {
+  -webkit-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.kaleidoscope.n20 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(216deg);
+  transform: scale(-1, 1) rotate(216deg);
+}
+.kaleidoscope.n20 .tile.t26 {
+  -webkit-transform: rotate(234deg);
+  transform: rotate(234deg);
+}
+.kaleidoscope.n20 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(234deg);
+  transform: scale(-1, 1) rotate(234deg);
+}
+.kaleidoscope.n20 .tile.t28 {
+  -webkit-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+.kaleidoscope.n20 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(252deg);
+  transform: scale(-1, 1) rotate(252deg);
+}
+.kaleidoscope.n20 .tile.t30 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kaleidoscope.n20 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(270deg);
+  transform: scale(-1, 1) rotate(270deg);
+}
+.kaleidoscope.n20 .tile.t32 {
+  -webkit-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.kaleidoscope.n20 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(288deg);
+  transform: scale(-1, 1) rotate(288deg);
+}
+.kaleidoscope.n20 .tile.t34 {
+  -webkit-transform: rotate(306deg);
+  transform: rotate(306deg);
+}
+.kaleidoscope.n20 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(306deg);
+  transform: scale(-1, 1) rotate(306deg);
+}
+.kaleidoscope.n20 .tile.t36 {
+  -webkit-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+.kaleidoscope.n20 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(324deg);
+  transform: scale(-1, 1) rotate(324deg);
+}
+.kaleidoscope.n20 .tile.t38 {
+  -webkit-transform: rotate(342deg);
+  transform: rotate(342deg);
+}
+.kaleidoscope.n20 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(342deg);
+  transform: scale(-1, 1) rotate(342deg);
+}
+.kaleidoscope.n20 .tile .image {
+  -webkit-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+.kaleidoscope.n21 .tile {
+  display: block;
+}
+.kaleidoscope.n21 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n21 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n21 .tile.t2 {
+  -webkit-transform: rotate(17.1428571429deg);
+  transform: rotate(17.1428571429deg);
+}
+.kaleidoscope.n21 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(17.1428571429deg);
+  transform: scale(-1, 1) rotate(17.1428571429deg);
+}
+.kaleidoscope.n21 .tile.t4 {
+  -webkit-transform: rotate(34.2857142857deg);
+  transform: rotate(34.2857142857deg);
+}
+.kaleidoscope.n21 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(34.2857142857deg);
+  transform: scale(-1, 1) rotate(34.2857142857deg);
+}
+.kaleidoscope.n21 .tile.t6 {
+  -webkit-transform: rotate(51.4285714286deg);
+  transform: rotate(51.4285714286deg);
+}
+.kaleidoscope.n21 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(51.4285714286deg);
+  transform: scale(-1, 1) rotate(51.4285714286deg);
+}
+.kaleidoscope.n21 .tile.t8 {
+  -webkit-transform: rotate(68.5714285714deg);
+  transform: rotate(68.5714285714deg);
+}
+.kaleidoscope.n21 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(68.5714285714deg);
+  transform: scale(-1, 1) rotate(68.5714285714deg);
+}
+.kaleidoscope.n21 .tile.t10 {
+  -webkit-transform: rotate(85.7142857143deg);
+  transform: rotate(85.7142857143deg);
+}
+.kaleidoscope.n21 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(85.7142857143deg);
+  transform: scale(-1, 1) rotate(85.7142857143deg);
+}
+.kaleidoscope.n21 .tile.t12 {
+  -webkit-transform: rotate(102.8571428571deg);
+  transform: rotate(102.8571428571deg);
+}
+.kaleidoscope.n21 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(102.8571428571deg);
+  transform: scale(-1, 1) rotate(102.8571428571deg);
+}
+.kaleidoscope.n21 .tile.t14 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n21 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n21 .tile.t16 {
+  -webkit-transform: rotate(137.1428571429deg);
+  transform: rotate(137.1428571429deg);
+}
+.kaleidoscope.n21 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(137.1428571429deg);
+  transform: scale(-1, 1) rotate(137.1428571429deg);
+}
+.kaleidoscope.n21 .tile.t18 {
+  -webkit-transform: rotate(154.2857142857deg);
+  transform: rotate(154.2857142857deg);
+}
+.kaleidoscope.n21 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(154.2857142857deg);
+  transform: scale(-1, 1) rotate(154.2857142857deg);
+}
+.kaleidoscope.n21 .tile.t20 {
+  -webkit-transform: rotate(171.4285714286deg);
+  transform: rotate(171.4285714286deg);
+}
+.kaleidoscope.n21 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(171.4285714286deg);
+  transform: scale(-1, 1) rotate(171.4285714286deg);
+}
+.kaleidoscope.n21 .tile.t22 {
+  -webkit-transform: rotate(188.5714285714deg);
+  transform: rotate(188.5714285714deg);
+}
+.kaleidoscope.n21 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(188.5714285714deg);
+  transform: scale(-1, 1) rotate(188.5714285714deg);
+}
+.kaleidoscope.n21 .tile.t24 {
+  -webkit-transform: rotate(205.7142857143deg);
+  transform: rotate(205.7142857143deg);
+}
+.kaleidoscope.n21 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(205.7142857143deg);
+  transform: scale(-1, 1) rotate(205.7142857143deg);
+}
+.kaleidoscope.n21 .tile.t26 {
+  -webkit-transform: rotate(222.8571428571deg);
+  transform: rotate(222.8571428571deg);
+}
+.kaleidoscope.n21 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(222.8571428571deg);
+  transform: scale(-1, 1) rotate(222.8571428571deg);
+}
+.kaleidoscope.n21 .tile.t28 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n21 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n21 .tile.t30 {
+  -webkit-transform: rotate(257.1428571429deg);
+  transform: rotate(257.1428571429deg);
+}
+.kaleidoscope.n21 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(257.1428571429deg);
+  transform: scale(-1, 1) rotate(257.1428571429deg);
+}
+.kaleidoscope.n21 .tile.t32 {
+  -webkit-transform: rotate(274.2857142857deg);
+  transform: rotate(274.2857142857deg);
+}
+.kaleidoscope.n21 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(274.2857142857deg);
+  transform: scale(-1, 1) rotate(274.2857142857deg);
+}
+.kaleidoscope.n21 .tile.t34 {
+  -webkit-transform: rotate(291.4285714286deg);
+  transform: rotate(291.4285714286deg);
+}
+.kaleidoscope.n21 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(291.4285714286deg);
+  transform: scale(-1, 1) rotate(291.4285714286deg);
+}
+.kaleidoscope.n21 .tile.t36 {
+  -webkit-transform: rotate(308.5714285714deg);
+  transform: rotate(308.5714285714deg);
+}
+.kaleidoscope.n21 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(308.5714285714deg);
+  transform: scale(-1, 1) rotate(308.5714285714deg);
+}
+.kaleidoscope.n21 .tile.t38 {
+  -webkit-transform: rotate(325.7142857143deg);
+  transform: rotate(325.7142857143deg);
+}
+.kaleidoscope.n21 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(325.7142857143deg);
+  transform: scale(-1, 1) rotate(325.7142857143deg);
+}
+.kaleidoscope.n21 .tile.t40 {
+  -webkit-transform: rotate(342.8571428571deg);
+  transform: rotate(342.8571428571deg);
+}
+.kaleidoscope.n21 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(342.8571428571deg);
+  transform: scale(-1, 1) rotate(342.8571428571deg);
+}
+.kaleidoscope.n21 .tile .image {
+  -webkit-transform: rotate(8.5714285714deg);
+  transform: rotate(8.5714285714deg);
+}
+.kaleidoscope.n22 .tile {
+  display: block;
+}
+.kaleidoscope.n22 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n22 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n22 .tile.t2 {
+  -webkit-transform: rotate(16.3636363636deg);
+  transform: rotate(16.3636363636deg);
+}
+.kaleidoscope.n22 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(16.3636363636deg);
+  transform: scale(-1, 1) rotate(16.3636363636deg);
+}
+.kaleidoscope.n22 .tile.t4 {
+  -webkit-transform: rotate(32.7272727273deg);
+  transform: rotate(32.7272727273deg);
+}
+.kaleidoscope.n22 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(32.7272727273deg);
+  transform: scale(-1, 1) rotate(32.7272727273deg);
+}
+.kaleidoscope.n22 .tile.t6 {
+  -webkit-transform: rotate(49.0909090909deg);
+  transform: rotate(49.0909090909deg);
+}
+.kaleidoscope.n22 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(49.0909090909deg);
+  transform: scale(-1, 1) rotate(49.0909090909deg);
+}
+.kaleidoscope.n22 .tile.t8 {
+  -webkit-transform: rotate(65.4545454545deg);
+  transform: rotate(65.4545454545deg);
+}
+.kaleidoscope.n22 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(65.4545454545deg);
+  transform: scale(-1, 1) rotate(65.4545454545deg);
+}
+.kaleidoscope.n22 .tile.t10 {
+  -webkit-transform: rotate(81.8181818182deg);
+  transform: rotate(81.8181818182deg);
+}
+.kaleidoscope.n22 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(81.8181818182deg);
+  transform: scale(-1, 1) rotate(81.8181818182deg);
+}
+.kaleidoscope.n22 .tile.t12 {
+  -webkit-transform: rotate(98.1818181818deg);
+  transform: rotate(98.1818181818deg);
+}
+.kaleidoscope.n22 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(98.1818181818deg);
+  transform: scale(-1, 1) rotate(98.1818181818deg);
+}
+.kaleidoscope.n22 .tile.t14 {
+  -webkit-transform: rotate(114.5454545455deg);
+  transform: rotate(114.5454545455deg);
+}
+.kaleidoscope.n22 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(114.5454545455deg);
+  transform: scale(-1, 1) rotate(114.5454545455deg);
+}
+.kaleidoscope.n22 .tile.t16 {
+  -webkit-transform: rotate(130.9090909091deg);
+  transform: rotate(130.9090909091deg);
+}
+.kaleidoscope.n22 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(130.9090909091deg);
+  transform: scale(-1, 1) rotate(130.9090909091deg);
+}
+.kaleidoscope.n22 .tile.t18 {
+  -webkit-transform: rotate(147.2727272727deg);
+  transform: rotate(147.2727272727deg);
+}
+.kaleidoscope.n22 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(147.2727272727deg);
+  transform: scale(-1, 1) rotate(147.2727272727deg);
+}
+.kaleidoscope.n22 .tile.t20 {
+  -webkit-transform: rotate(163.6363636364deg);
+  transform: rotate(163.6363636364deg);
+}
+.kaleidoscope.n22 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(163.6363636364deg);
+  transform: scale(-1, 1) rotate(163.6363636364deg);
+}
+.kaleidoscope.n22 .tile.t22 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n22 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n22 .tile.t24 {
+  -webkit-transform: rotate(196.3636363636deg);
+  transform: rotate(196.3636363636deg);
+}
+.kaleidoscope.n22 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(196.3636363636deg);
+  transform: scale(-1, 1) rotate(196.3636363636deg);
+}
+.kaleidoscope.n22 .tile.t26 {
+  -webkit-transform: rotate(212.7272727273deg);
+  transform: rotate(212.7272727273deg);
+}
+.kaleidoscope.n22 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(212.7272727273deg);
+  transform: scale(-1, 1) rotate(212.7272727273deg);
+}
+.kaleidoscope.n22 .tile.t28 {
+  -webkit-transform: rotate(229.0909090909deg);
+  transform: rotate(229.0909090909deg);
+}
+.kaleidoscope.n22 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(229.0909090909deg);
+  transform: scale(-1, 1) rotate(229.0909090909deg);
+}
+.kaleidoscope.n22 .tile.t30 {
+  -webkit-transform: rotate(245.4545454545deg);
+  transform: rotate(245.4545454545deg);
+}
+.kaleidoscope.n22 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(245.4545454545deg);
+  transform: scale(-1, 1) rotate(245.4545454545deg);
+}
+.kaleidoscope.n22 .tile.t32 {
+  -webkit-transform: rotate(261.8181818182deg);
+  transform: rotate(261.8181818182deg);
+}
+.kaleidoscope.n22 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(261.8181818182deg);
+  transform: scale(-1, 1) rotate(261.8181818182deg);
+}
+.kaleidoscope.n22 .tile.t34 {
+  -webkit-transform: rotate(278.1818181818deg);
+  transform: rotate(278.1818181818deg);
+}
+.kaleidoscope.n22 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(278.1818181818deg);
+  transform: scale(-1, 1) rotate(278.1818181818deg);
+}
+.kaleidoscope.n22 .tile.t36 {
+  -webkit-transform: rotate(294.5454545455deg);
+  transform: rotate(294.5454545455deg);
+}
+.kaleidoscope.n22 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(294.5454545455deg);
+  transform: scale(-1, 1) rotate(294.5454545455deg);
+}
+.kaleidoscope.n22 .tile.t38 {
+  -webkit-transform: rotate(310.9090909091deg);
+  transform: rotate(310.9090909091deg);
+}
+.kaleidoscope.n22 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(310.9090909091deg);
+  transform: scale(-1, 1) rotate(310.9090909091deg);
+}
+.kaleidoscope.n22 .tile.t40 {
+  -webkit-transform: rotate(327.2727272727deg);
+  transform: rotate(327.2727272727deg);
+}
+.kaleidoscope.n22 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(327.2727272727deg);
+  transform: scale(-1, 1) rotate(327.2727272727deg);
+}
+.kaleidoscope.n22 .tile.t42 {
+  -webkit-transform: rotate(343.6363636364deg);
+  transform: rotate(343.6363636364deg);
+}
+.kaleidoscope.n22 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(343.6363636364deg);
+  transform: scale(-1, 1) rotate(343.6363636364deg);
+}
+.kaleidoscope.n22 .tile .image {
+  -webkit-transform: rotate(8.1818181818deg);
+  transform: rotate(8.1818181818deg);
+}
+.kaleidoscope.n23 .tile {
+  display: block;
+}
+.kaleidoscope.n23 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n23 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n23 .tile.t2 {
+  -webkit-transform: rotate(15.652173913deg);
+  transform: rotate(15.652173913deg);
+}
+.kaleidoscope.n23 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(15.652173913deg);
+  transform: scale(-1, 1) rotate(15.652173913deg);
+}
+.kaleidoscope.n23 .tile.t4 {
+  -webkit-transform: rotate(31.3043478261deg);
+  transform: rotate(31.3043478261deg);
+}
+.kaleidoscope.n23 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(31.3043478261deg);
+  transform: scale(-1, 1) rotate(31.3043478261deg);
+}
+.kaleidoscope.n23 .tile.t6 {
+  -webkit-transform: rotate(46.9565217391deg);
+  transform: rotate(46.9565217391deg);
+}
+.kaleidoscope.n23 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(46.9565217391deg);
+  transform: scale(-1, 1) rotate(46.9565217391deg);
+}
+.kaleidoscope.n23 .tile.t8 {
+  -webkit-transform: rotate(62.6086956522deg);
+  transform: rotate(62.6086956522deg);
+}
+.kaleidoscope.n23 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(62.6086956522deg);
+  transform: scale(-1, 1) rotate(62.6086956522deg);
+}
+.kaleidoscope.n23 .tile.t10 {
+  -webkit-transform: rotate(78.2608695652deg);
+  transform: rotate(78.2608695652deg);
+}
+.kaleidoscope.n23 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(78.2608695652deg);
+  transform: scale(-1, 1) rotate(78.2608695652deg);
+}
+.kaleidoscope.n23 .tile.t12 {
+  -webkit-transform: rotate(93.9130434783deg);
+  transform: rotate(93.9130434783deg);
+}
+.kaleidoscope.n23 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(93.9130434783deg);
+  transform: scale(-1, 1) rotate(93.9130434783deg);
+}
+.kaleidoscope.n23 .tile.t14 {
+  -webkit-transform: rotate(109.5652173913deg);
+  transform: rotate(109.5652173913deg);
+}
+.kaleidoscope.n23 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(109.5652173913deg);
+  transform: scale(-1, 1) rotate(109.5652173913deg);
+}
+.kaleidoscope.n23 .tile.t16 {
+  -webkit-transform: rotate(125.2173913043deg);
+  transform: rotate(125.2173913043deg);
+}
+.kaleidoscope.n23 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(125.2173913043deg);
+  transform: scale(-1, 1) rotate(125.2173913043deg);
+}
+.kaleidoscope.n23 .tile.t18 {
+  -webkit-transform: rotate(140.8695652174deg);
+  transform: rotate(140.8695652174deg);
+}
+.kaleidoscope.n23 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(140.8695652174deg);
+  transform: scale(-1, 1) rotate(140.8695652174deg);
+}
+.kaleidoscope.n23 .tile.t20 {
+  -webkit-transform: rotate(156.5217391304deg);
+  transform: rotate(156.5217391304deg);
+}
+.kaleidoscope.n23 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(156.5217391304deg);
+  transform: scale(-1, 1) rotate(156.5217391304deg);
+}
+.kaleidoscope.n23 .tile.t22 {
+  -webkit-transform: rotate(172.1739130435deg);
+  transform: rotate(172.1739130435deg);
+}
+.kaleidoscope.n23 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(172.1739130435deg);
+  transform: scale(-1, 1) rotate(172.1739130435deg);
+}
+.kaleidoscope.n23 .tile.t24 {
+  -webkit-transform: rotate(187.8260869565deg);
+  transform: rotate(187.8260869565deg);
+}
+.kaleidoscope.n23 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(187.8260869565deg);
+  transform: scale(-1, 1) rotate(187.8260869565deg);
+}
+.kaleidoscope.n23 .tile.t26 {
+  -webkit-transform: rotate(203.4782608696deg);
+  transform: rotate(203.4782608696deg);
+}
+.kaleidoscope.n23 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(203.4782608696deg);
+  transform: scale(-1, 1) rotate(203.4782608696deg);
+}
+.kaleidoscope.n23 .tile.t28 {
+  -webkit-transform: rotate(219.1304347826deg);
+  transform: rotate(219.1304347826deg);
+}
+.kaleidoscope.n23 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(219.1304347826deg);
+  transform: scale(-1, 1) rotate(219.1304347826deg);
+}
+.kaleidoscope.n23 .tile.t30 {
+  -webkit-transform: rotate(234.7826086957deg);
+  transform: rotate(234.7826086957deg);
+}
+.kaleidoscope.n23 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(234.7826086957deg);
+  transform: scale(-1, 1) rotate(234.7826086957deg);
+}
+.kaleidoscope.n23 .tile.t32 {
+  -webkit-transform: rotate(250.4347826087deg);
+  transform: rotate(250.4347826087deg);
+}
+.kaleidoscope.n23 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(250.4347826087deg);
+  transform: scale(-1, 1) rotate(250.4347826087deg);
+}
+.kaleidoscope.n23 .tile.t34 {
+  -webkit-transform: rotate(266.0869565217deg);
+  transform: rotate(266.0869565217deg);
+}
+.kaleidoscope.n23 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(266.0869565217deg);
+  transform: scale(-1, 1) rotate(266.0869565217deg);
+}
+.kaleidoscope.n23 .tile.t36 {
+  -webkit-transform: rotate(281.7391304348deg);
+  transform: rotate(281.7391304348deg);
+}
+.kaleidoscope.n23 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(281.7391304348deg);
+  transform: scale(-1, 1) rotate(281.7391304348deg);
+}
+.kaleidoscope.n23 .tile.t38 {
+  -webkit-transform: rotate(297.3913043478deg);
+  transform: rotate(297.3913043478deg);
+}
+.kaleidoscope.n23 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(297.3913043478deg);
+  transform: scale(-1, 1) rotate(297.3913043478deg);
+}
+.kaleidoscope.n23 .tile.t40 {
+  -webkit-transform: rotate(313.0434782609deg);
+  transform: rotate(313.0434782609deg);
+}
+.kaleidoscope.n23 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(313.0434782609deg);
+  transform: scale(-1, 1) rotate(313.0434782609deg);
+}
+.kaleidoscope.n23 .tile.t42 {
+  -webkit-transform: rotate(328.6956521739deg);
+  transform: rotate(328.6956521739deg);
+}
+.kaleidoscope.n23 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(328.6956521739deg);
+  transform: scale(-1, 1) rotate(328.6956521739deg);
+}
+.kaleidoscope.n23 .tile.t44 {
+  -webkit-transform: rotate(344.347826087deg);
+  transform: rotate(344.347826087deg);
+}
+.kaleidoscope.n23 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(344.347826087deg);
+  transform: scale(-1, 1) rotate(344.347826087deg);
+}
+.kaleidoscope.n23 .tile .image {
+  -webkit-transform: rotate(7.8260869565deg);
+  transform: rotate(7.8260869565deg);
+}
+.kaleidoscope.n24 .tile {
+  display: block;
+}
+.kaleidoscope.n24 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n24 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n24 .tile.t2 {
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.kaleidoscope.n24 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(15deg);
+  transform: scale(-1, 1) rotate(15deg);
+}
+.kaleidoscope.n24 .tile.t4 {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.kaleidoscope.n24 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(30deg);
+  transform: scale(-1, 1) rotate(30deg);
+}
+.kaleidoscope.n24 .tile.t6 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.kaleidoscope.n24 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(45deg);
+  transform: scale(-1, 1) rotate(45deg);
+}
+.kaleidoscope.n24 .tile.t8 {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.kaleidoscope.n24 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(60deg);
+  transform: scale(-1, 1) rotate(60deg);
+}
+.kaleidoscope.n24 .tile.t10 {
+  -webkit-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+.kaleidoscope.n24 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(75deg);
+  transform: scale(-1, 1) rotate(75deg);
+}
+.kaleidoscope.n24 .tile.t12 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n24 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
+}
+.kaleidoscope.n24 .tile.t14 {
+  -webkit-transform: rotate(105deg);
+  transform: rotate(105deg);
+}
+.kaleidoscope.n24 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(105deg);
+  transform: scale(-1, 1) rotate(105deg);
+}
+.kaleidoscope.n24 .tile.t16 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n24 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n24 .tile.t18 {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.kaleidoscope.n24 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(135deg);
+  transform: scale(-1, 1) rotate(135deg);
+}
+.kaleidoscope.n24 .tile.t20 {
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+.kaleidoscope.n24 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(150deg);
+  transform: scale(-1, 1) rotate(150deg);
+}
+.kaleidoscope.n24 .tile.t22 {
+  -webkit-transform: rotate(165deg);
+  transform: rotate(165deg);
+}
+.kaleidoscope.n24 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(165deg);
+  transform: scale(-1, 1) rotate(165deg);
+}
+.kaleidoscope.n24 .tile.t24 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n24 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n24 .tile.t26 {
+  -webkit-transform: rotate(195deg);
+  transform: rotate(195deg);
+}
+.kaleidoscope.n24 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(195deg);
+  transform: scale(-1, 1) rotate(195deg);
+}
+.kaleidoscope.n24 .tile.t28 {
+  -webkit-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+.kaleidoscope.n24 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(210deg);
+  transform: scale(-1, 1) rotate(210deg);
+}
+.kaleidoscope.n24 .tile.t30 {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.kaleidoscope.n24 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(225deg);
+  transform: scale(-1, 1) rotate(225deg);
+}
+.kaleidoscope.n24 .tile.t32 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n24 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n24 .tile.t34 {
+  -webkit-transform: rotate(255deg);
+  transform: rotate(255deg);
+}
+.kaleidoscope.n24 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(255deg);
+  transform: scale(-1, 1) rotate(255deg);
+}
+.kaleidoscope.n24 .tile.t36 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kaleidoscope.n24 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(270deg);
+  transform: scale(-1, 1) rotate(270deg);
+}
+.kaleidoscope.n24 .tile.t38 {
+  -webkit-transform: rotate(285deg);
+  transform: rotate(285deg);
+}
+.kaleidoscope.n24 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(285deg);
+  transform: scale(-1, 1) rotate(285deg);
+}
+.kaleidoscope.n24 .tile.t40 {
+  -webkit-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.kaleidoscope.n24 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(300deg);
+  transform: scale(-1, 1) rotate(300deg);
+}
+.kaleidoscope.n24 .tile.t42 {
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+.kaleidoscope.n24 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(315deg);
+  transform: scale(-1, 1) rotate(315deg);
+}
+.kaleidoscope.n24 .tile.t44 {
+  -webkit-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+.kaleidoscope.n24 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(330deg);
+  transform: scale(-1, 1) rotate(330deg);
+}
+.kaleidoscope.n24 .tile.t46 {
+  -webkit-transform: rotate(345deg);
+  transform: rotate(345deg);
+}
+.kaleidoscope.n24 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(345deg);
+  transform: scale(-1, 1) rotate(345deg);
+}
+.kaleidoscope.n24 .tile .image {
+  -webkit-transform: rotate(7.5deg);
+  transform: rotate(7.5deg);
+}
+.kaleidoscope.n25 .tile {
+  display: block;
+}
+.kaleidoscope.n25 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n25 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n25 .tile.t2 {
+  -webkit-transform: rotate(14.4deg);
+  transform: rotate(14.4deg);
+}
+.kaleidoscope.n25 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(14.4deg);
+  transform: scale(-1, 1) rotate(14.4deg);
+}
+.kaleidoscope.n25 .tile.t4 {
+  -webkit-transform: rotate(28.8deg);
+  transform: rotate(28.8deg);
+}
+.kaleidoscope.n25 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(28.8deg);
+  transform: scale(-1, 1) rotate(28.8deg);
+}
+.kaleidoscope.n25 .tile.t6 {
+  -webkit-transform: rotate(43.2deg);
+  transform: rotate(43.2deg);
+}
+.kaleidoscope.n25 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(43.2deg);
+  transform: scale(-1, 1) rotate(43.2deg);
+}
+.kaleidoscope.n25 .tile.t8 {
+  -webkit-transform: rotate(57.6deg);
+  transform: rotate(57.6deg);
+}
+.kaleidoscope.n25 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(57.6deg);
+  transform: scale(-1, 1) rotate(57.6deg);
+}
+.kaleidoscope.n25 .tile.t10 {
+  -webkit-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.kaleidoscope.n25 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(72deg);
+  transform: scale(-1, 1) rotate(72deg);
+}
+.kaleidoscope.n25 .tile.t12 {
+  -webkit-transform: rotate(86.4deg);
+  transform: rotate(86.4deg);
+}
+.kaleidoscope.n25 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(86.4deg);
+  transform: scale(-1, 1) rotate(86.4deg);
+}
+.kaleidoscope.n25 .tile.t14 {
+  -webkit-transform: rotate(100.8deg);
+  transform: rotate(100.8deg);
+}
+.kaleidoscope.n25 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(100.8deg);
+  transform: scale(-1, 1) rotate(100.8deg);
+}
+.kaleidoscope.n25 .tile.t16 {
+  -webkit-transform: rotate(115.2deg);
+  transform: rotate(115.2deg);
+}
+.kaleidoscope.n25 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(115.2deg);
+  transform: scale(-1, 1) rotate(115.2deg);
+}
+.kaleidoscope.n25 .tile.t18 {
+  -webkit-transform: rotate(129.6deg);
+  transform: rotate(129.6deg);
+}
+.kaleidoscope.n25 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(129.6deg);
+  transform: scale(-1, 1) rotate(129.6deg);
+}
+.kaleidoscope.n25 .tile.t20 {
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.kaleidoscope.n25 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(144deg);
+  transform: scale(-1, 1) rotate(144deg);
+}
+.kaleidoscope.n25 .tile.t22 {
+  -webkit-transform: rotate(158.4deg);
+  transform: rotate(158.4deg);
+}
+.kaleidoscope.n25 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(158.4deg);
+  transform: scale(-1, 1) rotate(158.4deg);
+}
+.kaleidoscope.n25 .tile.t24 {
+  -webkit-transform: rotate(172.8deg);
+  transform: rotate(172.8deg);
+}
+.kaleidoscope.n25 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(172.8deg);
+  transform: scale(-1, 1) rotate(172.8deg);
+}
+.kaleidoscope.n25 .tile.t26 {
+  -webkit-transform: rotate(187.2deg);
+  transform: rotate(187.2deg);
+}
+.kaleidoscope.n25 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(187.2deg);
+  transform: scale(-1, 1) rotate(187.2deg);
+}
+.kaleidoscope.n25 .tile.t28 {
+  -webkit-transform: rotate(201.6deg);
+  transform: rotate(201.6deg);
+}
+.kaleidoscope.n25 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(201.6deg);
+  transform: scale(-1, 1) rotate(201.6deg);
+}
+.kaleidoscope.n25 .tile.t30 {
+  -webkit-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.kaleidoscope.n25 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(216deg);
+  transform: scale(-1, 1) rotate(216deg);
+}
+.kaleidoscope.n25 .tile.t32 {
+  -webkit-transform: rotate(230.4deg);
+  transform: rotate(230.4deg);
+}
+.kaleidoscope.n25 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(230.4deg);
+  transform: scale(-1, 1) rotate(230.4deg);
+}
+.kaleidoscope.n25 .tile.t34 {
+  -webkit-transform: rotate(244.8deg);
+  transform: rotate(244.8deg);
+}
+.kaleidoscope.n25 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(244.8deg);
+  transform: scale(-1, 1) rotate(244.8deg);
+}
+.kaleidoscope.n25 .tile.t36 {
+  -webkit-transform: rotate(259.2deg);
+  transform: rotate(259.2deg);
+}
+.kaleidoscope.n25 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(259.2deg);
+  transform: scale(-1, 1) rotate(259.2deg);
+}
+.kaleidoscope.n25 .tile.t38 {
+  -webkit-transform: rotate(273.6deg);
+  transform: rotate(273.6deg);
+}
+.kaleidoscope.n25 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(273.6deg);
+  transform: scale(-1, 1) rotate(273.6deg);
+}
+.kaleidoscope.n25 .tile.t40 {
+  -webkit-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.kaleidoscope.n25 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(288deg);
+  transform: scale(-1, 1) rotate(288deg);
+}
+.kaleidoscope.n25 .tile.t42 {
+  -webkit-transform: rotate(302.4deg);
+  transform: rotate(302.4deg);
+}
+.kaleidoscope.n25 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(302.4deg);
+  transform: scale(-1, 1) rotate(302.4deg);
+}
+.kaleidoscope.n25 .tile.t44 {
+  -webkit-transform: rotate(316.8deg);
+  transform: rotate(316.8deg);
+}
+.kaleidoscope.n25 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(316.8deg);
+  transform: scale(-1, 1) rotate(316.8deg);
+}
+.kaleidoscope.n25 .tile.t46 {
+  -webkit-transform: rotate(331.2deg);
+  transform: rotate(331.2deg);
+}
+.kaleidoscope.n25 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(331.2deg);
+  transform: scale(-1, 1) rotate(331.2deg);
+}
+.kaleidoscope.n25 .tile.t48 {
+  -webkit-transform: rotate(345.6deg);
+  transform: rotate(345.6deg);
+}
+.kaleidoscope.n25 .tile.t49 {
+  -webkit-transform: scale(-1, 1) rotate(345.6deg);
+  transform: scale(-1, 1) rotate(345.6deg);
+}
+.kaleidoscope.n25 .tile .image {
+  -webkit-transform: rotate(7.2deg);
+  transform: rotate(7.2deg);
+}
+.kaleidoscope.n26 .tile {
+  display: block;
+}
+.kaleidoscope.n26 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n26 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n26 .tile.t2 {
+  -webkit-transform: rotate(13.8461538462deg);
+  transform: rotate(13.8461538462deg);
+}
+.kaleidoscope.n26 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(13.8461538462deg);
+  transform: scale(-1, 1) rotate(13.8461538462deg);
+}
+.kaleidoscope.n26 .tile.t4 {
+  -webkit-transform: rotate(27.6923076923deg);
+  transform: rotate(27.6923076923deg);
+}
+.kaleidoscope.n26 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(27.6923076923deg);
+  transform: scale(-1, 1) rotate(27.6923076923deg);
+}
+.kaleidoscope.n26 .tile.t6 {
+  -webkit-transform: rotate(41.5384615385deg);
+  transform: rotate(41.5384615385deg);
+}
+.kaleidoscope.n26 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(41.5384615385deg);
+  transform: scale(-1, 1) rotate(41.5384615385deg);
+}
+.kaleidoscope.n26 .tile.t8 {
+  -webkit-transform: rotate(55.3846153846deg);
+  transform: rotate(55.3846153846deg);
+}
+.kaleidoscope.n26 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(55.3846153846deg);
+  transform: scale(-1, 1) rotate(55.3846153846deg);
+}
+.kaleidoscope.n26 .tile.t10 {
+  -webkit-transform: rotate(69.2307692308deg);
+  transform: rotate(69.2307692308deg);
+}
+.kaleidoscope.n26 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(69.2307692308deg);
+  transform: scale(-1, 1) rotate(69.2307692308deg);
+}
+.kaleidoscope.n26 .tile.t12 {
+  -webkit-transform: rotate(83.0769230769deg);
+  transform: rotate(83.0769230769deg);
+}
+.kaleidoscope.n26 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(83.0769230769deg);
+  transform: scale(-1, 1) rotate(83.0769230769deg);
+}
+.kaleidoscope.n26 .tile.t14 {
+  -webkit-transform: rotate(96.9230769231deg);
+  transform: rotate(96.9230769231deg);
+}
+.kaleidoscope.n26 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(96.9230769231deg);
+  transform: scale(-1, 1) rotate(96.9230769231deg);
+}
+.kaleidoscope.n26 .tile.t16 {
+  -webkit-transform: rotate(110.7692307692deg);
+  transform: rotate(110.7692307692deg);
+}
+.kaleidoscope.n26 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(110.7692307692deg);
+  transform: scale(-1, 1) rotate(110.7692307692deg);
+}
+.kaleidoscope.n26 .tile.t18 {
+  -webkit-transform: rotate(124.6153846154deg);
+  transform: rotate(124.6153846154deg);
+}
+.kaleidoscope.n26 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(124.6153846154deg);
+  transform: scale(-1, 1) rotate(124.6153846154deg);
+}
+.kaleidoscope.n26 .tile.t20 {
+  -webkit-transform: rotate(138.4615384615deg);
+  transform: rotate(138.4615384615deg);
+}
+.kaleidoscope.n26 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(138.4615384615deg);
+  transform: scale(-1, 1) rotate(138.4615384615deg);
+}
+.kaleidoscope.n26 .tile.t22 {
+  -webkit-transform: rotate(152.3076923077deg);
+  transform: rotate(152.3076923077deg);
+}
+.kaleidoscope.n26 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(152.3076923077deg);
+  transform: scale(-1, 1) rotate(152.3076923077deg);
+}
+.kaleidoscope.n26 .tile.t24 {
+  -webkit-transform: rotate(166.1538461538deg);
+  transform: rotate(166.1538461538deg);
+}
+.kaleidoscope.n26 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(166.1538461538deg);
+  transform: scale(-1, 1) rotate(166.1538461538deg);
+}
+.kaleidoscope.n26 .tile.t26 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n26 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n26 .tile.t28 {
+  -webkit-transform: rotate(193.8461538462deg);
+  transform: rotate(193.8461538462deg);
+}
+.kaleidoscope.n26 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(193.8461538462deg);
+  transform: scale(-1, 1) rotate(193.8461538462deg);
+}
+.kaleidoscope.n26 .tile.t30 {
+  -webkit-transform: rotate(207.6923076923deg);
+  transform: rotate(207.6923076923deg);
+}
+.kaleidoscope.n26 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(207.6923076923deg);
+  transform: scale(-1, 1) rotate(207.6923076923deg);
+}
+.kaleidoscope.n26 .tile.t32 {
+  -webkit-transform: rotate(221.5384615385deg);
+  transform: rotate(221.5384615385deg);
+}
+.kaleidoscope.n26 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(221.5384615385deg);
+  transform: scale(-1, 1) rotate(221.5384615385deg);
+}
+.kaleidoscope.n26 .tile.t34 {
+  -webkit-transform: rotate(235.3846153846deg);
+  transform: rotate(235.3846153846deg);
+}
+.kaleidoscope.n26 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(235.3846153846deg);
+  transform: scale(-1, 1) rotate(235.3846153846deg);
+}
+.kaleidoscope.n26 .tile.t36 {
+  -webkit-transform: rotate(249.2307692308deg);
+  transform: rotate(249.2307692308deg);
+}
+.kaleidoscope.n26 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(249.2307692308deg);
+  transform: scale(-1, 1) rotate(249.2307692308deg);
+}
+.kaleidoscope.n26 .tile.t38 {
+  -webkit-transform: rotate(263.0769230769deg);
+  transform: rotate(263.0769230769deg);
+}
+.kaleidoscope.n26 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(263.0769230769deg);
+  transform: scale(-1, 1) rotate(263.0769230769deg);
+}
+.kaleidoscope.n26 .tile.t40 {
+  -webkit-transform: rotate(276.9230769231deg);
+  transform: rotate(276.9230769231deg);
+}
+.kaleidoscope.n26 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(276.9230769231deg);
+  transform: scale(-1, 1) rotate(276.9230769231deg);
+}
+.kaleidoscope.n26 .tile.t42 {
+  -webkit-transform: rotate(290.7692307692deg);
+  transform: rotate(290.7692307692deg);
+}
+.kaleidoscope.n26 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(290.7692307692deg);
+  transform: scale(-1, 1) rotate(290.7692307692deg);
+}
+.kaleidoscope.n26 .tile.t44 {
+  -webkit-transform: rotate(304.6153846154deg);
+  transform: rotate(304.6153846154deg);
+}
+.kaleidoscope.n26 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(304.6153846154deg);
+  transform: scale(-1, 1) rotate(304.6153846154deg);
+}
+.kaleidoscope.n26 .tile.t46 {
+  -webkit-transform: rotate(318.4615384615deg);
+  transform: rotate(318.4615384615deg);
+}
+.kaleidoscope.n26 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(318.4615384615deg);
+  transform: scale(-1, 1) rotate(318.4615384615deg);
+}
+.kaleidoscope.n26 .tile.t48 {
+  -webkit-transform: rotate(332.3076923077deg);
+  transform: rotate(332.3076923077deg);
+}
+.kaleidoscope.n26 .tile.t49 {
+  -webkit-transform: scale(-1, 1) rotate(332.3076923077deg);
+  transform: scale(-1, 1) rotate(332.3076923077deg);
+}
+.kaleidoscope.n26 .tile.t50 {
+  -webkit-transform: rotate(346.1538461538deg);
+  transform: rotate(346.1538461538deg);
+}
+.kaleidoscope.n26 .tile.t51 {
+  -webkit-transform: scale(-1, 1) rotate(346.1538461538deg);
+  transform: scale(-1, 1) rotate(346.1538461538deg);
+}
+.kaleidoscope.n26 .tile .image {
+  -webkit-transform: rotate(6.9230769231deg);
+  transform: rotate(6.9230769231deg);
+}
+.kaleidoscope.n27 .tile {
+  display: block;
+}
+.kaleidoscope.n27 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n27 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n27 .tile.t2 {
+  -webkit-transform: rotate(13.3333333333deg);
+  transform: rotate(13.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(13.3333333333deg);
+  transform: scale(-1, 1) rotate(13.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t4 {
+  -webkit-transform: rotate(26.6666666667deg);
+  transform: rotate(26.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(26.6666666667deg);
+  transform: scale(-1, 1) rotate(26.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t6 {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.kaleidoscope.n27 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(40deg);
+  transform: scale(-1, 1) rotate(40deg);
+}
+.kaleidoscope.n27 .tile.t8 {
+  -webkit-transform: rotate(53.3333333333deg);
+  transform: rotate(53.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(53.3333333333deg);
+  transform: scale(-1, 1) rotate(53.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t10 {
+  -webkit-transform: rotate(66.6666666667deg);
+  transform: rotate(66.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(66.6666666667deg);
+  transform: scale(-1, 1) rotate(66.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t12 {
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+.kaleidoscope.n27 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(80deg);
+  transform: scale(-1, 1) rotate(80deg);
+}
+.kaleidoscope.n27 .tile.t14 {
+  -webkit-transform: rotate(93.3333333333deg);
+  transform: rotate(93.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(93.3333333333deg);
+  transform: scale(-1, 1) rotate(93.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t16 {
+  -webkit-transform: rotate(106.6666666667deg);
+  transform: rotate(106.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(106.6666666667deg);
+  transform: scale(-1, 1) rotate(106.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t18 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n27 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n27 .tile.t20 {
+  -webkit-transform: rotate(133.3333333333deg);
+  transform: rotate(133.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(133.3333333333deg);
+  transform: scale(-1, 1) rotate(133.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t22 {
+  -webkit-transform: rotate(146.6666666667deg);
+  transform: rotate(146.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(146.6666666667deg);
+  transform: scale(-1, 1) rotate(146.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t24 {
+  -webkit-transform: rotate(160deg);
+  transform: rotate(160deg);
+}
+.kaleidoscope.n27 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(160deg);
+  transform: scale(-1, 1) rotate(160deg);
+}
+.kaleidoscope.n27 .tile.t26 {
+  -webkit-transform: rotate(173.3333333333deg);
+  transform: rotate(173.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(173.3333333333deg);
+  transform: scale(-1, 1) rotate(173.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t28 {
+  -webkit-transform: rotate(186.6666666667deg);
+  transform: rotate(186.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(186.6666666667deg);
+  transform: scale(-1, 1) rotate(186.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t30 {
+  -webkit-transform: rotate(200deg);
+  transform: rotate(200deg);
+}
+.kaleidoscope.n27 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(200deg);
+  transform: scale(-1, 1) rotate(200deg);
+}
+.kaleidoscope.n27 .tile.t32 {
+  -webkit-transform: rotate(213.3333333333deg);
+  transform: rotate(213.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(213.3333333333deg);
+  transform: scale(-1, 1) rotate(213.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t34 {
+  -webkit-transform: rotate(226.6666666667deg);
+  transform: rotate(226.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(226.6666666667deg);
+  transform: scale(-1, 1) rotate(226.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t36 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n27 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n27 .tile.t38 {
+  -webkit-transform: rotate(253.3333333333deg);
+  transform: rotate(253.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(253.3333333333deg);
+  transform: scale(-1, 1) rotate(253.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t40 {
+  -webkit-transform: rotate(266.6666666667deg);
+  transform: rotate(266.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(266.6666666667deg);
+  transform: scale(-1, 1) rotate(266.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t42 {
+  -webkit-transform: rotate(280deg);
+  transform: rotate(280deg);
+}
+.kaleidoscope.n27 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(280deg);
+  transform: scale(-1, 1) rotate(280deg);
+}
+.kaleidoscope.n27 .tile.t44 {
+  -webkit-transform: rotate(293.3333333333deg);
+  transform: rotate(293.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(293.3333333333deg);
+  transform: scale(-1, 1) rotate(293.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t46 {
+  -webkit-transform: rotate(306.6666666667deg);
+  transform: rotate(306.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(306.6666666667deg);
+  transform: scale(-1, 1) rotate(306.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t48 {
+  -webkit-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+.kaleidoscope.n27 .tile.t49 {
+  -webkit-transform: scale(-1, 1) rotate(320deg);
+  transform: scale(-1, 1) rotate(320deg);
+}
+.kaleidoscope.n27 .tile.t50 {
+  -webkit-transform: rotate(333.3333333333deg);
+  transform: rotate(333.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t51 {
+  -webkit-transform: scale(-1, 1) rotate(333.3333333333deg);
+  transform: scale(-1, 1) rotate(333.3333333333deg);
+}
+.kaleidoscope.n27 .tile.t52 {
+  -webkit-transform: rotate(346.6666666667deg);
+  transform: rotate(346.6666666667deg);
+}
+.kaleidoscope.n27 .tile.t53 {
+  -webkit-transform: scale(-1, 1) rotate(346.6666666667deg);
+  transform: scale(-1, 1) rotate(346.6666666667deg);
+}
+.kaleidoscope.n27 .tile .image {
+  -webkit-transform: rotate(6.6666666667deg);
+  transform: rotate(6.6666666667deg);
+}
+.kaleidoscope.n28 .tile {
+  display: block;
+}
+.kaleidoscope.n28 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n28 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n28 .tile.t2 {
+  -webkit-transform: rotate(12.8571428571deg);
+  transform: rotate(12.8571428571deg);
+}
+.kaleidoscope.n28 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(12.8571428571deg);
+  transform: scale(-1, 1) rotate(12.8571428571deg);
+}
+.kaleidoscope.n28 .tile.t4 {
+  -webkit-transform: rotate(25.7142857143deg);
+  transform: rotate(25.7142857143deg);
+}
+.kaleidoscope.n28 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(25.7142857143deg);
+  transform: scale(-1, 1) rotate(25.7142857143deg);
+}
+.kaleidoscope.n28 .tile.t6 {
+  -webkit-transform: rotate(38.5714285714deg);
+  transform: rotate(38.5714285714deg);
+}
+.kaleidoscope.n28 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(38.5714285714deg);
+  transform: scale(-1, 1) rotate(38.5714285714deg);
+}
+.kaleidoscope.n28 .tile.t8 {
+  -webkit-transform: rotate(51.4285714286deg);
+  transform: rotate(51.4285714286deg);
+}
+.kaleidoscope.n28 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(51.4285714286deg);
+  transform: scale(-1, 1) rotate(51.4285714286deg);
+}
+.kaleidoscope.n28 .tile.t10 {
+  -webkit-transform: rotate(64.2857142857deg);
+  transform: rotate(64.2857142857deg);
+}
+.kaleidoscope.n28 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(64.2857142857deg);
+  transform: scale(-1, 1) rotate(64.2857142857deg);
+}
+.kaleidoscope.n28 .tile.t12 {
+  -webkit-transform: rotate(77.1428571429deg);
+  transform: rotate(77.1428571429deg);
+}
+.kaleidoscope.n28 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(77.1428571429deg);
+  transform: scale(-1, 1) rotate(77.1428571429deg);
+}
+.kaleidoscope.n28 .tile.t14 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n28 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
+}
+.kaleidoscope.n28 .tile.t16 {
+  -webkit-transform: rotate(102.8571428571deg);
+  transform: rotate(102.8571428571deg);
+}
+.kaleidoscope.n28 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(102.8571428571deg);
+  transform: scale(-1, 1) rotate(102.8571428571deg);
+}
+.kaleidoscope.n28 .tile.t18 {
+  -webkit-transform: rotate(115.7142857143deg);
+  transform: rotate(115.7142857143deg);
+}
+.kaleidoscope.n28 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(115.7142857143deg);
+  transform: scale(-1, 1) rotate(115.7142857143deg);
+}
+.kaleidoscope.n28 .tile.t20 {
+  -webkit-transform: rotate(128.5714285714deg);
+  transform: rotate(128.5714285714deg);
+}
+.kaleidoscope.n28 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(128.5714285714deg);
+  transform: scale(-1, 1) rotate(128.5714285714deg);
+}
+.kaleidoscope.n28 .tile.t22 {
+  -webkit-transform: rotate(141.4285714286deg);
+  transform: rotate(141.4285714286deg);
+}
+.kaleidoscope.n28 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(141.4285714286deg);
+  transform: scale(-1, 1) rotate(141.4285714286deg);
+}
+.kaleidoscope.n28 .tile.t24 {
+  -webkit-transform: rotate(154.2857142857deg);
+  transform: rotate(154.2857142857deg);
+}
+.kaleidoscope.n28 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(154.2857142857deg);
+  transform: scale(-1, 1) rotate(154.2857142857deg);
+}
+.kaleidoscope.n28 .tile.t26 {
+  -webkit-transform: rotate(167.1428571429deg);
+  transform: rotate(167.1428571429deg);
+}
+.kaleidoscope.n28 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(167.1428571429deg);
+  transform: scale(-1, 1) rotate(167.1428571429deg);
+}
+.kaleidoscope.n28 .tile.t28 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n28 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n28 .tile.t30 {
+  -webkit-transform: rotate(192.8571428571deg);
+  transform: rotate(192.8571428571deg);
+}
+.kaleidoscope.n28 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(192.8571428571deg);
+  transform: scale(-1, 1) rotate(192.8571428571deg);
+}
+.kaleidoscope.n28 .tile.t32 {
+  -webkit-transform: rotate(205.7142857143deg);
+  transform: rotate(205.7142857143deg);
+}
+.kaleidoscope.n28 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(205.7142857143deg);
+  transform: scale(-1, 1) rotate(205.7142857143deg);
+}
+.kaleidoscope.n28 .tile.t34 {
+  -webkit-transform: rotate(218.5714285714deg);
+  transform: rotate(218.5714285714deg);
+}
+.kaleidoscope.n28 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(218.5714285714deg);
+  transform: scale(-1, 1) rotate(218.5714285714deg);
+}
+.kaleidoscope.n28 .tile.t36 {
+  -webkit-transform: rotate(231.4285714286deg);
+  transform: rotate(231.4285714286deg);
+}
+.kaleidoscope.n28 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(231.4285714286deg);
+  transform: scale(-1, 1) rotate(231.4285714286deg);
+}
+.kaleidoscope.n28 .tile.t38 {
+  -webkit-transform: rotate(244.2857142857deg);
+  transform: rotate(244.2857142857deg);
+}
+.kaleidoscope.n28 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(244.2857142857deg);
+  transform: scale(-1, 1) rotate(244.2857142857deg);
+}
+.kaleidoscope.n28 .tile.t40 {
+  -webkit-transform: rotate(257.1428571429deg);
+  transform: rotate(257.1428571429deg);
+}
+.kaleidoscope.n28 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(257.1428571429deg);
+  transform: scale(-1, 1) rotate(257.1428571429deg);
+}
+.kaleidoscope.n28 .tile.t42 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kaleidoscope.n28 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(270deg);
+  transform: scale(-1, 1) rotate(270deg);
+}
+.kaleidoscope.n28 .tile.t44 {
+  -webkit-transform: rotate(282.8571428571deg);
+  transform: rotate(282.8571428571deg);
+}
+.kaleidoscope.n28 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(282.8571428571deg);
+  transform: scale(-1, 1) rotate(282.8571428571deg);
+}
+.kaleidoscope.n28 .tile.t46 {
+  -webkit-transform: rotate(295.7142857143deg);
+  transform: rotate(295.7142857143deg);
+}
+.kaleidoscope.n28 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(295.7142857143deg);
+  transform: scale(-1, 1) rotate(295.7142857143deg);
+}
+.kaleidoscope.n28 .tile.t48 {
+  -webkit-transform: rotate(308.5714285714deg);
+  transform: rotate(308.5714285714deg);
+}
+.kaleidoscope.n28 .tile.t49 {
+  -webkit-transform: scale(-1, 1) rotate(308.5714285714deg);
+  transform: scale(-1, 1) rotate(308.5714285714deg);
+}
+.kaleidoscope.n28 .tile.t50 {
+  -webkit-transform: rotate(321.4285714286deg);
+  transform: rotate(321.4285714286deg);
+}
+.kaleidoscope.n28 .tile.t51 {
+  -webkit-transform: scale(-1, 1) rotate(321.4285714286deg);
+  transform: scale(-1, 1) rotate(321.4285714286deg);
+}
+.kaleidoscope.n28 .tile.t52 {
+  -webkit-transform: rotate(334.2857142857deg);
+  transform: rotate(334.2857142857deg);
+}
+.kaleidoscope.n28 .tile.t53 {
+  -webkit-transform: scale(-1, 1) rotate(334.2857142857deg);
+  transform: scale(-1, 1) rotate(334.2857142857deg);
+}
+.kaleidoscope.n28 .tile.t54 {
+  -webkit-transform: rotate(347.1428571429deg);
+  transform: rotate(347.1428571429deg);
+}
+.kaleidoscope.n28 .tile.t55 {
+  -webkit-transform: scale(-1, 1) rotate(347.1428571429deg);
+  transform: scale(-1, 1) rotate(347.1428571429deg);
+}
+.kaleidoscope.n28 .tile .image {
+  -webkit-transform: rotate(6.4285714286deg);
+  transform: rotate(6.4285714286deg);
+}
+.kaleidoscope.n29 .tile {
+  display: block;
+}
+.kaleidoscope.n29 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n29 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n29 .tile.t2 {
+  -webkit-transform: rotate(12.4137931034deg);
+  transform: rotate(12.4137931034deg);
+}
+.kaleidoscope.n29 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(12.4137931034deg);
+  transform: scale(-1, 1) rotate(12.4137931034deg);
+}
+.kaleidoscope.n29 .tile.t4 {
+  -webkit-transform: rotate(24.8275862069deg);
+  transform: rotate(24.8275862069deg);
+}
+.kaleidoscope.n29 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(24.8275862069deg);
+  transform: scale(-1, 1) rotate(24.8275862069deg);
+}
+.kaleidoscope.n29 .tile.t6 {
+  -webkit-transform: rotate(37.2413793103deg);
+  transform: rotate(37.2413793103deg);
+}
+.kaleidoscope.n29 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(37.2413793103deg);
+  transform: scale(-1, 1) rotate(37.2413793103deg);
+}
+.kaleidoscope.n29 .tile.t8 {
+  -webkit-transform: rotate(49.6551724138deg);
+  transform: rotate(49.6551724138deg);
+}
+.kaleidoscope.n29 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(49.6551724138deg);
+  transform: scale(-1, 1) rotate(49.6551724138deg);
+}
+.kaleidoscope.n29 .tile.t10 {
+  -webkit-transform: rotate(62.0689655172deg);
+  transform: rotate(62.0689655172deg);
+}
+.kaleidoscope.n29 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(62.0689655172deg);
+  transform: scale(-1, 1) rotate(62.0689655172deg);
+}
+.kaleidoscope.n29 .tile.t12 {
+  -webkit-transform: rotate(74.4827586207deg);
+  transform: rotate(74.4827586207deg);
+}
+.kaleidoscope.n29 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(74.4827586207deg);
+  transform: scale(-1, 1) rotate(74.4827586207deg);
+}
+.kaleidoscope.n29 .tile.t14 {
+  -webkit-transform: rotate(86.8965517241deg);
+  transform: rotate(86.8965517241deg);
+}
+.kaleidoscope.n29 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(86.8965517241deg);
+  transform: scale(-1, 1) rotate(86.8965517241deg);
+}
+.kaleidoscope.n29 .tile.t16 {
+  -webkit-transform: rotate(99.3103448276deg);
+  transform: rotate(99.3103448276deg);
+}
+.kaleidoscope.n29 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(99.3103448276deg);
+  transform: scale(-1, 1) rotate(99.3103448276deg);
+}
+.kaleidoscope.n29 .tile.t18 {
+  -webkit-transform: rotate(111.724137931deg);
+  transform: rotate(111.724137931deg);
+}
+.kaleidoscope.n29 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(111.724137931deg);
+  transform: scale(-1, 1) rotate(111.724137931deg);
+}
+.kaleidoscope.n29 .tile.t20 {
+  -webkit-transform: rotate(124.1379310345deg);
+  transform: rotate(124.1379310345deg);
+}
+.kaleidoscope.n29 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(124.1379310345deg);
+  transform: scale(-1, 1) rotate(124.1379310345deg);
+}
+.kaleidoscope.n29 .tile.t22 {
+  -webkit-transform: rotate(136.5517241379deg);
+  transform: rotate(136.5517241379deg);
+}
+.kaleidoscope.n29 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(136.5517241379deg);
+  transform: scale(-1, 1) rotate(136.5517241379deg);
+}
+.kaleidoscope.n29 .tile.t24 {
+  -webkit-transform: rotate(148.9655172414deg);
+  transform: rotate(148.9655172414deg);
+}
+.kaleidoscope.n29 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(148.9655172414deg);
+  transform: scale(-1, 1) rotate(148.9655172414deg);
+}
+.kaleidoscope.n29 .tile.t26 {
+  -webkit-transform: rotate(161.3793103448deg);
+  transform: rotate(161.3793103448deg);
+}
+.kaleidoscope.n29 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(161.3793103448deg);
+  transform: scale(-1, 1) rotate(161.3793103448deg);
+}
+.kaleidoscope.n29 .tile.t28 {
+  -webkit-transform: rotate(173.7931034483deg);
+  transform: rotate(173.7931034483deg);
+}
+.kaleidoscope.n29 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(173.7931034483deg);
+  transform: scale(-1, 1) rotate(173.7931034483deg);
+}
+.kaleidoscope.n29 .tile.t30 {
+  -webkit-transform: rotate(186.2068965517deg);
+  transform: rotate(186.2068965517deg);
+}
+.kaleidoscope.n29 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(186.2068965517deg);
+  transform: scale(-1, 1) rotate(186.2068965517deg);
+}
+.kaleidoscope.n29 .tile.t32 {
+  -webkit-transform: rotate(198.6206896552deg);
+  transform: rotate(198.6206896552deg);
+}
+.kaleidoscope.n29 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(198.6206896552deg);
+  transform: scale(-1, 1) rotate(198.6206896552deg);
+}
+.kaleidoscope.n29 .tile.t34 {
+  -webkit-transform: rotate(211.0344827586deg);
+  transform: rotate(211.0344827586deg);
+}
+.kaleidoscope.n29 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(211.0344827586deg);
+  transform: scale(-1, 1) rotate(211.0344827586deg);
+}
+.kaleidoscope.n29 .tile.t36 {
+  -webkit-transform: rotate(223.4482758621deg);
+  transform: rotate(223.4482758621deg);
+}
+.kaleidoscope.n29 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(223.4482758621deg);
+  transform: scale(-1, 1) rotate(223.4482758621deg);
+}
+.kaleidoscope.n29 .tile.t38 {
+  -webkit-transform: rotate(235.8620689655deg);
+  transform: rotate(235.8620689655deg);
+}
+.kaleidoscope.n29 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(235.8620689655deg);
+  transform: scale(-1, 1) rotate(235.8620689655deg);
+}
+.kaleidoscope.n29 .tile.t40 {
+  -webkit-transform: rotate(248.275862069deg);
+  transform: rotate(248.275862069deg);
+}
+.kaleidoscope.n29 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(248.275862069deg);
+  transform: scale(-1, 1) rotate(248.275862069deg);
+}
+.kaleidoscope.n29 .tile.t42 {
+  -webkit-transform: rotate(260.6896551724deg);
+  transform: rotate(260.6896551724deg);
+}
+.kaleidoscope.n29 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(260.6896551724deg);
+  transform: scale(-1, 1) rotate(260.6896551724deg);
+}
+.kaleidoscope.n29 .tile.t44 {
+  -webkit-transform: rotate(273.1034482759deg);
+  transform: rotate(273.1034482759deg);
+}
+.kaleidoscope.n29 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(273.1034482759deg);
+  transform: scale(-1, 1) rotate(273.1034482759deg);
+}
+.kaleidoscope.n29 .tile.t46 {
+  -webkit-transform: rotate(285.5172413793deg);
+  transform: rotate(285.5172413793deg);
+}
+.kaleidoscope.n29 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(285.5172413793deg);
+  transform: scale(-1, 1) rotate(285.5172413793deg);
+}
+.kaleidoscope.n29 .tile.t48 {
+  -webkit-transform: rotate(297.9310344828deg);
+  transform: rotate(297.9310344828deg);
+}
+.kaleidoscope.n29 .tile.t49 {
+  -webkit-transform: scale(-1, 1) rotate(297.9310344828deg);
+  transform: scale(-1, 1) rotate(297.9310344828deg);
+}
+.kaleidoscope.n29 .tile.t50 {
+  -webkit-transform: rotate(310.3448275862deg);
+  transform: rotate(310.3448275862deg);
+}
+.kaleidoscope.n29 .tile.t51 {
+  -webkit-transform: scale(-1, 1) rotate(310.3448275862deg);
+  transform: scale(-1, 1) rotate(310.3448275862deg);
+}
+.kaleidoscope.n29 .tile.t52 {
+  -webkit-transform: rotate(322.7586206897deg);
+  transform: rotate(322.7586206897deg);
+}
+.kaleidoscope.n29 .tile.t53 {
+  -webkit-transform: scale(-1, 1) rotate(322.7586206897deg);
+  transform: scale(-1, 1) rotate(322.7586206897deg);
+}
+.kaleidoscope.n29 .tile.t54 {
+  -webkit-transform: rotate(335.1724137931deg);
+  transform: rotate(335.1724137931deg);
+}
+.kaleidoscope.n29 .tile.t55 {
+  -webkit-transform: scale(-1, 1) rotate(335.1724137931deg);
+  transform: scale(-1, 1) rotate(335.1724137931deg);
+}
+.kaleidoscope.n29 .tile.t56 {
+  -webkit-transform: rotate(347.5862068966deg);
+  transform: rotate(347.5862068966deg);
+}
+.kaleidoscope.n29 .tile.t57 {
+  -webkit-transform: scale(-1, 1) rotate(347.5862068966deg);
+  transform: scale(-1, 1) rotate(347.5862068966deg);
+}
+.kaleidoscope.n29 .tile .image {
+  -webkit-transform: rotate(6.2068965517deg);
+  transform: rotate(6.2068965517deg);
+}
+.kaleidoscope.n30 .tile {
+  display: block;
+}
+.kaleidoscope.n30 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n30 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n30 .tile.t2 {
+  -webkit-transform: rotate(12deg);
+  transform: rotate(12deg);
+}
+.kaleidoscope.n30 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(12deg);
+  transform: scale(-1, 1) rotate(12deg);
+}
+.kaleidoscope.n30 .tile.t4 {
+  -webkit-transform: rotate(24deg);
+  transform: rotate(24deg);
+}
+.kaleidoscope.n30 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(24deg);
+  transform: scale(-1, 1) rotate(24deg);
+}
+.kaleidoscope.n30 .tile.t6 {
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.kaleidoscope.n30 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(36deg);
+  transform: scale(-1, 1) rotate(36deg);
+}
+.kaleidoscope.n30 .tile.t8 {
+  -webkit-transform: rotate(48deg);
+  transform: rotate(48deg);
+}
+.kaleidoscope.n30 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(48deg);
+  transform: scale(-1, 1) rotate(48deg);
+}
+.kaleidoscope.n30 .tile.t10 {
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.kaleidoscope.n30 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(60deg);
+  transform: scale(-1, 1) rotate(60deg);
+}
+.kaleidoscope.n30 .tile.t12 {
+  -webkit-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.kaleidoscope.n30 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(72deg);
+  transform: scale(-1, 1) rotate(72deg);
+}
+.kaleidoscope.n30 .tile.t14 {
+  -webkit-transform: rotate(84deg);
+  transform: rotate(84deg);
+}
+.kaleidoscope.n30 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(84deg);
+  transform: scale(-1, 1) rotate(84deg);
+}
+.kaleidoscope.n30 .tile.t16 {
+  -webkit-transform: rotate(96deg);
+  transform: rotate(96deg);
+}
+.kaleidoscope.n30 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(96deg);
+  transform: scale(-1, 1) rotate(96deg);
+}
+.kaleidoscope.n30 .tile.t18 {
+  -webkit-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+.kaleidoscope.n30 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(108deg);
+  transform: scale(-1, 1) rotate(108deg);
+}
+.kaleidoscope.n30 .tile.t20 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+.kaleidoscope.n30 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(120deg);
+  transform: scale(-1, 1) rotate(120deg);
+}
+.kaleidoscope.n30 .tile.t22 {
+  -webkit-transform: rotate(132deg);
+  transform: rotate(132deg);
+}
+.kaleidoscope.n30 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(132deg);
+  transform: scale(-1, 1) rotate(132deg);
+}
+.kaleidoscope.n30 .tile.t24 {
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.kaleidoscope.n30 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(144deg);
+  transform: scale(-1, 1) rotate(144deg);
+}
+.kaleidoscope.n30 .tile.t26 {
+  -webkit-transform: rotate(156deg);
+  transform: rotate(156deg);
+}
+.kaleidoscope.n30 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(156deg);
+  transform: scale(-1, 1) rotate(156deg);
+}
+.kaleidoscope.n30 .tile.t28 {
+  -webkit-transform: rotate(168deg);
+  transform: rotate(168deg);
+}
+.kaleidoscope.n30 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(168deg);
+  transform: scale(-1, 1) rotate(168deg);
+}
+.kaleidoscope.n30 .tile.t30 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n30 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n30 .tile.t32 {
+  -webkit-transform: rotate(192deg);
+  transform: rotate(192deg);
+}
+.kaleidoscope.n30 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(192deg);
+  transform: scale(-1, 1) rotate(192deg);
+}
+.kaleidoscope.n30 .tile.t34 {
+  -webkit-transform: rotate(204deg);
+  transform: rotate(204deg);
+}
+.kaleidoscope.n30 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(204deg);
+  transform: scale(-1, 1) rotate(204deg);
+}
+.kaleidoscope.n30 .tile.t36 {
+  -webkit-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.kaleidoscope.n30 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(216deg);
+  transform: scale(-1, 1) rotate(216deg);
+}
+.kaleidoscope.n30 .tile.t38 {
+  -webkit-transform: rotate(228deg);
+  transform: rotate(228deg);
+}
+.kaleidoscope.n30 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(228deg);
+  transform: scale(-1, 1) rotate(228deg);
+}
+.kaleidoscope.n30 .tile.t40 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+.kaleidoscope.n30 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(240deg);
+  transform: scale(-1, 1) rotate(240deg);
+}
+.kaleidoscope.n30 .tile.t42 {
+  -webkit-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+.kaleidoscope.n30 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(252deg);
+  transform: scale(-1, 1) rotate(252deg);
+}
+.kaleidoscope.n30 .tile.t44 {
+  -webkit-transform: rotate(264deg);
+  transform: rotate(264deg);
+}
+.kaleidoscope.n30 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(264deg);
+  transform: scale(-1, 1) rotate(264deg);
+}
+.kaleidoscope.n30 .tile.t46 {
+  -webkit-transform: rotate(276deg);
+  transform: rotate(276deg);
+}
+.kaleidoscope.n30 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(276deg);
+  transform: scale(-1, 1) rotate(276deg);
+}
+.kaleidoscope.n30 .tile.t48 {
+  -webkit-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.kaleidoscope.n30 .tile.t49 {
+  -webkit-transform: scale(-1, 1) rotate(288deg);
+  transform: scale(-1, 1) rotate(288deg);
+}
+.kaleidoscope.n30 .tile.t50 {
+  -webkit-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+.kaleidoscope.n30 .tile.t51 {
+  -webkit-transform: scale(-1, 1) rotate(300deg);
+  transform: scale(-1, 1) rotate(300deg);
+}
+.kaleidoscope.n30 .tile.t52 {
+  -webkit-transform: rotate(312deg);
+  transform: rotate(312deg);
+}
+.kaleidoscope.n30 .tile.t53 {
+  -webkit-transform: scale(-1, 1) rotate(312deg);
+  transform: scale(-1, 1) rotate(312deg);
+}
+.kaleidoscope.n30 .tile.t54 {
+  -webkit-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+.kaleidoscope.n30 .tile.t55 {
+  -webkit-transform: scale(-1, 1) rotate(324deg);
+  transform: scale(-1, 1) rotate(324deg);
+}
+.kaleidoscope.n30 .tile.t56 {
+  -webkit-transform: rotate(336deg);
+  transform: rotate(336deg);
+}
+.kaleidoscope.n30 .tile.t57 {
+  -webkit-transform: scale(-1, 1) rotate(336deg);
+  transform: scale(-1, 1) rotate(336deg);
+}
+.kaleidoscope.n30 .tile.t58 {
+  -webkit-transform: rotate(348deg);
+  transform: rotate(348deg);
+}
+.kaleidoscope.n30 .tile.t59 {
+  -webkit-transform: scale(-1, 1) rotate(348deg);
+  transform: scale(-1, 1) rotate(348deg);
+}
+.kaleidoscope.n30 .tile .image {
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+.kaleidoscope.n31 .tile {
+  display: block;
+}
+.kaleidoscope.n31 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n31 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n31 .tile.t2 {
+  -webkit-transform: rotate(11.6129032258deg);
+  transform: rotate(11.6129032258deg);
+}
+.kaleidoscope.n31 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(11.6129032258deg);
+  transform: scale(-1, 1) rotate(11.6129032258deg);
+}
+.kaleidoscope.n31 .tile.t4 {
+  -webkit-transform: rotate(23.2258064516deg);
+  transform: rotate(23.2258064516deg);
+}
+.kaleidoscope.n31 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(23.2258064516deg);
+  transform: scale(-1, 1) rotate(23.2258064516deg);
+}
+.kaleidoscope.n31 .tile.t6 {
+  -webkit-transform: rotate(34.8387096774deg);
+  transform: rotate(34.8387096774deg);
+}
+.kaleidoscope.n31 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(34.8387096774deg);
+  transform: scale(-1, 1) rotate(34.8387096774deg);
+}
+.kaleidoscope.n31 .tile.t8 {
+  -webkit-transform: rotate(46.4516129032deg);
+  transform: rotate(46.4516129032deg);
+}
+.kaleidoscope.n31 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(46.4516129032deg);
+  transform: scale(-1, 1) rotate(46.4516129032deg);
+}
+.kaleidoscope.n31 .tile.t10 {
+  -webkit-transform: rotate(58.064516129deg);
+  transform: rotate(58.064516129deg);
+}
+.kaleidoscope.n31 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(58.064516129deg);
+  transform: scale(-1, 1) rotate(58.064516129deg);
+}
+.kaleidoscope.n31 .tile.t12 {
+  -webkit-transform: rotate(69.6774193548deg);
+  transform: rotate(69.6774193548deg);
+}
+.kaleidoscope.n31 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(69.6774193548deg);
+  transform: scale(-1, 1) rotate(69.6774193548deg);
+}
+.kaleidoscope.n31 .tile.t14 {
+  -webkit-transform: rotate(81.2903225806deg);
+  transform: rotate(81.2903225806deg);
+}
+.kaleidoscope.n31 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(81.2903225806deg);
+  transform: scale(-1, 1) rotate(81.2903225806deg);
+}
+.kaleidoscope.n31 .tile.t16 {
+  -webkit-transform: rotate(92.9032258065deg);
+  transform: rotate(92.9032258065deg);
+}
+.kaleidoscope.n31 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(92.9032258065deg);
+  transform: scale(-1, 1) rotate(92.9032258065deg);
+}
+.kaleidoscope.n31 .tile.t18 {
+  -webkit-transform: rotate(104.5161290323deg);
+  transform: rotate(104.5161290323deg);
+}
+.kaleidoscope.n31 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(104.5161290323deg);
+  transform: scale(-1, 1) rotate(104.5161290323deg);
+}
+.kaleidoscope.n31 .tile.t20 {
+  -webkit-transform: rotate(116.1290322581deg);
+  transform: rotate(116.1290322581deg);
+}
+.kaleidoscope.n31 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(116.1290322581deg);
+  transform: scale(-1, 1) rotate(116.1290322581deg);
+}
+.kaleidoscope.n31 .tile.t22 {
+  -webkit-transform: rotate(127.7419354839deg);
+  transform: rotate(127.7419354839deg);
+}
+.kaleidoscope.n31 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(127.7419354839deg);
+  transform: scale(-1, 1) rotate(127.7419354839deg);
+}
+.kaleidoscope.n31 .tile.t24 {
+  -webkit-transform: rotate(139.3548387097deg);
+  transform: rotate(139.3548387097deg);
+}
+.kaleidoscope.n31 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(139.3548387097deg);
+  transform: scale(-1, 1) rotate(139.3548387097deg);
+}
+.kaleidoscope.n31 .tile.t26 {
+  -webkit-transform: rotate(150.9677419355deg);
+  transform: rotate(150.9677419355deg);
+}
+.kaleidoscope.n31 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(150.9677419355deg);
+  transform: scale(-1, 1) rotate(150.9677419355deg);
+}
+.kaleidoscope.n31 .tile.t28 {
+  -webkit-transform: rotate(162.5806451613deg);
+  transform: rotate(162.5806451613deg);
+}
+.kaleidoscope.n31 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(162.5806451613deg);
+  transform: scale(-1, 1) rotate(162.5806451613deg);
+}
+.kaleidoscope.n31 .tile.t30 {
+  -webkit-transform: rotate(174.1935483871deg);
+  transform: rotate(174.1935483871deg);
+}
+.kaleidoscope.n31 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(174.1935483871deg);
+  transform: scale(-1, 1) rotate(174.1935483871deg);
+}
+.kaleidoscope.n31 .tile.t32 {
+  -webkit-transform: rotate(185.8064516129deg);
+  transform: rotate(185.8064516129deg);
+}
+.kaleidoscope.n31 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(185.8064516129deg);
+  transform: scale(-1, 1) rotate(185.8064516129deg);
+}
+.kaleidoscope.n31 .tile.t34 {
+  -webkit-transform: rotate(197.4193548387deg);
+  transform: rotate(197.4193548387deg);
+}
+.kaleidoscope.n31 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(197.4193548387deg);
+  transform: scale(-1, 1) rotate(197.4193548387deg);
+}
+.kaleidoscope.n31 .tile.t36 {
+  -webkit-transform: rotate(209.0322580645deg);
+  transform: rotate(209.0322580645deg);
+}
+.kaleidoscope.n31 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(209.0322580645deg);
+  transform: scale(-1, 1) rotate(209.0322580645deg);
+}
+.kaleidoscope.n31 .tile.t38 {
+  -webkit-transform: rotate(220.6451612903deg);
+  transform: rotate(220.6451612903deg);
+}
+.kaleidoscope.n31 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(220.6451612903deg);
+  transform: scale(-1, 1) rotate(220.6451612903deg);
+}
+.kaleidoscope.n31 .tile.t40 {
+  -webkit-transform: rotate(232.2580645161deg);
+  transform: rotate(232.2580645161deg);
+}
+.kaleidoscope.n31 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(232.2580645161deg);
+  transform: scale(-1, 1) rotate(232.2580645161deg);
+}
+.kaleidoscope.n31 .tile.t42 {
+  -webkit-transform: rotate(243.8709677419deg);
+  transform: rotate(243.8709677419deg);
+}
+.kaleidoscope.n31 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(243.8709677419deg);
+  transform: scale(-1, 1) rotate(243.8709677419deg);
+}
+.kaleidoscope.n31 .tile.t44 {
+  -webkit-transform: rotate(255.4838709677deg);
+  transform: rotate(255.4838709677deg);
+}
+.kaleidoscope.n31 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(255.4838709677deg);
+  transform: scale(-1, 1) rotate(255.4838709677deg);
+}
+.kaleidoscope.n31 .tile.t46 {
+  -webkit-transform: rotate(267.0967741935deg);
+  transform: rotate(267.0967741935deg);
+}
+.kaleidoscope.n31 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(267.0967741935deg);
+  transform: scale(-1, 1) rotate(267.0967741935deg);
+}
+.kaleidoscope.n31 .tile.t48 {
+  -webkit-transform: rotate(278.7096774194deg);
+  transform: rotate(278.7096774194deg);
+}
+.kaleidoscope.n31 .tile.t49 {
+  -webkit-transform: scale(-1, 1) rotate(278.7096774194deg);
+  transform: scale(-1, 1) rotate(278.7096774194deg);
+}
+.kaleidoscope.n31 .tile.t50 {
+  -webkit-transform: rotate(290.3225806452deg);
+  transform: rotate(290.3225806452deg);
+}
+.kaleidoscope.n31 .tile.t51 {
+  -webkit-transform: scale(-1, 1) rotate(290.3225806452deg);
+  transform: scale(-1, 1) rotate(290.3225806452deg);
+}
+.kaleidoscope.n31 .tile.t52 {
+  -webkit-transform: rotate(301.935483871deg);
+  transform: rotate(301.935483871deg);
+}
+.kaleidoscope.n31 .tile.t53 {
+  -webkit-transform: scale(-1, 1) rotate(301.935483871deg);
+  transform: scale(-1, 1) rotate(301.935483871deg);
+}
+.kaleidoscope.n31 .tile.t54 {
+  -webkit-transform: rotate(313.5483870968deg);
+  transform: rotate(313.5483870968deg);
+}
+.kaleidoscope.n31 .tile.t55 {
+  -webkit-transform: scale(-1, 1) rotate(313.5483870968deg);
+  transform: scale(-1, 1) rotate(313.5483870968deg);
+}
+.kaleidoscope.n31 .tile.t56 {
+  -webkit-transform: rotate(325.1612903226deg);
+  transform: rotate(325.1612903226deg);
+}
+.kaleidoscope.n31 .tile.t57 {
+  -webkit-transform: scale(-1, 1) rotate(325.1612903226deg);
+  transform: scale(-1, 1) rotate(325.1612903226deg);
+}
+.kaleidoscope.n31 .tile.t58 {
+  -webkit-transform: rotate(336.7741935484deg);
+  transform: rotate(336.7741935484deg);
+}
+.kaleidoscope.n31 .tile.t59 {
+  -webkit-transform: scale(-1, 1) rotate(336.7741935484deg);
+  transform: scale(-1, 1) rotate(336.7741935484deg);
+}
+.kaleidoscope.n31 .tile.t60 {
+  -webkit-transform: rotate(348.3870967742deg);
+  transform: rotate(348.3870967742deg);
+}
+.kaleidoscope.n31 .tile.t61 {
+  -webkit-transform: scale(-1, 1) rotate(348.3870967742deg);
+  transform: scale(-1, 1) rotate(348.3870967742deg);
+}
+.kaleidoscope.n31 .tile .image {
+  -webkit-transform: rotate(5.8064516129deg);
+  transform: rotate(5.8064516129deg);
+}
+.kaleidoscope.n32 .tile {
+  display: block;
+}
+.kaleidoscope.n32 .tile.t0 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.kaleidoscope.n32 .tile.t1 {
+  -webkit-transform: scale(-1, 1) rotate(0deg);
+  transform: scale(-1, 1) rotate(0deg);
+}
+.kaleidoscope.n32 .tile.t2 {
+  -webkit-transform: rotate(11.25deg);
+  transform: rotate(11.25deg);
+}
+.kaleidoscope.n32 .tile.t3 {
+  -webkit-transform: scale(-1, 1) rotate(11.25deg);
+  transform: scale(-1, 1) rotate(11.25deg);
+}
+.kaleidoscope.n32 .tile.t4 {
+  -webkit-transform: rotate(22.5deg);
+  transform: rotate(22.5deg);
+}
+.kaleidoscope.n32 .tile.t5 {
+  -webkit-transform: scale(-1, 1) rotate(22.5deg);
+  transform: scale(-1, 1) rotate(22.5deg);
+}
+.kaleidoscope.n32 .tile.t6 {
+  -webkit-transform: rotate(33.75deg);
+  transform: rotate(33.75deg);
+}
+.kaleidoscope.n32 .tile.t7 {
+  -webkit-transform: scale(-1, 1) rotate(33.75deg);
+  transform: scale(-1, 1) rotate(33.75deg);
+}
+.kaleidoscope.n32 .tile.t8 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.kaleidoscope.n32 .tile.t9 {
+  -webkit-transform: scale(-1, 1) rotate(45deg);
+  transform: scale(-1, 1) rotate(45deg);
+}
+.kaleidoscope.n32 .tile.t10 {
+  -webkit-transform: rotate(56.25deg);
+  transform: rotate(56.25deg);
+}
+.kaleidoscope.n32 .tile.t11 {
+  -webkit-transform: scale(-1, 1) rotate(56.25deg);
+  transform: scale(-1, 1) rotate(56.25deg);
+}
+.kaleidoscope.n32 .tile.t12 {
+  -webkit-transform: rotate(67.5deg);
+  transform: rotate(67.5deg);
+}
+.kaleidoscope.n32 .tile.t13 {
+  -webkit-transform: scale(-1, 1) rotate(67.5deg);
+  transform: scale(-1, 1) rotate(67.5deg);
+}
+.kaleidoscope.n32 .tile.t14 {
+  -webkit-transform: rotate(78.75deg);
+  transform: rotate(78.75deg);
+}
+.kaleidoscope.n32 .tile.t15 {
+  -webkit-transform: scale(-1, 1) rotate(78.75deg);
+  transform: scale(-1, 1) rotate(78.75deg);
+}
+.kaleidoscope.n32 .tile.t16 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.kaleidoscope.n32 .tile.t17 {
+  -webkit-transform: scale(-1, 1) rotate(90deg);
+  transform: scale(-1, 1) rotate(90deg);
+}
+.kaleidoscope.n32 .tile.t18 {
+  -webkit-transform: rotate(101.25deg);
+  transform: rotate(101.25deg);
+}
+.kaleidoscope.n32 .tile.t19 {
+  -webkit-transform: scale(-1, 1) rotate(101.25deg);
+  transform: scale(-1, 1) rotate(101.25deg);
+}
+.kaleidoscope.n32 .tile.t20 {
+  -webkit-transform: rotate(112.5deg);
+  transform: rotate(112.5deg);
+}
+.kaleidoscope.n32 .tile.t21 {
+  -webkit-transform: scale(-1, 1) rotate(112.5deg);
+  transform: scale(-1, 1) rotate(112.5deg);
+}
+.kaleidoscope.n32 .tile.t22 {
+  -webkit-transform: rotate(123.75deg);
+  transform: rotate(123.75deg);
+}
+.kaleidoscope.n32 .tile.t23 {
+  -webkit-transform: scale(-1, 1) rotate(123.75deg);
+  transform: scale(-1, 1) rotate(123.75deg);
+}
+.kaleidoscope.n32 .tile.t24 {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.kaleidoscope.n32 .tile.t25 {
+  -webkit-transform: scale(-1, 1) rotate(135deg);
+  transform: scale(-1, 1) rotate(135deg);
+}
+.kaleidoscope.n32 .tile.t26 {
+  -webkit-transform: rotate(146.25deg);
+  transform: rotate(146.25deg);
+}
+.kaleidoscope.n32 .tile.t27 {
+  -webkit-transform: scale(-1, 1) rotate(146.25deg);
+  transform: scale(-1, 1) rotate(146.25deg);
+}
+.kaleidoscope.n32 .tile.t28 {
+  -webkit-transform: rotate(157.5deg);
+  transform: rotate(157.5deg);
+}
+.kaleidoscope.n32 .tile.t29 {
+  -webkit-transform: scale(-1, 1) rotate(157.5deg);
+  transform: scale(-1, 1) rotate(157.5deg);
+}
+.kaleidoscope.n32 .tile.t30 {
+  -webkit-transform: rotate(168.75deg);
+  transform: rotate(168.75deg);
+}
+.kaleidoscope.n32 .tile.t31 {
+  -webkit-transform: scale(-1, 1) rotate(168.75deg);
+  transform: scale(-1, 1) rotate(168.75deg);
+}
+.kaleidoscope.n32 .tile.t32 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.kaleidoscope.n32 .tile.t33 {
+  -webkit-transform: scale(-1, 1) rotate(180deg);
+  transform: scale(-1, 1) rotate(180deg);
+}
+.kaleidoscope.n32 .tile.t34 {
+  -webkit-transform: rotate(191.25deg);
+  transform: rotate(191.25deg);
+}
+.kaleidoscope.n32 .tile.t35 {
+  -webkit-transform: scale(-1, 1) rotate(191.25deg);
+  transform: scale(-1, 1) rotate(191.25deg);
+}
+.kaleidoscope.n32 .tile.t36 {
+  -webkit-transform: rotate(202.5deg);
+  transform: rotate(202.5deg);
+}
+.kaleidoscope.n32 .tile.t37 {
+  -webkit-transform: scale(-1, 1) rotate(202.5deg);
+  transform: scale(-1, 1) rotate(202.5deg);
+}
+.kaleidoscope.n32 .tile.t38 {
+  -webkit-transform: rotate(213.75deg);
+  transform: rotate(213.75deg);
+}
+.kaleidoscope.n32 .tile.t39 {
+  -webkit-transform: scale(-1, 1) rotate(213.75deg);
+  transform: scale(-1, 1) rotate(213.75deg);
+}
+.kaleidoscope.n32 .tile.t40 {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.kaleidoscope.n32 .tile.t41 {
+  -webkit-transform: scale(-1, 1) rotate(225deg);
+  transform: scale(-1, 1) rotate(225deg);
+}
+.kaleidoscope.n32 .tile.t42 {
+  -webkit-transform: rotate(236.25deg);
+  transform: rotate(236.25deg);
+}
+.kaleidoscope.n32 .tile.t43 {
+  -webkit-transform: scale(-1, 1) rotate(236.25deg);
+  transform: scale(-1, 1) rotate(236.25deg);
+}
+.kaleidoscope.n32 .tile.t44 {
+  -webkit-transform: rotate(247.5deg);
+  transform: rotate(247.5deg);
+}
+.kaleidoscope.n32 .tile.t45 {
+  -webkit-transform: scale(-1, 1) rotate(247.5deg);
+  transform: scale(-1, 1) rotate(247.5deg);
+}
+.kaleidoscope.n32 .tile.t46 {
+  -webkit-transform: rotate(258.75deg);
+  transform: rotate(258.75deg);
+}
+.kaleidoscope.n32 .tile.t47 {
+  -webkit-transform: scale(-1, 1) rotate(258.75deg);
+  transform: scale(-1, 1) rotate(258.75deg);
+}
+.kaleidoscope.n32 .tile.t48 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.kaleidoscope.n32 .tile.t49 {
+  -webkit-transform: scale(-1, 1) rotate(270deg);
+  transform: scale(-1, 1) rotate(270deg);
+}
+.kaleidoscope.n32 .tile.t50 {
+  -webkit-transform: rotate(281.25deg);
+  transform: rotate(281.25deg);
+}
+.kaleidoscope.n32 .tile.t51 {
+  -webkit-transform: scale(-1, 1) rotate(281.25deg);
+  transform: scale(-1, 1) rotate(281.25deg);
+}
+.kaleidoscope.n32 .tile.t52 {
+  -webkit-transform: rotate(292.5deg);
+  transform: rotate(292.5deg);
+}
+.kaleidoscope.n32 .tile.t53 {
+  -webkit-transform: scale(-1, 1) rotate(292.5deg);
+  transform: scale(-1, 1) rotate(292.5deg);
+}
+.kaleidoscope.n32 .tile.t54 {
+  -webkit-transform: rotate(303.75deg);
+  transform: rotate(303.75deg);
+}
+.kaleidoscope.n32 .tile.t55 {
+  -webkit-transform: scale(-1, 1) rotate(303.75deg);
+  transform: scale(-1, 1) rotate(303.75deg);
+}
+.kaleidoscope.n32 .tile.t56 {
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+.kaleidoscope.n32 .tile.t57 {
+  -webkit-transform: scale(-1, 1) rotate(315deg);
+  transform: scale(-1, 1) rotate(315deg);
+}
+.kaleidoscope.n32 .tile.t58 {
+  -webkit-transform: rotate(326.25deg);
+  transform: rotate(326.25deg);
+}
+.kaleidoscope.n32 .tile.t59 {
+  -webkit-transform: scale(-1, 1) rotate(326.25deg);
+  transform: scale(-1, 1) rotate(326.25deg);
+}
+.kaleidoscope.n32 .tile.t60 {
+  -webkit-transform: rotate(337.5deg);
+  transform: rotate(337.5deg);
+}
+.kaleidoscope.n32 .tile.t61 {
+  -webkit-transform: scale(-1, 1) rotate(337.5deg);
+  transform: scale(-1, 1) rotate(337.5deg);
+}
+.kaleidoscope.n32 .tile.t62 {
+  -webkit-transform: rotate(348.75deg);
+  transform: rotate(348.75deg);
+}
+.kaleidoscope.n32 .tile.t63 {
+  -webkit-transform: scale(-1, 1) rotate(348.75deg);
+  transform: scale(-1, 1) rotate(348.75deg);
+}
+.kaleidoscope.n32 .tile .image {
+  -webkit-transform: rotate(5.625deg);
+  transform: rotate(5.625deg);
+}
+/*# sourceMappingURL=kaleidoscope.css.map */

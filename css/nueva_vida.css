@@ -1,0 +1,717 @@
+.section_nuevavida{
+	/*border: solid purple;*/
+	background-color: var(--azul);
+	background-image: url('../img/fondos/fondo_azulclaro.png');
+		background-attachment: fixed;
+		background-size: 100%;
+}
+/* Nueva vida 1 */
+	.nuevavida_1{
+		padding: 5% 10%;
+		height: 100vh;
+		min-height: 600px;
+		background-image: url('../img/nueva_vida/fondo_nuevavida.png');
+		background-size: cover;
+	}
+	.nv1_texto{
+		color: #fff;
+		width: 45%;
+		max-width: 480px;
+		height: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		position: relative;
+		top: 80%;
+	}
+	.nv1_texto span{
+		color: var(--lima);
+	}
+	.nv1_titulo{
+		font-family: 'FilsonProBold', sans-serif;
+		color: #fff;
+		margin-bottom: 2.5rem;
+	}
+	.nv1_texto p{
+		line-height: 1.5;
+	}
+	.p-lima{
+		color: var(--lima);
+	}
+	.nv1_texto .p-lima{
+		margin-top: 1rem;
+	}
+
+/* Nueva vida 2 */
+	.nuevavida_2{
+		height: 200vh;
+		min-height: 700px;
+		
+		background-size: 100%;
+		padding: 0;
+	}
+	.nuevavida2_container{
+		height: 100vh;
+		padding: 5% 10%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		position: relative;
+		/*border: solid pink;*/
+	}
+	.nv2_titulo{
+		color: var(--lima);
+		font-family: 'FilsonProBold', sans-serif;
+		text-align: center;
+		position: relative;
+		top: 20%;
+	}
+	.nv2_img{
+		/*border: solid #fff;*/
+		height: 70vh;
+		position: relative;
+		left: -120%;
+	}
+	.nv2_rack_img{
+		display: block;
+		margin: 0 auto;
+		height: 100%;
+		position: relative;
+	}
+	
+	.nv2_texto{
+		position: absolute;
+		color: #fff;
+	}
+	.nv2_texto_black{
+		font-family: 'FilsonProBlack', sans-serif;
+	}
+	.nv2_texto_bold{
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	.nv2_texto1{
+		left: 58%;
+		top: 114%;
+	}
+	.nv2_texto2{
+		left: 58%;
+		top: 160%;
+	}
+	.nv2_texto3{
+		right: 1%;
+		width: 100px;
+		line-height: 1.8;
+		top: 152%;
+		margin-right: 2%;
+	}
+	.nv2_texto3 span{
+		color: var(--lima);
+	}
+
+/* Nueva vida 3 */
+	.nuevavida_3{
+		height: 530vh;
+		min-height: 700px;
+		/*background-image: url('../img/fondos/fondo_azulclaro.png');*/
+		background-attachment: fixed;
+		background-size: 100%;
+		margin-top: 100vh;
+		position: relative;
+		top: 0;
+		/*border: solid pink;*/
+	}
+	/* Aux */
+		.nv3_aux{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-color: yellowgreen;
+			text-align: center;
+			visibility: hidden;
+		}
+		.nv3_aux1{
+			top: 50vh;
+		}
+		.nv3_aux2{
+			top: 150vh;
+		}
+		.nv3_aux21{
+			top: 250vh;
+		}
+		.nv3_aux3{
+			top: 200vh;
+		}
+		.nv3_aux4{
+			top: 320vh;
+		}
+		.nv3_aux5{
+			top: 360vh;
+		}
+		.nv3_aux6{
+			top: 420vh;
+		}
+	/* 1 */
+		.nv3_1{
+			height: 100vh;
+			min-height: 700px;
+			padding: 5% 10% 0;
+			background-size: 100%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			/*border: solid red;*/
+			width: 100%;
+			z-index: 200;
+		}
+		.nv3_camion{
+			position: relative;
+			height: 100%;
+			width: 50%;
+			/*border: solid yellowgreen;*/
+			/*transform: scale(6);*/
+		}
+		.nv3_camion_img{
+			display: block;
+			margin: 0 auto;
+			height: 100%;
+			position: relative;
+		}
+		.nv3_texto{
+			height: 85%;
+			display: flex;
+			flex-direction: column;
+			color: #fff;
+			width: 30%;
+			/*border: solid;*/
+			position: relative;
+			top: 120%;
+		}
+		.nv3_titulo{
+			margin:1rem 0 1.5rem;
+			font-family: 'FilsonProBold', sans-serif;
+		}
+		.nv3_texto p{
+			width: 85%;
+			line-height: 1.4;
+		}
+		.nv3_camion_puerta_div{
+			box-sizing: content-box;
+			position: absolute;
+			top: 7.5%;
+			left: 17.8%;
+			width: 66.5%;
+			height: 35.2%;
+			overflow: hidden;
+			z-index: 2000;
+			/*border: solid blue .5px;*/
+		}
+		.nv3_camion_puerta{
+			box-sizing: content-box;
+			display: block;
+			width: 100%;
+			position: relative;
+			top: -110%;
+			top: 0;
+		}
+		/* Prendas */
+			.nv3_prenda{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 900;
+			}
+			.nv3_prenda1{
+				width: 35%;
+				left: 50%;
+				top: 10%;
+			}
+			.nv3_prenda2{
+				width: 15%;
+				top: 10%;
+				left: 25%;
+			}
+			.nv3_prenda3{
+				width: 35%;
+				top: 15%;
+				left: 20%;
+			}
+			.nv3_prenda4{
+				width: 20%;
+				left: 55%;
+				top: 20%;
+			}
+			.nv3_prenda5{
+				width: 30%;
+				left: 20%;
+				top: 20%;
+			}
+			.nv3_prenda6{
+				width: 43%;
+				left: 33%;
+			}
+			.nv3_prenda7{
+				width: 5%;
+				left: 24%;
+				top: 37%;
+			}
+			.nv3_prenda8{
+				width: 10%;
+				left: 67%;
+				top: 15%;
+				transform: rotate(50deg);
+			}
+			.nv3_prenda9{
+				width: 20%;
+				left: 20%;
+				top: 15%;
+				transform: rotate(45deg);
+			}
+			.nv3_prenda10{
+				width: 20%;
+				left: 64%;
+				top: 15%;
+				transform: rotate(225deg);
+			}
+			.nv3_prenda11{
+				width: 5%;
+				left: 75%;
+				top: 37%;
+			}
+
+	/* 2 */
+		.nv3_2{
+			height: 100vh;
+			min-height: 700px;
+			padding: 5% 10% 0;
+			background-size: 100%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			/*border: solid green;*/
+			margin-top: 150vh;
+			position: sticky;
+			top: 0;
+		}
+		.nv3_2_fondo{
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			z-index: 400;
+		}
+		.nv3_texto_92{
+			position: absolute;
+			z-index: 300;
+			width: 280px;
+			color: #fff;
+			right: 20%;
+			top: 50%;
+		}
+		.nv3_92_titulo{
+			font-family: 'FilsonProBold', sans-serif;
+			color: var(--lima);
+		}
+		.nv3_texto_92 p{
+			line-height: 1.4;
+		}
+		.nv3_texto_92 span{
+			color: var(--lima);
+		}
+		.nv3_2_cinturon{
+			position: absolute;
+			top: 45%;
+			left: 10%;
+			width: 24%;
+			filter: grayscale(100%);
+			z-index: 500;
+		}
+		.nv3_2_abrigo{
+			position: absolute;
+			bottom: 5%;
+			right: 7%;
+			width: 32%;
+			filter: grayscale(100%);
+			z-index: 500;
+		}
+
+		.nv3_texto_1{
+			color: #fff;
+			position: absolute;
+			left: 15%;
+			top: 84%;
+		}
+		.nv3_texto_1 p{
+			width: 160px;
+		}
+		.nv3_texto_1_titulo{
+			font-family: 'FilsonProBold', sans-serif;
+			color: var(--lima);
+		}
+		.nv3_texto_2{
+			color: #fff;
+			position: absolute;
+			right: 18%;
+			top: 102%;
+			z-index: 800;
+		}
+		.nv3_texto_2 p{
+			width: 200px;
+		}
+		.nv3_texto_2_titulo{
+			font-family: 'FilsonProBold', sans-serif;
+		}
+
+/* Nueva vida 4  */
+	.nv4_aux_div{
+		position: relative;
+	}
+	.nuevavida_4_container{
+	}
+	/* aux */
+		.nv4_aux{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			background-color: midnightblue;
+			color: #fff;
+			visibility: hidden;
+		}
+		.nv4_aux1{
+			top: 10vh;
+		}
+		.nv4_aux2{
+			top: 20vh;
+		}
+		.nv4_aux3{
+			top: 30vh;
+		}
+		.nv4_aux4{
+			top: 40vh;
+		}
+
+	.nuevavida_4{
+		position: relative;
+		height: 320vh;
+		/*border: solid 10px white;*/
+	}
+	.nv4_texto{
+		position: absolute;
+		top: 2%;
+		left: 12%;
+		color: #fff;
+	}
+	.nv4_titulo{
+		color: var(--lima);
+		font-family: 'FilsonProBold', sans-serif;
+		margin-bottom: 0rem;
+	}
+	.nv4_texto p{
+		width: 75%;
+		line-height: 1.4;
+	}
+
+	.nuevavida4_main{
+		overflow-x: hidden;
+		display: flex;
+		position: sticky;
+		top:0;
+		height: 100vh;
+		align-items: center;
+		boder: solid green;
+	}
+	.nv4_diagrama_img{
+		position: absolute;
+		height: 70%;
+		boder: solid green;
+		left: 10%;
+		bottom: 5%;
+	}
+	text.clx-36{
+		font-family: 'FilsonProRegular', sans-serif;
+	}
+	text.clx-52{
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	text.clx-55{
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	text.clx-4{
+		font-family: 'FilsonProRegular', sans-serif;
+	}
+	text.clx-9{
+		font-family: 'FilsonProRegular', sans-serif;
+	}
+	text.clx-24{
+		font-family: 'FilsonProRegular', sans-serif;
+	}
+
+/* Nueva vida 5 */
+	.nuevavida_5_container{
+		position: relative;
+		height: 300vh;
+		/*border: solid white;*/
+		background-image: url('../img/nueva_vida/troquer_fondo_marca.png');
+		background-attachment: fixed;
+		background-size: 90%;
+		background-position: 90% 90%;
+		background-repeat: no-repeat;
+	}
+	.nuevavida_5{
+		height: 100vh;
+		padding: 5% 10%;
+		position: relative;
+		padding-bottom: 12%;
+		position: sticky;
+		top: 0;
+	}
+	/* Aux */
+		.nv5_aux{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-color: bisque;
+			visibility: hidden;
+		}
+		.nv5_aux1{
+			top: 90vh;
+		}
+		.nv5_aux2{
+			top: 170vh;
+		}
+		.nv5_aux3{
+			top: 40vh;
+		}
+
+	.nv5_texto{
+		text-align: center;
+		color: #fff;
+		width: 550px;
+		margin: 0 auto;
+		position: relative;
+		top: 150%;
+	}
+	.nv5_titulo{
+		color: var(--lima);
+		margin: .5rem auto .8rem;
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	.nv5_texto p{
+		width: 90%;
+		line-height: 1.4;
+		margin: 0 auto;
+	}
+	.nv5_fondo{
+		position: absolute;
+		width: 85%;
+		bottom: -70%;
+		left: 7.5%;
+	}
+	.nv5_azul{
+		color: #fff;
+		border-radius: 1.2rem;
+		padding: 3rem 2rem;
+		position: absolute;
+		width: 80%;
+		background-color: var(--azul);
+		text-align: center;
+		left: 10%;
+		bottom: 15%;
+		/*bottom: -85%;*/
+		opacity: 0;
+	}
+	.nv5_troquer{
+		width: 20%;
+		max-width: 300px;
+		margin: 1rem auto;
+	}
+	.nv5_azul p{
+		margin: 0 auto;
+		max-width: 450px;
+	}
+
+/* Nueva vida 6 */
+	.nuevavida_6_container{
+		position: relative;
+		height: 200vh;
+		/*border: solid white;*/
+	}
+	/* aux */
+		.nv6_aux{
+			position: absolute;
+			width: 50px;
+			visibility: hidden;
+		}
+		.nv6_aux1{
+			top: 40vh;
+		}
+	.nuevavida_6{
+		height: 150vh;
+		padding: 1% 5%;
+		position: relative;
+		position: sticky;
+		top: 0;
+	}
+	.nv6_tijeras1{
+		position: absolute;
+		left: -3%;
+		top: 20%;
+		width: 12%;
+		animation: float1 6s ease-in-out infinite;
+	}
+	.nv6_tijeras2{
+		position: absolute;
+		right: -3%;
+		top: 60%;
+		width: 10%;
+		animation: flowerOut 5s linear infinite;
+	}
+	.nv6_texto{
+		text-align: center;
+		color: #fff;
+		position: relative;
+		padding-bottom: .5rem;
+		/*top: 60%;*/
+		/*border: solid;*/
+		padding: 2rem 0;
+	}
+	.nv6_circulo{
+		background-color: var(--lima);
+		border-radius: 50%;
+		width: 46px;
+		height: 46px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+	}
+	.nv6_circulo img{
+		width: 60%;
+	}
+	.nv6_texto p{
+		width: 430px;
+		margin: 0 auto;
+	}
+	.nv6_texto_final{
+		text-align: center;
+		text-transform: uppercase;
+		width: 40%;
+		max-width: 460px;
+		color: var(--lima);
+		line-height: 1.5;
+		margin: 0 auto;
+		padding: .5rem 0;
+		letter-spacing: 1px;
+		padding: 2rem 0;
+	}
+
+
+
+@media (min-width: 576px) {
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.nv2_texto3{
+		margin-right: 4%;
+	}
+	.nv5_azul{
+		color: #fff;
+		border-radius: 1.2rem;
+		padding: 2rem 2rem;
+		position: absolute;
+		width: 60%;
+		background-color: var(--azul);
+		text-align: center;
+		left: 20%;
+		bottom: 0%;
+		/*bottom: -85%;*/
+		opacity: 0;
+	}
+	.nv5_fondo{
+		position: absolute;
+		width: 70%;
+		bottom: -70%;
+		left: 15%;
+	}
+	.nuevavida_6{
+		height: 200vh;
+		padding: 1% 5%;
+		position: relative;
+		position: sticky;
+		top: 0;
+	}
+	.nv6_texto_final{
+		text-align: center;
+		text-transform: uppercase;
+		width: 40%;
+		max-width: 460px;
+		color: var(--lima);
+		line-height: 1.5;
+		margin: 0 auto;
+		padding: .5rem 0;
+		letter-spacing: 1px;
+		padding: 2rem 0;
+		margin-top: 25%;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.nv4_texto{
+		top: 5%;
+	}
+	.nv4_titulo{
+		color: var(--lima);
+		font-family: 'FilsonProBold', sans-serif;
+		margin-bottom: 1.5rem;
+	}
+	.nv5_fondo{
+		position: absolute;
+		width: 85%;
+		bottom: -70%;
+		left: 7.5%;
+	}
+	.nuevavida_6{
+		height: 150vh;
+		padding: 1% 5%;
+		position: relative;
+		position: sticky;
+		top: 0;
+	}
+	.nv6_texto_final{
+		text-align: center;
+		text-transform: uppercase;
+		width: 40%;
+		max-width: 460px;
+		color: var(--lima);
+		line-height: 1.5;
+		margin: 0 auto;
+		padding: .5rem 0;
+		letter-spacing: 1px;
+		padding: 2rem 0;
+		margin-top: 5%;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+	
+}

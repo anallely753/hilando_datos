@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hilando Datos</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<link rel="shortcut icon" href="./img/portada/gota.svg">
+	<link rel="stylesheet" href="./css/animation.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/portada.css">
+	<link rel="stylesheet" href="./css/portada_pregunta.css">
+	<link rel="stylesheet" href="./css/intro.css">
+	<link rel="stylesheet" href="./css/kaleidoscope.css">
+	<link rel="stylesheet" href="./css/ciclo.css">
+	<link rel="stylesheet" href="./css/produccion.css">
+	<link rel="stylesheet" href="./css/grafica-produccion.css">
+	<link rel="stylesheet" href="./css/diseno.css">
+	<link rel="stylesheet" href="./css/logistica.css">
+	
+
+	
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+	<link rel="stylesheet" href="./css/mapscroll.css">
+
+</head>
+<body>
+	<!-- Empieza portada -->
+	<section class="portada">
+		<div class="portada_lima">
+			<!-- titulo -->
+			<div class="portada_titulo_div">
+				<img class="portada_titulo" src="./img/portada/logo_hilando_datos.png" alt="">
+				<h1 class="portada_h1">Visibilizando la moda sustentable</h1>
+			</div>
+
+			<!-- arriba -->
+			<img class="portada_algodon1" src="./img/portada/algodon1_1x.png" alt="Algodón">
+			<img class="portada_hilo1" src="./img/portada/hilo1-1x.png" alt="Hilo">
+			<img class="portada_algodon2" src="./img/portada/algodon2_1x.png" alt="Algodón">
+			<img class="portada_hilo2" src="./img/portada/hilo2_1x.png" alt="Hilo naranja">
+
+			<div class="portada_planta_cortada1_div">
+				<img class="portada_planta_cortada1" src="./img/portada/plantapr-PhotoRoom.png" alt="Planta de algodón">
+				<img class="portada_flor_planta1" src="./img/portada/planta1_flor.png" alt="Flor de algodón">
+				<img class="portada_flor_planta11" src="./img/portada/planta1_flor2.png" alt="Flor de algodón">
+			</div>
+
+			<div class="portada_planta_cortada2_div">
+				<img class="portada_planta_cortada" src="./img/portada/planta2pr-PhotoRoom.png" alt="Planta de algodón">
+				<img class="portada_flor_planta2" src="./img/portada/planta2_flor1.png" alt="Planta de algodón">
+				<img class="portada_flor2_planta21" src="./img/portada/planta2_flor2.png" alt="Planta de algodón">
+				<img class="portada_flor2_planta22" src="./img/portada/planta2_flor3.png" alt="Planta de algodón">
+			</div>
+			
+			<img class="portada_hilo3" src="./img/portada/hilo3-1x.png" alt="Hilo naranja">
+
+			<div class="portada_ropa">
+				<div class="portada_ropa_bn">
+					<img class="portada_montanaRopaBN" src="./img/portada/montana_ropa_color_y_bn.png" alt="Montaña de ropa">
+					<img class="portada_ropa_color portada_chaleco" src="./img/portada/chaleco3.png" alt="Chaleco">
+
+					<!-- ropa escondida -->
+					<img src="./img/portada/tenis1.png" class="portada_escondida portada_escondida_tenis1" alt="Tenis">
+					<img src="./img/portada/chamarra1.png" class="portada_escondida portada_escondida_chamarra1" alt="Chamarra">
+					<img src="./img/portada/Lentes.png" class="portada_escondida portada_escondida_lentes1" alt="Lentes">
+					<img src="./img/portada/tenis2.png" class="portada_escondida portada_escondida_tenis2" alt="Tenis">
+					<img src="./img/portada/jeans2.png" class="portada_escondida portada_escondida_jeans2" alt="Jeans">
+					<img src="./img/portada/chamarra2.png" class="portada_escondida portada_escondida_chamarra2" alt="Chamarra">
+					<img src="./img/portada/Lentes.png" class="portada_escondida portada_escondida_lentes2" alt="Lentes">
+					<img src="./img/portada/jeans2.png" class="portada_escondida portada_escondida_jeans21" alt="Jeans">
+					<img src="./img/portada/ropa1.png" class="portada_escondida portada_escondida_ropa1" alt="Ropa">
+					<img src="./img/portada/tenis1.png" class="portada_escondida portada_escondida_tenis11" alt="Tenis">
+					<img src="./img/portada/chamarra2.png" class="portada_escondida portada_escondida_chamarra3" alt="Chamarra">
+					<img src="./img/portada/chamarra1.png" class="portada_escondida portada_escondida_chamarra11" alt="Chamarra">
+					<img src="./img/portada/Pulcera.png" class="portada_escondida portada_escondida_pulsera" alt="Pulsera">
+					<img src="./img/portada/Pulcera.png" class="portada_escondida portada_escondida_pulsera2" alt="Pulsera">
+
+					
+
+
+				</div>
+			</div>
+		</div>
+		<div class="portada_verde portada_bloqueAzul">
+			<div class="scroll">
+				<img class="portada_bloqueAzul_icons mouse" src="./img/portada/mouse2x.png" alt="">
+				<!-- <img class="portada_bloqueAzul_icons" src="./img/portada/scroll2x.png" alt=""> -->
+				<div class="flechas">
+					<span class="m_scroll_arrows unu"></span>
+					<span class="m_scroll_arrows doi"></span>
+					<span class="m_scroll_arrows trei"></span>
+				</div>
+			</div>
+			<p class="desliza fs-07">Desliza lento para una mejor experiencia</p>
+		</div>
+	</section>
+
+	<div id="myNav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<div class="overlay-content" id="overlay_content">
+			<div>
+				<img class="overlay_logo" src="./img/portada/x-data.png" alt="">
+				<h2 class="fs-1-8">Es el laboratorio de datos más efectivo</h2>
+				<p class="fs-08 overlay_texto">Este proyecto refleja el potencial del análisis de datos en la sociedad. Es una muestra de la importancia del diseño en la creación de visualizaciones que presentan información relevante, clara, precisa y bella.</p>
+				<a target="_blank" href="" class="overlay_btn fs-07">Nos encantaría hablar</a>
+			</div>
+			<div class="overlay_equipo_div fs-08">
+				<p class="overlay_equipo">Equipo:</p>
+				<div class="overlay_linea">	</div>
+				<div class="overlay_grid">	
+					<div class="fs-08">
+						<p>Desarrollador creativo y dataviz:</p>
+						<p>Aremi Manrique</p>
+					</div>
+					<div class="fs-08">
+						<p>Diseño de sitio:</p>
+						<p>Aremi Manrique, Fernanda Palomino, Valeria Ramos, <br>Katia Hernández, Mónica Dámazo, Elsa Murillo   </p>
+					</div>
+					<div class="fs-08">
+						<p>Corrección de estilo:</p>
+						<p>Lilian Cuesta e Itzel Osornio</p>
+					</div>
+					<div class="fs-08">
+						<p>Dirección de desarrollo:</p>
+						<p>Anallely Martínez</p>
+					</div>
+					<div class="fs-08">
+						<p>Desarrollo web:</p>
+						<p>Anallely Martínez</p>
+					</div>
+					<div class="fs-08 item-creativa">
+						<p>Dirección creativa:</p>
+						<p>Elsa Murillo</p>
+					</div>
+					<div class="fs-08">
+						<p>Análisis de datos:</p>
+						<p>Anna Rocha, Fernanda Aguilar, Alejandra Cordero</p>
+					</div>
+					<div class="overlay_redes">
+						<a href="" class="overlay_redes_a">
+							<img src="./img/portada/ig.png" alt="">
+						</a>
+						<a href="" class="overlay_redes_a">
+							<img src="./img/portada/ig.png" alt="">
+						</a>
+						<a href="" class="overlay_redes_a">
+							<img src="./img/portada/ig.png" alt="">
+						</a>
+						<a href="" class="overlay_redes_a">
+							<img src="./img/portada/ig.png" alt="">
+						</a>
+						<a href="" class="overlay_redes_a">
+							<img src="./img/portada/ig.png" alt="">
+						</a>
+						<a href="" class="overlay_redes_a">
+							<img src="./img/portada/ig.png" alt="">
+						</a>
+					</div>
+				</div>	
+
+			</div>
+		</div>
+
+	</div>
+
+	
+	<main>
+		<div class="portada_pregunta-botones" id="botones-intro">
+			<button onclick="openNav()" id="full" href="" class="btn portada_btn-hilando btn-main">
+				<img src="./img/portada/logo_boton.png" alt="">
+			</button>
+			<a target="_blank" href="https://x-data.mx/" class="btn portada_btn-xdata">
+				<img src="./img/portada/x-data_boton.png" alt="">
+			</a>
+			<a target="_blank" href="" class="btn portada_btn-contacto btn-main">Acerca de nosotros</a>
+		</div>
+
+		<section class="portada_pregunta">
+			<div class="portada_pregunta_texto">
+				<div class="portada_pregunta_sticky" id="portada_pregunta_sticky">
+					<div class="portada_pregunta_centro">
+						<img class="logos" src="./img/portada/logos-troquer-xdata.png" alt="Logos Troquer y X-DATA">
+						<h2 class="fs-2 portada_pregunta_titulo">¿Sabes cómo afecta el <i>fast fashion</i> a nuestro planeta?</h2>
+						<div class="portada_pregunta_p">
+							<p class="fs-07">Por: Aremi Manrique y Laboratorio de Visualización de Datos</p>
+							<p class="fs-07">2024</p>
+						</div>
+						<img id="gota1" class="portada_pregunta_gota gota1" src="./img/portada/gota.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro">
+			<div class="intro1" id="intro1">
+				<div class="intro1_planeta">
+					<img class="intro1_planeta_arriba" src="./img/intro/colllage_70agua.png" alt="">
+					<img src="./img/intro/intro1_ovalo_azul1.png" alt="" class="ovalo1">
+					<img src="./img/intro/ovalo_blanco.png" alt="" class="ovalo_blanco">
+					<img src="./img/intro/intro1_ovalo_azul2.png" alt="" class="ovalo2">
+					<!-- <img class="intro1_planeta_arriba" src="./img/intro/Mundo-arriba.png" alt=""> -->
+					<img class="intro1_planeta_abajo" src="./img/intro/planeta_mitad_abajo.png" alt="">
+					<!-- <img class="intro1_planeta_abajo" src="./img/intro/Mundo-abajo.png" alt=""> -->
+					<img class="intro1_planeta_ballena" src="./img/intro/planeta1_ballena.png" alt="">
+					<img class="intro1_planeta_nuestro" src="./img/intro/nuestro_planeta_1.png" alt="">
+					<img  class="intro1_planeta_gota" src="./img/portada/gota.svg" alt="">
+					<div class="intro1_texto" >
+						<p class="fs-09">El <span class="intro1_texto_70 fs-2-5">70%</span></p>
+						<!-- <p class="intro1_texto_70 fs-2-5">70%</p> -->
+						<p class="fs-09">de la superficie está cubierta de agua</p>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="intro2" id="intro2">
+				<div class="intro2_planeta">
+					<img class="intro2_planeta_mitad" src="./img/intro/planeta_mitad_1@2x.png" alt="">
+					<img class="intro2_planeta_abajo" src="./img/intro/intro2_planeta_abajo.png" alt="">
+					<div class="oval_azul"></div>
+					<!-- <img class="intro2_planeta_abajo" src="./img/intro/planeta_bottom@2x.png" alt=""> -->
+					<img class="intro2_planeta_gota" src="./img/intro/gota-azul.svg" alt="">
+					<div class="intro2_texto intro2_texto1">
+						<p class="intro2_texto_97 fs-2-5 intro2_texto_grande">97.5%</p>
+						<p class="fs-09">corresponde a agua salada</p>
+					</div>
+					<div class="intro2_texto intro2_texto2">
+						<p class="intro2_texto_dulce">Solo</p>
+						<p class="intro2_texto_2 fs-2-5 intro2_texto_grande">2.5%</p>
+						<p class="intro2_texto_dulce">es agua dulce</p>
+					</div>
+
+
+				</div>
+
+			</div>
+			<div class="intro3">
+				<div class="intro3_planeta">
+					<img class="intro3_gota1" src="./img/intro/intro4_gota1.png" alt="">
+					<img class="intro3_gota2" src="./img/intro/intro4_gota2.png" alt="">
+					<img class="intro3_gota3" src="./img/intro/intro3_gota_abajo.png" alt="">
+					<div class="oval_verde"></div>
+					<!-- <img class="intro3_gota3" src="./img/intro/intro4_gota3.png" alt=""> -->
+					<div class="intro3_texto intro3_texto1">
+						<p class="fs-09">El</p>
+						<p class="intro3_texto_97 fs-2-5 intro3_texto_grande">65%</p>
+						<p class="fs-09">Se encuentra en glaciares, cimas nevadas y permahielo</p>
+					</div>
+					<div class="intro3_texto intro3_texto2">
+						<p class="fs-09">El</p>
+						<p class="intro3_texto_97 fs-2-5 intro3_texto_grande">30.1%</p>
+						<p class="fs-09">en aguas subterráneas</p>
+					</div>
+					<div class="intro3_texto intro3_texto3">
+						<p class="fs-09">únicamente el</p>
+						<p class="intro3_texto_97 fs-2-5 intro3_texto_grande">0.4%</p>
+						<p class="intro2_texto_dulce">está disponible para consumo humano</p>
+					</div>
+					<img class="intro3_gotaverde" id="intro3_gotaverde" src="./img/intro/intro4_gotaverde.svg" alt="">
+				</div>
+
+			</div>
+			<div class="intro4">
+				<div class="intro4_planeta">
+					<img  src="./img/intro/agua_residual@2x.png" alt="" class="intro4_agua">
+					<img src="./img/intro/intro5_verdeazul.png" alt="" class="intro4_azul">
+					<img  src="./img/intro/intro5_verde.png" alt="" class="intro4_verde">
+					<p class="intro4_del_agua fs-09">De esta mínima cantidad de agua disponible en nuestro planeta</p>
+					<div class="intro4_texto intro4_texto2">
+						<p class="intro2_texto_residuos">El</p>
+						<p class="fs-2-5 intro4_texto_grande">20%</p>
+						<p class="intro2_texto_residuos">son aguas residuales de la industria textil</p>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="intro5">
+				<div class="intro5_planeta">
+					<div class="intro5_texto" >
+						<p class="intro5_inicio fs-09">Este es el inicio...</p>
+						<p class="intro5_impacto fs-2-3">del impacto de los productos que consumimos</p>
+						<p class="intro5_huella fs-09T">Nuestra huella ecológica se relaciona directamente con la huella ecólogica de dichos productos. Para comprenderla, debemos considerar los múltiples impactos que tienen a lo largo de su ciclo de vida.</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="section_ciclo" id="section_ciclo">
+			<div class="section_ciclo_sticky">
+				<div class="kaleidos_div">
+					<img class="ciclo_circulo" src="./img/ciclo/ciclo_de_vida.png" alt="">
+					<div class="circulo_grande"></div>
+					<div class="circulo_grande circulo_grande2"></div>
+
+					<div class="ciclo_texto_intro">
+						<p class="fs-09T ciclo_texto_intro_p">Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida.</p>
+						<p class="fs-09T ciclo_texto_intro_lima">Veamos los descubrimientos</p>
+					</div>
+
+					<svg class="rotor_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 632.8 632.79">
+						<defs>
+							<style></style>
+						</defs>
+						<g id="Capa_2" data-name="Capa 2">
+							<g id="Elementos">
+								<path class="cls-1" d="M74.23,323.18A243.63,243.63,0,0,1,79,268.92"/>
+								<path class="cls-1" d="M188.46,523.74a245.52,245.52,0,0,1-61-54.27"/>
+								<path class="cls-1" d="M459.11,515.28a241.25,241.25,0,0,1-48.49,27.23"/>
+								<path class="cls-1" d="M559.43,297a242.63,242.63,0,0,1-24.28,128.29"/>
+								<path class="cls-1" d="M404.14,90.49A244.74,244.74,0,0,1,505.21,163.4"/>
+								<path class="cls-1" d="M215.21,96.88a243.73,243.73,0,0,1,97.52-22.35"/>
+								<g class="g_etapa g_produccion" fill="#000" id="g_produccion">
+									<text class="cls-2" transform="translate(83.23 265.03) rotate(-76.44)">P</text>
+									<text class="cls-2" transform="matrix(0.28, -0.96, 0.96, 0.28, 86.03, 253.66)">R</text>
+									<text class="cls-2" transform="matrix(0.34, -0.94, 0.94, 0.34, 89.59, 241.79)">O</text>
+									<text class="cls-2" transform="translate(94.35 228.68) rotate(-67.15)">D</text>
+									<text class="cls-2" transform="matrix(0.44, -0.9, 0.9, 0.44, 99.58, 216.49)">U</text>
+									<text class="cls-2" transform="translate(105.28 204.96) rotate(-61.02)">C</text>
+									<text class="cls-2" transform="translate(111.25 194.3) rotate(-58.1)">C</text>
+									<text class="cls-2" transform="translate(117.91 183.81) rotate(-55.76)">I</text>
+									<text class="cls-2" transform="translate(121.94 177.85) rotate(-53.23)">Ó</text>
+									<text class="cls-2" transform="matrix(0.64, -0.77, 0.77, 0.64, 130.35, 166.75)">N</text>
+									<text class="cls-2" transform="translate(138.9 156.76) rotate(-47.67)"> </text>
+									<text class="cls-2" transform="translate(143 152.23) rotate(-45.34)">D</text>
+									<text class="cls-2" transform="matrix(0.74, -0.67, 0.67, 0.74, 152.43, 142.83)">E</text>
+									<text class="cls-2" transform="translate(160.64 135.46) rotate(-40.33)"> </text>
+									<text class="cls-2" transform="translate(165.32 131.49) rotate(-38.27)">F</text>
+									<text class="cls-2" transform="translate(173.93 124.81) rotate(-36.08)">I</text>
+									<text class="cls-2" transform="translate(179.74 120.58) rotate(-33.77)">B</text>
+									<text class="cls-2" transform="translate(189.7 114) rotate(-30.81)">R</text>
+									<text class="cls-2" transform="translate(200.5 107.63) rotate(-27.78)">A</text>
+								</g>
+								<text class="cls-3" transform="translate(211.28 102.07) rotate(-25.64)">	</text>
+								<text class="cls-3" transform="translate(217.81 99) rotate(-23.92)">	</text>
+								<text class="cls-3" transform="translate(238.43 90.82) rotate(-19.16)">	</text>
+								<text class="cls-3" transform="translate(259.65 84.54) rotate(-13.41)">	</text>
+								<text class="cls-3" transform="translate(281.39 80.25) rotate(-8.09)"> </text>
+								<text class="cls-3" transform="translate(287.48 79.42) rotate(-6.61)"> </text>
+								<text class="cls-3" transform="translate(293.58 78.75) rotate(-5.12)"> </text>
+								<text class="cls-3" transform="translate(299.73 78.24) rotate(-3.63)"> </text>
+								<text class="cls-3" transform="translate(305.87 77.88) rotate(-2.15)"> </text>
+								<text class="cls-3" transform="translate(312.01 77.69) rotate(-0.66)"> </text>
+								<text class="cls-3" transform="translate(318.17 77.65) rotate(0.83)"> </text>
+								<g class="g_etapa g_dis" id="g_dis">
+									<text class="cls-4" transform="matrix(1, 0.06, -0.06, 1, 324.3, 77.72)">D</text>
+									<text class="cls-4" transform="matrix(1, 0.1, -0.1, 1, 337.54, 78.58)">I</text>
+									<text class="cls-4" transform="translate(344.71 79.31) rotate(7.84)">S</text>
+									<text class="cls-4" transform="matrix(0.98, 0.18, -0.18, 0.98, 355.56, 80.86)">E</text>
+									<text class="cls-4" transform="translate(366.37 82.91) rotate(13.39)">Ñ</text>
+									<text class="cls-4" transform="matrix(0.96, 0.29, -0.29, 0.96, 379.12, 86.01)">O</text>
+								</g>
+								<text class="cls-4" transform="translate(392.46 90.14) rotate(19.03)">	</text>
+								<text class="cls-4" transform="matrix(0.91, 0.4, -0.4, 0.91, 411.43, 97.44)">	</text>
+								<text class="cls-4" transform="matrix(0.87, 0.49, -0.49, 0.87, 431.33, 107.2)">	</text>
+								<text class="cls-4" transform="translate(450.22 118.73) rotate(34.46)">	</text>
+								<text class="cls-4" transform="translate(467.98 131.98) rotate(39.77)">	</text>
+								<text class="cls-4" transform="matrix(0.71, 0.71, -0.71, 0.71, 484.44, 146.81)">	</text>
+								<text class="cls-4" transform="translate(499.44 163.1) rotate(50.45)"> </text>
+								<g class="g_etapa g_manufactura" id="g_manufactura">
+									<text class="cls-4" transform="matrix(0.6, 0.8, -0.8, 0.6, 503.36, 167.77)">M</text>
+									<text class="cls-4" transform="translate(512.75 180.49) rotate(56.53)">A</text>
+									<text class="cls-4" transform="matrix(0.51, 0.86, -0.86, 0.51, 519.6, 190.96)">N</text>
+									<text class="cls-4" transform="translate(526.18 202.34) rotate(62.76)">U</text>
+									<text class="cls-4" transform="matrix(0.41, 0.91, -0.91, 0.41, 531.99, 213.83)">F</text>
+									<text class="cls-4" transform="translate(536.12 223.01) rotate(68.21)">A</text>
+									<text class="cls-4" transform="translate(540.58 234.36) rotate(70.84)">C</text>
+									<text class="cls-4" transform="translate(544.53 246.08) rotate(73.83)">T</text>
+									<text class="cls-4" transform="translate(547.57 256.71) rotate(76.68)">U</text>
+									<text class="cls-4" transform="translate(550.46 269.26) rotate(79.73)">R</text>
+									<text class="cls-4" transform="translate(552.63 281.6) rotate(82.74)">A</text>
+								</g>
+								<text class="cls-4" transform="translate(554.06 293.65) rotate(84.89)">	</text>
+								<text class="cls-4" transform="translate(554.88 305.04) rotate(87.65)">	</text>
+								<text class="cls-4" transform="translate(554.91 327.2) rotate(93.02)">	</text>
+								<text class="cls-4" transform="translate(552.88 349.23) rotate(98.36)">	</text>
+								<text class="cls-4" transform="translate(548.8 371) rotate(103.69)">	</text>
+								<text class="cls-4" transform="translate(542.72 392.29) rotate(108.99)">	</text>
+								<text class="cls-4" transform="translate(534.7 412.94) rotate(114.28)"> </text>
+								<text class="cls-4" transform="translate(532.13 418.54) rotate(115.75)"> </text>
+								<text class="cls-4" transform="translate(529.43 424.06) rotate(117.22)"> </text>
+								<g class="g_etapa g_logistica" id="g_logistica">
+									<text class="cls-4" transform="translate(526.62 429.52) rotate(119.24)">L</text>
+									<text class="cls-4" transform="translate(521.55 438.54) rotate(122.09)">O</text>
+									<text class="cls-4" transform="matrix(-0.58, 0.82, -0.82, -0.58, 514.07, 450.3)">G</text>
+									<text class="cls-4" transform="translate(506.47 460.83) rotate(127.72)">Í</text>
+									<text class="cls-4" transform="translate(502.05 466.51) rotate(129.89)">S</text>
+									<text class="cls-4" transform="matrix(-0.68, 0.74, -0.74, -0.68, 495, 474.86)">T</text>
+									<text class="cls-4" transform="matrix(-0.7, 0.71, -0.71, -0.7, 487.47, 482.94)">I</text>
+									<text class="cls-4" transform="translate(482.39 488.06) rotate(137.09)">C</text>
+									<text class="cls-4" transform="matrix(-0.77, 0.64, -0.64, -0.77, 473.26, 496.46)">A</text>	
+								</g>
+								<text class="cls-4" transform="translate(463.89 504.15) rotate(142.26)">	</text>
+								<text class="cls-4" transform="matrix(-0.83, 0.56, -0.56, -0.83, 450.73, 513.78)">	</text>
+								<text class="cls-4" transform="translate(431.86 525.36) rotate(151.55)">	</text>
+								<text class="cls-4" transform="translate(411.98 535.13) rotate(156.87)"> </text>
+								<text class="cls-4" transform="translate(406.31 537.52) rotate(158.34)"> </text>
+								<g class="g_etapa g_uso" id="g_uso">
+									<text class="cls-4" transform="matrix(-0.94, 0.33, -0.33, -0.94, 400.62, 539.79)">U</text>
+									<text class="cls-4" transform="translate(388.43 543.99) rotate(163.4)">S</text>
+									<text class="cls-4" transform="translate(377.96 547.08) rotate(166.35)">O</text>
+									<text class="cls-4" transform="matrix(-0.98, 0.2, -0.2, -0.98, 364.35, 550.25)"> </text>
+									<text class="cls-4" transform="translate(358.85 551.36) rotate(170.91)">Y</text>
+									<text class="cls-4" transform="matrix(-0.99, 0.12, -0.12, -0.99, 346.6, 553.22)"> </text>
+									<text class="cls-4" transform="translate(340.54 554) rotate(175.73)">M</text>
+									<text class="cls-4" transform="matrix(-1, 0.01, -0.01, -1, 324.77, 555.05)">A</text>
+									<text class="cls-4" transform="matrix(-1, -0.04, 0.04, -1, 312.24, 555.17)">N</text>
+									<text class="cls-4" transform="translate(299.13 554.56) rotate(-174.82)">T</text>
+									<text class="cls-4" transform="translate(288.13 553.5) rotate(-172.16)">E</text>
+									<text class="cls-4" transform="translate(277.23 551.95) rotate(-169.25)">N</text>
+									<text class="cls-4" transform="matrix(-0.97, -0.23, 0.23, -0.97, 264.32, 549.38)">I</text>
+									<text class="cls-4" transform="translate(257.31 547.78) rotate(-164.05)">M</text>
+									<text class="cls-4" transform="translate(242.17 543.27) rotate(-161.3)">I</text>
+									<text class="cls-4" transform="translate(235.33 540.94) rotate(-159.11)">E</text>
+									<text class="cls-4" transform="translate(225.07 536.98) rotate(-156.23)">N</text>
+									<text class="cls-4" transform="translate(213.09 531.61) rotate(-153.35)">T</text>
+									<text class="cls-4" transform="matrix(-0.87, -0.49, 0.49, -0.87, 203.54, 526.79)">O</text>
+								</g>
+								<text class="cls-4" transform="translate(191.47 519.79) rotate(-148.06)"> </text>
+								<text class="cls-4" transform="translate(186.25 516.49) rotate(-146.59)"> </text>
+								<text class="cls-4" transform="translate(181.14 513.08) rotate(-145.12)"> </text>
+								<text class="cls-4" transform="matrix(-0.81, -0.59, 0.59, -0.81, 176.12, 509.54)"> </text>
+								<text class="cls-4" transform="matrix(-0.79, -0.61, 0.61, -0.79, 171.17, 505.85)"> </text>
+								<text class="cls-4" transform="matrix(-0.77, -0.63, 0.63, -0.77, 166.33, 502.05)"> </text>
+								<text class="cls-4" transform="matrix(-0.76, -0.65, 0.65, -0.76, 161.61, 498.14)"> </text>
+								<text class="cls-4" transform="matrix(-0.74, -0.67, 0.67, -0.74, 156.96, 494.08)"> </text>
+								<text class="cls-4" transform="matrix(-0.72, -0.69, 0.69, -0.72, 152.43, 489.91)"> </text>
+								<text class="cls-4" transform="matrix(-0.7, -0.71, 0.71, -0.7, 148, 485.63)"> </text>
+								<text class="cls-4" transform="translate(143.69 481.23) rotate(-133.29)"> </text>
+								<text class="cls-4" transform="translate(139.5 476.74) rotate(-131.81)"> </text>
+								<text class="cls-4" transform="matrix(-0.65, -0.76, 0.76, -0.65, 135.43, 472.13)"> </text>
+								<text class="cls-4" transform="translate(131.48 467.42) rotate(-128.84)"> </text>
+								<text class="cls-4" transform="matrix(-0.61, -0.79, 0.79, -0.61, 127.64, 462.6)"> </text>
+								<g class="g_etapa g_nueva" id="g_nueva">
+									<text class="cls-4" transform="matrix(-0.57, -0.82, 0.82, -0.57, 123.91, 457.74)">N</text>
+									<text class="cls-4" transform="translate(116.45 446.95) rotate(-121.87)">U</text>
+									<text class="cls-4" transform="translate(109.73 435.96) rotate(-118.99)">E</text>
+									<text class="cls-4" transform="translate(104.43 426.29) rotate(-116.2)">V</text>
+									<text class="cls-4" transform="matrix(-0.4, -0.92, 0.92, -0.4, 99.49, 416.18)">A</text>
+									<text class="cls-4" transform="translate(94.76 405) rotate(-111.33)"> </text>
+									<text class="cls-4" transform="matrix(-0.33, -0.94, 0.94, -0.33, 92.52, 399.29)">D</text>
+									<text class="cls-4" transform="matrix(-0.28, -0.96, 0.96, -0.28, 88.27, 386.71)">E</text>
+									<text class="cls-4" transform="matrix(-0.24, -0.97, 0.97, -0.24, 85.28, 376.08)"> </text>
+									<text class="cls-4" transform="translate(83.89 370.61) rotate(-102.06)">V</text>
+									<text class="cls-4" transform="translate(81.45 358.68) rotate(-99.73)">I</text>
+									<text class="cls-4" transform="matrix(-0.13, -0.99, 0.99, -0.13, 80.23, 351.59)">D</text>
+									<text class="cls-4" transform="matrix(-0.07, -1, 1, -0.07, 78.66, 338.78)">A</text>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<div class="ciclo_hidden">
+
+						<div id="k_circle_1" class="k_circle_1"></div>
+						<div id="k_circle_2" class="k_circle_2"></div>
+						<div id="k_circle_F3" class="k_circle_F3"></div>
+						<div id="k_circle_4" class="k_circle_4"></div>
+						<div id="cuadro1" class="cuadro cuadro1"></div>
+						<div id="cuadro2" class="cuadro cuadro2"></div>
+						<div class="slices">
+							<div id="slice1" class="slice slice1">
+								<span class="span1"></span>
+								<span class="span2"></span>
+							</div>
+							<div id="slice2" class="slice slice2">
+								<span class="span1"></span>
+								<span class="span2"></span>
+							</div>
+							<div id="slice3" class="slice slice3">
+								<span class="span1"></span>
+								<span class="span2"></span>
+							</div>
+						</div>
+					</div>
+					<div class="kaleidoscope"></div>
+				</div>
+
+				<div class="ciclo_texto">
+					<p class="ciclo_texto_titulo fs-07">Producción de fibra</p>
+					<p id="ciclo_p" class="ciclo_texto_p fs-07">Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida</p>
+					<p class="ciclo_lima_abajo fs-07">Veamos los descubrimientos</p>
+					<a href="" class="btn ciclo_texto_btn fs-07">IR</a>
+				</div>
+			</div>
+			<div class="ciclo_aux ciclo_aux_ciclo" id="ciclo_aux_ciclo">ciclo</div>
+			<div class="ciclo_aux ciclo_aux_rotate" id="ciclo_aux_rotate">rotate</div>
+			<div class="ciclo_aux ciclo_aux_opacity" id="ciclo_aux_opacity">opacity</div>
+			<div class="ciclo_aux ciclo_aux_fibra" id="ciclo_aux_fibra">fibra</div>
+			<div class="ciclo_aux ciclo_aux_dis" id="ciclo_aux_dis">diseño</div>
+			<div class="ciclo_aux ciclo_aux_manufactura" id="ciclo_aux_manufactura">manufactura</div>
+			<div class="ciclo_aux ciclo_aux_logistica" id="ciclo_aux_logistica">logistica</div>
+			<div class="ciclo_aux ciclo_aux_uso" id="ciclo_aux_uso">uso</div>
+			<div class="ciclo_aux ciclo_aux_nuevavida" id="ciclo_aux_nuevavida">nuevavida</div>
+		</section>
+
+		<section class="section_produccion">
+			<div class="aux aux_fibra1">aux1</div>
+			<div class="aux aux_fibra1_2">aux1-2</div>
+			<div class="aux aux_fibra2">aux2</div>
+			<div class="aux aux_fibra2Texto">aux2Texto</div>
+			<div class="aux aux_fibra3">aux3</div>
+			<div class="aux aux_fibra3Texto">aux3Texto</div>
+			<div class="aux aux_fibra4">aux4</div>
+			<div class="aux aux_fibra5">aux5</div>
+			<div class="aux aux_fibra6">aux6</div>
+			<div class="aux aux_fibra7">aux7</div>
+			<div class="produccion1">
+				<div class="produccion1_container">
+					<div class="produccion1_texto">
+						<h2 class="produccion1_texto_h2 fs-2">Producción <span>de fibra</span></h2>
+						<p class="produccion1_texto_p fs-09T">El comportamiento ambiental y social de las diferentes materias primas utilizadas en la moda depende de cada tipo de material, cómo surge y qué procesos sigue hasta convertirse en fibra preparada para hilar. Es por eso que generalizamos. </p><br>
+						<p class="produccion1_texto_p fs-09T">Esta etapa te invita a pensar acerca de cómo los niveles de producción de la fibras han aumentaso así como en los diferentes impactos que existen.</p>
+					</div>
+					<div class="produccion-mano">
+						<img class="produccion1_img produccion1_img_mano" src="./img/fibra/mano.png" alt="Mano humana">
+						<img class="produccion1_img produccion1_img_wraist" src="./img/fibra/hilo-wraist.png" alt="Hilo">
+						<img class="produccion1_img produccion1_img_vertical" src="./img/fibra/hilo-vertical.png" alt="Hilo">
+					</div>
+					<img class="produccion1_fondo" src="./img/fibra/hilo-fibra1.png" alt="Hilo">
+				</div>
+			</div>
+
+			<div class="produccion2">
+				<div class="produccion2_container">
+					<div id="produccion-texto1" class="produccion2_texto">
+						<h3 id="momento" class="produccion2_texto_h3">Ha llegado el momento...</h3>
+						<div class="produccion-p">
+							<p id="produccion-texto2" class="produccion2_texto_p fs-09T">Las fibras se clasifican según su origenes como fibras artificiales, fibras sinteticas y fibras naturales. <br> En esta visualización muestra su producción.</p>
+							<p id="produccion-texto3" class="produccion2_texto_p fs-09T">Las fibras artificiales han tenido un incremento considerable hasta el 2021 en contraposición con las naturales.</p>
+							<p id="produccion-texto4" class="produccion2_texto_p fs-09T">Esta demanda de producción es debido a que al diseñar ropa la elección de cada fibra se piensa más en la funcionalidad y estética. Para ahondar en sus diversos impactos se realizo el siguiente análisis.</p>
+						</div>
+					</div>
+					<div class="produccion_grafica">
+						<div id="produccion_container_grafica" class="svg_produccion_container">
+							<div class="produccion_grafica_leyendas">
+								<div class="produccion_leyendas_div artificial ">
+									<div class="produccion-dot"></div>
+									<p class="fs-09T">Fibras artificiales</p>
+								</div>
+								<div class="produccion_leyendas_div natural">
+									<div class="produccion-dot"></div>
+									<p class="fs-09T">Fibras naturales</p>
+								</div>
+							</div>
+							<p class="toneladas fs-09T">en 1.000 toneladas métricas</p>
+							<img src="./img/fibra/aguja.png" alt="" class="aguja aguja_left">
+							<img src="./img/fibra/aguja.png" alt="" class="aguja aguja_right">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="produccion3">
+				<div class="aux aux_prod3_1">1</div>
+				<div class="aux aux_prod3_2">2</div>
+				<div class="aux aux_prod3_3">3</div>
+				<div class="aux aux_prod3_4">4</div>
+				<div class="aux aux_prod3_5">5</div>
+				<div class="aux aux_prod3_6">6</div>
+				<div class="aux aux_prod3_7">7</div>
+				<div class="aux aux_prod3_8">8</div>
+				<div class="aux aux_prod3_9">9</div>
+				<div class="aux aux_prod3_10">10</div>
+				<div class="aux aux_prod3_11">11</div>
+				<div class="produccion3_container">
+					<p class="produccion3_p fs-09T">Como lo notas, es necesario tomar en cuenta qué tipo de material utilizaremos</p>
+					<div class="produccion3_main">
+						<img src="./img/fibra/hilar_der.png" alt="" class="produccion3_hilar hilar_der">
+						<img src="./img/fibra/hilar_izq.png" alt="" class="produccion3_hilar hilar_izq">
+						<div class="fondo_hilos_div">
+							<img src="./img/fibra/fondo_hilar.png" alt="" class="fondo_hilos">
+							<img src="./img/fibra/fondo_lineas.png" alt="" class="fondo_lineas">
+						</div>
+						<div class="produccion3_principal">
+							<p class="prod_texto_lateral lateral_fibra fs-07T">Producción de fibra</p>
+							<p class="prod_texto_lateral lateral_ambiental fs-07T">Impacto ambiental</p>
+							<div class="produccion3_div_art">
+								<div class="produccion3_art produccion3_titulos">
+									<div class="arcos">
+										<span></span>
+									</div>
+									<p class="fs-09T">Fibras artificiales</p>
+								</div>
+								<div class="produccion3_lineas">
+									<div class="produccion3_lineas_art">
+										<div class="linea_vertical"><span></span></div>
+										<div class="lineas_horizontales">
+											<div class="horizontal"></div>
+											<div class="horizontal"></div>
+											<div class="horizontal"></div>
+										</div>
+									</div>
+									<div class="produccion3_lineas_nat"></div>
+								</div>
+								<div class="produccion3_tipos_art">
+									<div class="produccion_tipos_div" id="tipos_poliester">
+										<div class="row_img">
+										     <img class="oval1" src="./img/fibra/hoja.png" alt="">
+										</div>
+										<p class="produccion3_numeroM fs-09">54 <span class="fs-07">M</span></p>
+										<p class="produccion3_tipo_material fs-07">Poliester</p>
+									</div>
+									<div class="produccion_tipos_div" id="tipos_algodon">
+										<div class="row_img">
+										     <img class="oval2" src="./img/fibra/hoja2.png" alt="">
+										</div>
+										<p class="produccion3_numeroM fs-09">27 <span class="fs-07">M</span></p>
+										<p class="produccion3_tipo_material fs-07">Algodón</p>
+									</div>
+									<div class="produccion_tipos_div" id="tipos_celulosas">
+										<div class="row_img">
+										     <img class="oval3" src="./img/fibra/hoja3.png" alt="">
+										</div>
+										<p class="produccion3_numeroM fs-09">7 <span class="fs-07">M</span></p>
+										<p class="produccion3_tipo_material fs-07">Celulosas</p>
+									</div>
+									<div class="produccion_tipos_div" id="tipos_poliamida">
+										<div class="row_img">
+										     <img class="oval4" src="./img/fibra/hoja4.png" alt="">
+										</div>
+										<p class="produccion3_numeroM fs-09">6.1 <span class="fs-07">M</span></p>
+										<p class="produccion3_tipo_material fs-07">Poliamida</p>
+									</div>
+								</div>
+								<div class="produccion3_impacto_art">
+									<div class="impacto_div_img">
+										<img src="./img/fibra/rayo.png" alt="">
+										<img src="./img/fibra/gota.png" alt="">
+										<img src="./img/fibra/nube.png" alt="">
+									</div>
+									<div>
+										<div class="oval_div" id="oval108">
+											<div class="impacto_oval oval108"></div>
+											<div class="impacto_num fs-07">108 kWh</div>
+										</div>
+										<div class="oval_div" id="oval21">
+											<div class="impacto_oval oval21"></div>
+											<div class="impacto_num fs-07">21 l</div>
+										</div>
+										<div class="oval_div" id="oval33">
+											<div class="impacto_oval oval33"></div>
+											<div class="impacto_num fs-07">3.3 kg</div>
+										</div>
+									</div>
+									<div>
+										<div class="oval_div" id="oval48">
+											<div class="impacto_oval oval48"></div>
+											<div class="impacto_num fs-07">48 kWh</div>
+										</div>
+										<div class="oval_div" id="oval1559">
+											<div class="impacto_oval oval1559"></div>
+											<div class="impacto_num fs-07">1,559 l</div>
+										</div>
+										<div class="oval_div" id="oval222">
+											<div class="impacto_oval oval222"></div>
+											<div class="impacto_num fs-07">2.2 kg</div>
+										</div>
+									</div>
+									<div>
+										<div class="oval_div" id="oval85">
+											<div class="impacto_oval oval85"></div>
+											<div class="impacto_num fs-07">85 kWhh</div>
+										</div>
+										<div class="oval_div" id="oval92">
+											<div class="impacto_oval oval92"></div>
+											<div class="impacto_num fs-07">92 l</div>
+										</div>
+										<div class="oval_div" id="oval332">
+											<div class="impacto_oval oval332"></div>
+											<div class="impacto_num fs-07">3.3 kg</div>
+										</div>
+									</div>
+									<div>
+										<div class="oval_div" id="oval160">
+											<div class="impacto_oval oval160"></div>
+											<div class="impacto_num fs-07">160 kWh</div>
+										</div>
+										<div class="oval_div" id="oval40">
+											<div class="impacto_oval oval40"></div>
+											<div class="impacto_num fs-07">40 l</div>
+										</div>
+										<div class="oval_div" id="oval83">
+											<div class="impacto_oval oval83"></div>
+											<div class="impacto_num fs-07">8.3 kg</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="produccion3_div_nat">
+								<div class="produccion3_nat produccion3_titulos">
+									<div class="arcos">
+										<span></span>
+									</div>
+									<p class="fs-09T">Fibras naturales</p>
+								</div>
+								<div class="produccion3_lineas_nat">
+									<div class="produccion3_lineas_nat2">
+										<div class="linea_vertical"><span></span></div>
+										<div class="lineas_horizontales">
+											<div class="horizontal"></div>
+											<div class="horizontal"></div>
+										</div>
+									</div>
+									<div class="produccion3_lineas_nat"></div>
+								</div>
+								<div class="produccion3_tipos_nat">
+									<div class="produccion_tipos_div" id="tipos_lana">
+										<div class="row_img">
+										     <img class="oval4" src="./img/fibra/hoja5.png" alt="">
+										</div>
+										<p class="produccion3_numeroM fs-09">1.2 <span class="fs-07">M</span></p>
+										<p class="produccion3_tipo_material fs-07">Lana</p>
+									</div>
+									<div class="produccion_tipos_div" id="tipos_canamo">
+										<div class="row_img">
+										     <img class="oval4" src="./img/fibra/hoja6.png" alt="">
+										</div>
+										<p class="produccion3_numeroM fs-09">0.09 <span class="fs-07">M</span></p>
+										<p class="produccion3_tipo_material fs-07">Cañamo</p>
+									</div>
+								</div>
+								<div class="produccion3_impacto_nat">
+									<div>
+										<div class="oval_div" id="oval120">
+											<div class="impacto_oval oval120"></div>
+											<div class="impacto_num fs-07">120 kWh</div>
+										</div>
+										<div class="oval_div" id="oval530">
+											<div class="impacto_oval oval530"></div>
+											<div class="impacto_num fs-07">530 L</div>
+										</div>
+										<div class="oval_div" id="oval17">
+											<div class="impacto_oval oval17"></div>
+											<div class="impacto_num fs-07">17 kg</div>
+										</div>
+									</div>
+									<div>
+										<div class="oval_div" id="oval22">
+											<div class="impacto_oval oval22"></div>
+											<div class="impacto_num fs-07">22 kWh</div>
+										</div>
+										<div class="oval_div" id="oval89">
+											<div class="impacto_oval oval89"></div>
+											<div class="impacto_num fs-07">89 l</div>
+										</div>
+										<div class="oval_div" id="oval31">
+											<div class="impacto_oval oval31"></div>
+											<div class="impacto_num fs-07">3.1 kg</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="produccion3_cotas">
+						<div class="produccion3_cotas_div" id="cota_energia">
+							<img src="./img/fibra/cota_energia.png" alt="">
+							<div class="produccion3_cotas_div_div fs-07">
+								<p>Consumo de energía</p>
+								<p>(kWh por kg de fibra)</p>
+							</div>
+						</div>
+						<div class="produccion3_cotas_div" id="cota_agua">
+							<img src="./img/fibra/cota_agua.png" alt="">
+							<div class="produccion3_cotas_div_div fs-07">
+								<p>Consumo de agua</p>
+								<p>(litro por kg)</p>
+							</div>
+						</div>
+						<div class="produccion3_cotas_div" id="cota_co2">
+							<img src="./img/fibra/cota_co2.png" alt="">
+							<div class="produccion3_cotas_div_div fs-07">
+								<p>Emisiones de CO2</p>
+								<p>(kg por kg de fibra)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="produccion4">
+				<div class="produccion4_container">
+					<div class="produccion4_texto">
+						<p class="fs-09T">Como lo notas es necesario tomar en cuenta qué tipo de material utilizaremos o eligiremos ya que tendrá consecuencias en nuestro planeta, pero no hay que olvidar  que ninguna fibra, es la solución al impacto de la industria tan intensiva. </p>
+						<p class="fs-09T produccion4_texto2">Es necesario atender diversos impactos que se producen a lo largo de todo el ciclo de vida de un producto como lo veremos en las siguientes etapas.</p>
+					</div>
+					<img src="./img/fibra/campo_flores.png" alt="" class="produccion4_campo">
+					<img src="./img/fibra/flor333.png" alt="" class="produccion4_flor1">
+					<img src="./img/fibra/flor2.png" alt="" class="produccion4_flor2">
+					<img src="./img/fibra/flor32.png" alt="" class="produccion4_flor3">
+					<img src="./img/fibra/flor4.png" alt="" class="produccion4_flor4">
+					<img src="./img/fibra/flor5.png" alt="" class="produccion4_flor5">
+					<img src="./img/fibra/flor6.png" alt="" class="produccion4_flor6">
+				</div>
+			</div>
+		</section>
+
+	<section class="section_diseno">
+			<div class="dis_aux dis_aux1">1</div>
+			<div class="dis_aux dis_aux12">12</div>
+			<div class="dis_aux dis_aux2">2</div>
+			<div class="dis_aux dis_aux3">3</div>
+			<div class="dis_aux dis_aux32">32</div>
+			<div class="dis_aux dis_aux4">4</div>
+			<div class="dis_aux dis_aux42">42</div>
+			<div class="dis_aux dis_aux5">5</div>
+
+			<div class="container container-dis">
+
+				<!-- Panel 1 -->
+				<div class="description panel blue">
+					<div class="dis1">
+						<svg  viewBox="0 0 775.51 444.49"class="dis_hilo dis_hilo1"  xmlns="http://www.w3.org/2000/svg">
+						  <path id="animatedPath1" d="M.25,1.48C25.54,5.73,36.34,35.05,34.8,57.71c-1.24,18.26-8,35.62-12.55,53.35-7.23,28.11-8.92,58.17-.74,86s27,53.22,53.19,65.68,59.78,10.25,81.94-8.49c15.24-12.89,24.78-35.27,21.7-55.3-3.24-21.06-23-32-37.35-15.71-12.53,14.23-4.89,42.41,3.94,56.21,39.53,61.82,126.8,57.41,187.58,37.48C378.71,261.8,422.9,239.15,471,232c136.72-20.22,267.22,84.18,303.08,212.05" fill="none" stroke="white" stroke-dasharray="3000" stroke-dashoffset="3000">
+						  </path>
+						</svg>
+						<svg class="dis_hilo dis_hilo12" viewBox="0 0 775.51 444.49" xmlns="http://www.w3.org/2000/svg">
+						  <path id="animatedPath12" d="M.25,1.48C25.54,5.73,36.34,35.05,34.8,57.71c-1.24,18.26-8,35.62-12.55,53.35-7.23,28.11-8.92,58.17-.74,86s27,53.22,53.19,65.68,59.78,10.25,81.94-8.49c15.24-12.89,24.78-35.27,21.7-55.3-3.24-21.06-23-32-37.35-15.71-12.53,14.23-4.89,42.41,3.94,56.21,39.53,61.82,126.8,57.41,187.58,37.48C378.71,261.8,422.9,239.15,471,232c136.72-20.22,267.22,84.18,303.08,212.05" fill="none" stroke="white" stroke-dasharray="3000" stroke-dashoffset="3000"/>
+						</svg>
+						<div class="dis1_col1">
+						</div>
+						<div class="dis1_col2">
+							<div class="dis1_col2_big">
+								<p class="dis1_necesario  fs-13">Es por eso que es necesario</p>
+								<h2 class="dis1_titulo dis_titulo fs-2-5 ">Pensar en cómo diseñar para disminuir los impactos</h2>
+								<p class="dis1_variedad float fs-09TT dis_book">La variedad de materiales tiene que ver en la forma que se diseña, es por eso que te mostramos una forma de hacer tus prendas para ...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Panel 2 -->
+				<section class="panel">
+					<div class="dis2">
+						<svg class="dis_hilo dis_hilo2" viewBox="0 0 732.02 514.14"  xmlns="http://www.w3.org/2000/svg">
+						  <path id="animatedPath2" d="M.25,1.48C25.54,5.73,36.34,35.05,34.8,57.71c-1.24,18.26-8,35.62-12.55,53.35-7.23,28.11-8.92,58.17-.74,86s27,53.22,53.19,65.68,59.78,10.25,81.94-8.49c15.24-12.89,24.78-35.27,21.7-55.3-3.24-21.06-23-32-37.35-15.71-12.53,14.23-4.89,42.41,3.94,56.21,39.53,61.82,126.8,57.41,187.58,37.48C378.71,261.8,422.9,239.15,471,232c136.72-20.22,267.22,84.18,303.08,212.05" fill="none" stroke="white" stroke-dasharray="3000" stroke-dashoffset="3000"/>
+						</svg>
+						<div class="dis2_texto float">
+							<h2 class="dis2_titulo dis_titulo fs-2-5">¿Qué hace a una <br><span>prenda sustentable?</span></h2>
+							<div class="dis2_texto_numero">
+								<span class="span_numero">1</span>
+								<div>
+									<p class="dis2_calidad dis_bold fs-1-3">Hecha con materiales de calidad y fabricación duradera</p>
+									<p class="dis2_p dis_book fs-09TT">Estas dos características influirán en la durabilidad física y visual de la prenda, lo cuál implicará una necesidad menor de nuevas adquisiciones.</p>
+								</div>
+							</div>
+						</div>
+						<div class=" dis2_tela_div">
+							<img class="dis2_tela" src="./img/diseno/tela_sus.png" alt="">
+							<button class="dis_button dis2_button">
+								<img src="./img/diseno/dis_btn.png" alt="">
+							</button>
+						</div>
+						<div class="dis2_reveal dis2_revealp">
+							<h3 class="dis_reveal_titulo fs-09T">¿Cómo saber si mi prenda es de buena calidad?</h3>
+							<div>
+								<!-- <img src="./img/diseno/costuras.png" alt=""> -->
+								<span class="vineta"></span>
+								<p class="fs-08">Las costuras son rectas, cortas y uniformes.</p>
+							</div>
+							<div>
+								<!-- <img src="./img/diseno/fibras.png" alt=""> -->
+								<span class="vineta"></span>
+								<p class="fs-08">Los tejidos están hechos de fibras que son cómodos de usar.</p>
+							</div>
+							<div>
+								<!-- <img src="./img/diseno/ajuste.png" alt=""> -->
+								<span class="vineta"></span>
+								<p class="fs-08">La prenda ajusta perfecto a tu cuerpo, no se jala ni está chueca.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Panel 3 -->
+				<section class="panel">
+					<div class="dis3 dis_panel">
+						<svg class="dis_hilo dis_hilo3" viewBox="0 0 349.45 401.6"  xmlns="http://www.w3.org/2000/svg">
+						  <path id="animatedPath3" d="M.29,219.55C18,214.25,37,211.45,55,215.61c19.26,4.45,41.63,20.81,43.41,42.12,1.19,14.15-15.76,28.79-27,20.12,2.38-11.47,17.35-16.7,28.25-12.4s17.91,15,22.31,25.87c11.44,28.24,10.35,61.73,28.38,86.29,15.9,21.65,51.77,31.08,74.57,14.7,44.17-31.76-2.27-102.67-23-135.67-25.75-41-69.78-81.52-72.21-132.79C126.12,48.54,202,4.25,269.28,1.13c29-1.34,59.53,7.44,79.44,28.57" fill="none" stroke="white"  stroke-dasharray="3000" stroke-dashoffset="3000"/>
+						</svg>
+						<svg class="dis_hilo dis_hilo32" viewBox="0 0 413.38 366"  xmlns="http://www.w3.org/2000/svg">
+						  <path id="animatedPath32" d="M1.24,215.78C-5.09,324.94,117,385.59,211.89,358.63c73.83-21,125.48-89.89,132-165.35,3.26-37.53-4.31-75.6,1.28-112.85S375.76,4.11,413.29,1" fill="none" stroke="white"  stroke-dasharray="3000" stroke-dashoffset="3000"/>
+						</svg>
+						<div class="dis_col dis_col1">
+							<div class="dis_panel_texto float dis3_col1_container">
+								<div class="dis_texto_div">
+									<span class="span_numero">2</span>
+									<h3 class="dis_panel_titulo fs-1-3">Modificable o multifuncional</h3>
+								</div>
+								<p class="dis_panel_p fs-09TT">De esta manera se solventarán problemas como las modas o los cambios corporales, promoviendo así una vida más larga del producto</p>
+								<img class="dis3_flecha " src="./img/diseno/flecha-abajo-verde.png" alt="">
+								<div class="dis_panel_img_main">
+									<img class="dis3_modificables" src="./img/diseno/multifuncional.png" alt="">
+									<button class="dis_panel_button dis3_button1">
+										<img src="./img/diseno/dis_btn.png" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="dis_panel_reveal dis3_reveal1" id="dis3_reveal1">
+								<p class="dis3_ventajas dis_reveal_titulo fs-09T">Ventajas de tener una prenda modificable</p>
+								<div class="dis3_reveal1_container">
+									<div>
+										<img src="./img/diseno/modificable1.png" alt="">
+										<p class="fs-08">Una misma prenda permite crear diferentes looks</p>
+									</div>
+									<div>
+										<img src="./img/diseno/modificable2.png" alt="">
+										<p class="fs-08">Ahorran el espacio que podrían utilizar 4 diferentes prendas en una maleta/guardarropa</p>
+									</div>
+									<div>
+										<img src="./img/diseno/modificable1.png" alt="">
+										<p class="fs-08">Se pueden adaptar a diferentes situaciones y/o necesidades</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="dis_col dis_col2">
+							<div class="dis_panel_texto float dis3_col2_container">
+								<div class="dis_panel_img_main dis3_div_botones">
+									<span class="span_panel_numero span_numero_3">3</span>
+									<img class="dis3_botones" src="./img/diseno/botones.png" alt="">
+									<button class="dis_panel_button dis3_button2">
+										<img src="./img/diseno/dis_btn.png" alt="">
+									</button>
+								</div>
+								<h3 class="dis_panel_titulo fs-1-3">Con pocos materiales y furnituras</h3>
+								<p class="dis_panel_p  fs-09TT">Esto reducirá significativamente la cantidad de productos químicos contaminantes</p>
+							</div>
+							<div class="dis_panel_reveal dis3_reveal2" id="dis3_reveal2">
+								<p class="dis_reveal_titulo fs-09T">¿Cuánto tiempo tardan en degradarse los materiales?</p>
+								<img src="./img/diseno/tiempo_degradar.png" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Panel 4 -->
+				<section class="panel">
+					<div class="dis4 dis_panel">
+						<svg class="dis_hilo dis_hilo4" viewBox="0 0 349.45 401.6"  xmlns="http://www.w3.org/2000/svg">
+						  <path id="animatedPath4" viewBox="0 0 405.66 464.74" d="M.93,153.71c12.4-30.59,44.25-50.47,77.15-48.39a78.59,78.59,0,0,1,48,20.61c9.47,8.77,27.82,41.74,6.06,47.5.35-.1,1.88-10,8.77-10.26,6.36-.29,12.2,6.23,14.64,11.4,2.73,5.83,3.31,12.4,3.77,18.82,3.58,50.6,6.52,101.93,18.91,151.31,10,40,40.82,137,99.62,116.13,22-7.81,31.8-33.27,35.39-56.3,7.78-49.94-1.11-100.76-8.55-150.75s-13.34-101.76.13-150.47S355.64,9.22,405.5,1" fill="none" stroke="white"  stroke-dasharray="3000" stroke-dashoffset="3000"/>
+						</svg>
+						<svg class="dis_hilo dis_hilo42" viewBox="0 0 422.53 279.8"  xmlns="http://www.w3.org/2000/svg">
+						  <path id="animatedPath42" viewBox="0 0 405.66 464.74" d="M422.25,6.47c-72.4-20.59-153.21,19-188.85,83.6C202,146.92,201.82,228.34,139.47,263.84c-43.19,24.59-94,14.37-139.19,1.27" fill="none" stroke="white"  stroke-dasharray="3000" stroke-dashoffset="3000"/>
+						</svg>
+						<div class="dis_col dis_col1">
+							
+							<div class="dis_panel_texto float dis4_col1_container">
+								<div class="dis_panel_img_main dis4_chamarra_div">
+									<span class="span_panel_numero span_numero_4">4</span>
+									<img class="dis3_modificables" src="./img/diseno/chamarra_mezclilla.png" alt="">
+									<button class="dis_panel_button dis4_button1">
+										<img src="./img/diseno/dis_btn.png" alt="">
+									</button>
+								</div>
+								<div class="dis_texto_div">
+									<h3 class="dis_panel_titulo fs-1-3">La que conecta con el usuario</h3>
+								</div>
+								<p class="dis_panel_p fs-09TT">Promover un mayor compromiso entre el consumidor alargará la vida de la prenda y reducirá el consumo de fast-fashion. </p>
+							</div>
+							<div class="dis_panel_reveal dis4_reveal1" id="dis4_reveal1">
+								<p class="dis_reveal_titulo fs-09T">¿Cuántos años mínimo se debe usar una prenda para que sea sustentable?</p>
+								<img src="./img/diseno/uso_sustentable_grafica.png" alt="">
+							</div>
+						</div>
+
+						<div class="dis_col dis_col2">
+							<div class="dis_panel_texto float dis4_col1_container">
+								<div class="dis_texto_div">
+									<span class="span_numero span_numero_5">5</span>
+									<h3 class="dis_panel_titulo fs-1-3">Responsable socialmente</h3>
+								</div>
+								<p class="dis_panel_p  fs-09TT">Tener en cuenta el bienestar de los artesanos, agricultores y otros involucrados, fomentará una cultura de moda ética. </p>
+								<div class="dis_panel_img_main dis4_artesana_div">
+									<img class="dis3_botones" src="./img/diseno/artesana.png" alt="">
+									<button class="dis_panel_button dis4_button2">
+										<img src="./img/diseno/dis_btn.png" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="dis_panel_reveal dis4_reveal2 materiales" id="dis4_reveal2">
+								<p class="dis_reveal_titulo fs-09T">¿Cuál es el salario de los artesanos en México?</p>
+								<img src="./img/diseno/mapa_salarios_artesanos.png" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Panel 5 -->
+				<section class="panel">
+					<div class="dis5 dis_panel">
+						<svg class="dis_hilo dis_hilo5" viewBox="0 0 476.72 151.74"  xmlns="http://www.w3.org/2000/svg">
+						  <path id="animatedPath5" viewBox="0 0 476.72 151.74" d="M.5,39C43.27,14.67,90.29-4.49,140.25,2.43c50.51,7,93.86,35.71,124.36,75.87,9.68,12.76,16.72,30.55,13.86,46.7-2.14,12.16-11.31,23.62-23.51,25.49-18.3,2.82-33.94-18.74-29.23-36.64,6.9-26.27,37.86-36.2,61.27-41.5,61.73-14,138.45-14.55,189.07,29.54" fill="none" stroke="white"  stroke-dasharray="3000" stroke-dashoffset="3000"/>
+						</svg>
+						<div class="dis_col dis_col1">
+							<div class="dis_panel_texto float dis5_col1_container">
+								<div class="dis_texto_div">
+									<span class="span_numero">6</span>
+									<h3 class="dis_panel_titulo fs-1-3">Sin residuos</h3>
+								</div>
+								<p class="dis_panel_p fs-09TT">Reducir el desperdicio hasta eliminarlo completamente.</p>
+								<div class="dis_panel_img_main dis5_residuos_div">
+									<img class="dis3_modificables" src="./img/diseno/residuos.png" alt="">
+									<button class="dis_panel_button dis5_button1">
+										<img src="./img/diseno/dis_btn.png" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="dis_panel_reveal dis5_reveal1" id="dis5_reveal1">
+								<p class="dis_reveal_titulo fs-09T">¿Qué hacer con el sobrante de tela?</p>
+								<img src="./img/diseno/objetos_uso_cotidiano.png" alt="">
+							</div>
+						</div>
+
+						<div class="dis_col dis_col2">
+							<div class="dis_panel_texto float dis5_col2_container">
+								<div class="dis_panel_img_main dis5_etiquetado_div">
+									<span class="span_panel_numero span_numero_7">7</span>
+									<img class="dis3_botones" src="./img/diseno/etiquetado.png" alt="">
+									<button class="dis_panel_button dis5_button2">
+										<img src="./img/diseno/dis_btn.png" alt="">
+									</button>
+								</div>
+								<h3 class="dis_panel_titulo fs-1-3">Etiquetado</h3>
+								<p class="dis_panel_p  fs-09TT">Informar al usuario promoverá comportamientos más sostenibles e incentivará al consumidor a alargar la vida del producto. </p>
+							</div>
+							<div class="dis_panel_reveal dis5_reveal2" id="dis5_reveal2">
+								<p>¿Cuánto tiempo tardan en degradarse los materiales?</p>
+								<img src="./img/diseno/furnituras_reveal.png" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="panel">
+					
+				</section>
+
+			</div>
+	</section>
+	
+	<section class="section_logistica">
+		<div class="section_logistica_div logistica1">
+			<div class="log1_texto">
+				<h2 class="log1_titulo fs-2-5">Logística y distribución</h2>
+				<p class="fs-09TT">Para esta etapa se realizó un análisis de la contaminación que ocasionan diversos medios de transporte a través de indicadores como energía consumida y emisiones CO2</p>
+				<br>
+				<p class="fs-09TT">Los mapas del trayecto refleja el trancurso de una prenda en una ruta internacinonal y el segundo una ruta local, ambas muestran el transcurso desde la fabricación hasta el aparador.</p>
+			</div>
+		</div>
+		<div class="section_logistica_div logistica2">
+			<div class="log2_texto">
+				<h2 class="log2_titulo fs-2-3">Ejercicio de simulación</h2>
+				<p class="fs-09TT">Haremos un ejercicio que nos permita ver cual es el impacto que se genera al trasladar una playera de algodón. Por un lado en una ruta internacional y por otro, una ruta local.</p>
+			</div>
+			<img src="./img/logistica/van.png" alt="" class="log2_van">
+			
+		</div>
+			
+		<div class="logistica3_container">
+			<div class="log3_aux log3_aux1">log3 1</div>
+			<div class="log3_aux log3_aux2">log3 2</div>
+			<div class="log3_aux log3_aux3">log3 3</div>
+							<div id="log3_auxTexas" class="log3_aux ">log3 Texas</div>
+			
+
+			<div class="section_logistica_div  logistica3">
+				
+				<div class="log3_texto">
+					<h2 class="log3_titulo fs-2-3 texto_log3">Ruta internacional</h2>
+					<p class="fs-09T texto_log3">Las marcas de moda trasnacionales, suelen llevar a cabo rutas que recorren grandes distancias a través del mundo que va desde el lugar donde se produce la materia prima hasta la distribución de la prenda confeccionada.</p>
+				</div>
+				<div class="ruta_internacional">
+
+						<div class="section_map">
+							
+							<div id="map"></div>
+							<div id="mapInset"></div>
+							<div id="story"></div>
+						</div>
+				</div>
+				<p class="log3_texto_abajo fs-09T texto_log3">Aquí tienes un ejemplo de un análisis que se realizó a partir de una ruta simulatoria de el país que consume más ropa a nivel mundial</p>
+			</div>
+			<div class="log3_indicadores">
+				<p class="fs-09TT log3_indicadores_title">Indicadores de contaminación</p>
+				<div class="log3_indicadores_div">
+					<img src="./img/logistica/km.png" alt="">
+					<div>
+						<p>Distancia</p>
+						<p>0</p>
+					</div>
+				</div>
+				<div class="log3_indicadores_div">
+					<img src="./img/logistica/energia_consumida.png" alt="">
+					<div>
+						<p>Energía consumida</p>
+						<p>0</p>
+					</div>
+				</div>
+				<div class="log3_indicadores_div">
+					<img src="./img/logistica/nube_emision.png" alt="">
+					<div>
+						<p>Emisión de CO2</p>
+						<p>0</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section_logistica_div logistica4">
+			
+			<div class="log4_texto">
+				<h2 class="log4_titulo fs-2-3">Ruta local</h2>
+				<p class="fs-09T">A diferencia de las marcas trasnacionales, los diseñadores de moda que no producen a gran escala, manejan otra lógica muy distinta.</p>
+				<p>Como ejemplo para este ejercicio, se tomará la ruta que lleva a cabo Jorge, un diseñador de moda mexicano quien se ha interesado en el mundo del upcycling.</p>
+			</div>
+			<p class="log4_texto_abajo fs-09T">Por otro lado se tomó esta ruta basados en la marca dennjs, basada en México</p>
+		</div>
+		<div class="section_logistica_div logistica5">
+			<div class="log5_texto">
+				<h2 class="log5_titulo fs-2-3">Resultados</h2>
+				<p class="fs-09T">Aquí te mostramos la comparativa de estas dos rutas, como te darás cuenta el impacto generado en cada una de ellas es evidentemente distinto.</p>
+			</div>
+		</div>
+		<div class="section_logistica_div logistica6">
+			<div class="log6_playeras">
+				<div class="log6_playeras_tubo"></div>
+				<img class="log6_playeras_img" src="./img/logistica/playeras5.png" alt="">
+			</div>
+			<p class="log6_texto fs-09T">Hay un sin fin de marcas que seguramente puedes encontrar en el lugar donde vives, y tienen iniciativas sostenibles o circulares, en las siguientes etapas te brindaremos un par de alternativas para que puedas adquirir productos desde tu localidad</p>
+		</div>
+	</section>
+	
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script> 
+
+<script src="./js/kaleidoscope.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/gsap-portada.js"></script>
+<script src="./js/gsap-intro.js"></script>
+<script src="./js/gsap-ciclo.js"></script>
+<script src="./js/ciclo.js"></script>
+<script src="./js/gsap-produccion.js"></script>
+<script type="text/javascript" src="https://d3js.org/d3.v6.js"></script>
+<script src="./js/grafica-produccion.js"></script>
+<script src="./js/diseno.js"></script>
+<script src="./js/gsap-diseno.js"></script>
+<!-- <script src="./js/ruta_internacional.js"></script> -->
+<script src="js/config.js"></script>
+<script src="./js/gsap-logistica.js"></script>
+<script src="js/mapscroll.js"></script>
+
+</body>
+</html>

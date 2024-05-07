@@ -1,0 +1,139 @@
+.section_embajadores{
+	height: 300vh;
+	background-image: url('../img/fondos/fondo_verde.png');
+	background-attachment: fixed;
+	background-size: 100%;
+	position: relative;
+	/*border: solid #fff;*/
+}
+.embajadores_container{
+	height: 200vh;
+	min-height: 800px;
+	position: sticky;
+	top: 0;
+	color: #fff;
+	/*border: solid white;*/
+}
+.aux_emb{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: lime;
+	visibility: hidden;
+}
+.auxemb1{
+	top: 50vh;
+}
+.auxemb2{
+	top: 100vh;
+}
+.embajadores_texto{
+	position: relative;
+	margin-top: 4%;
+	padding-left: 10%;
+	/*border: solid yellow;*/
+}
+.embajadores_title{
+	font-family: 'FilsonProBold', sans-serif;
+	color: var(--lima);
+}
+.embajadores_ayuda{
+	margin-top: .3rem;
+	margin-left: 4px;
+}
+
+
+/* Influencers */
+	.embajadores_influencers{
+		position: relative;
+	}
+	.influencer1{
+		padding:0 10%;
+		display: grid;
+		grid-template-columns: repeat(3, 33.3333%);
+		/*border: solid pink;*/
+		justify-content: space-evenly;
+	}
+	.influencer2{
+		padding:0 20%;
+		display: grid;
+		grid-template-columns: repeat(2,50%);
+		/*border: solid pink;*/
+		justify-content: space-around;
+		margin-top: 5%;
+	}
+	.influencer_foto_div{
+		/*border: solid red;*/
+		display: grid;
+		justify-content: center;
+		grid-template-rows: 64% 12% 12% 12%;
+		height: 380px;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+	.influencer_foto{
+		height: 100%;
+	}
+	.influencer_nombre{
+		border: solid var(--lima) 2px;
+		border-radius: 2rem;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		color: var(--lima);
+		padding: .5rem;
+		margin-bottom: .5rem;
+	}
+	.influencer_info{
+		letter-spacing: 1px;
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: .8rem;
+	}
+	.influencer_icon{
+		width: 40px;
+	}
+	.influencer_redes_div{
+		cursor: pointer;
+		margin: 0 .5rem;
+	}
+
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.influencer_foto_div{
+		display: grid;
+		justify-content: center;
+		grid-template-rows: 64% 12% 12% 12%;
+		height: 600px;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 2rem;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+	
+}

@@ -1,0 +1,99 @@
+#uym_diagrama{
+	/*border: solid var(--azul);*/
+}
+#uym_diagrama svg{
+	display: block;
+	/*border: solid var(--lima);*/
+	margin: 0 auto;
+}
+
+.circle {
+    cursor: pointer;
+    stroke-width: 2.5px;
+    box-sizing: border-box;
+    stroke-location: inside;
+    stroke: #2c4c51;
+}
+
+.circle.planchado{
+    stroke: #fff;
+}
+
+line.link {
+    fill: none;
+    stroke: #34495e;
+    stroke-width: 2pt;
+    stroke-dasharray: 4,3;
+}
+
+line.link.link_64 {
+   stroke-dasharray: 0;
+}
+line.link.link_19 {
+   stroke-dasharray: 0;
+}
+line.link.link_39 {
+   stroke-dasharray: 0;
+}
+line.link.link_56 {
+   stroke-dasharray: 0;
+}
+line.link.link_44 {
+   stroke-dasharray: 0;
+}
+line.link.link_63 {
+   stroke-dasharray: 0;
+}
+
+.circle.one.limpieza{
+    stroke: var(--lima);
+}
+.circle.main .myimg{
+    shad
+}
+.circle.main{
+    stroke: transparent;
+}
+.circle.one.blanquear{
+    stroke:#e9851e;
+}
+.circle.one.lavado{
+    stroke:var(--azul);
+}
+.circle.one.planchado{
+    stroke:var(--verde);
+}
+.circle.one.secado{
+    stroke:#5a75c9;
+}
+.circle.one{
+    stroke-width: 4px;
+}
+
+.title{
+    fill: #fff;
+}
+.title-one{
+    text-transform: uppercase;
+    font-family: 'FilsonProBlack';
+    font-size: 13px;
+    letter-spacing: 1.4px;
+}
+
+.title-two{
+    font-family: 'FilsonProRegular';
+    font-size: 12px;
+    letter-spacing: .5px;
+    display: block;
+}
+
+.title-three{
+    font-family: 'FilsonProRegular';
+    font-size: 10px;
+    letter-spacing: .5px;
+}
+
+.myimg{
+    cursor: pointer;
+    /*z-index: 1000 !important;*/
+}

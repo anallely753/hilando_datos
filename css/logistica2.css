@@ -1,0 +1,739 @@
+.section_logistica{
+	background-image: url('../img/fondos/textura_gris.png');
+	background-attachment: fixed;
+	height: 100%;
+	background-size: 50%;
+	background-color: var(--gris);
+	/*border: solid red;*/
+}
+.section_logistica_div{
+	height: 100vh;
+}
+.aux_log{
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+	position: absolute;
+	left: 0;
+	visibility: hidden;
+}
+
+/* Logistica 1 */
+	.logistica1{
+		height: 250vh;
+		position: relative;
+	}
+	.aux_log1{
+		top: 50vh;
+	}
+	.aux_log1_2{
+		top: 100vh;
+	}
+	.log1_container{
+		background-image: url('../img/logistica/collage_final_logistica2.png');
+		background-size: cover;
+		background-position: 0% -800%;
+		background-repeat: no-repeat;
+		height: 100vh;
+		min-height: 600px;
+		position: sticky;
+		top: 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		color: #fff;
+		padding: 5% 10%;
+	}
+	.log1_texto{
+		max-width: 750px;
+		position: relative;
+		top: 100%;
+	}
+	.log1_titulo{
+		color: var(--lima);
+		margin-bottom: 1rem;
+	}
+
+/* Logistica 2 */
+	.logistica2{
+		background-size: cover;
+		height: 230vh;
+		position: relative;
+		/*height: 800vh;*/
+	}
+	.aux_log2{
+		top: 50vh;
+	}
+	.aux_log2_2{
+		top: 180vh;
+	}
+	.log2_container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		padding: 10%;
+		height: 100vh;
+		min-height: 600px;
+		position: sticky;
+		top: 0;
+	}
+	.log2_texto{
+		max-width: 590px;
+		color: #000;
+		position: relative;
+		/*left: 150vh;*/
+		top: 100%;
+	}
+	.log2_titulo{
+		color: var(--azul);
+		margin-bottom: 1.2rem;
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	.log2_van{
+		position: absolute;
+		height: 75vh;
+		bottom: 1%;
+		left: -200vh;
+	}
+
+/* Logistica 3 aux */
+	.log3_aux{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+	}
+	.log3_aux1{
+		top: 100vh;
+	}
+	.log3_aux2{
+		top: 150vh;
+	}
+	.log3_aux3{
+		top: 200vh;
+	}
+
+/* Logistica 3 */
+	.logistica3{
+		position: absolute;
+		height:100vh;
+		width: 100vw;
+		padding: 0;
+		/*bordeR: solid purple;*/
+		top: 0;
+	}
+	.log3_texto{
+		width: 90%;
+		position: relative;
+		color: #000;
+		padding-left: 5%;
+		transform: translateY(80%);
+	}
+	.log3_titulo{
+		color: var(--azul);
+		margin-bottom: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	.log3_texto p{
+		line-height: 1.4;
+	}
+	.log3_texto_abajo{
+		position: absolute;
+		line-height: 1.4;
+		right: 5%;
+		top: 150%;
+		color: #000;
+		z-index: -10;
+	}
+	/* Ruta internacional */
+		.ruta_internacional{
+			position: absolute;
+			top: 90%;
+			left: 0;
+			height: 100%;
+			width:100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.ruta_internacional_img{
+			width: 30%;
+			position: relative;
+		}
+
+	/* Aux Span */
+		#mapboxgl-marker-id{
+			visibility: hidden;
+		}
+		.log3_aux_int{
+			height: 20vh;
+			width: 50px;
+			position: absolute;
+			background-color: #eaeaea;
+			visibility: hidden;
+		}
+		#log3_auxTexas{
+			top:213vh;
+		}
+		#log3_auxSF1{
+			top:290vh;
+		}
+		#log3_auxSH1{
+			top:373vh;
+		}
+		#log3_auxDaca{
+			top:453vh;
+		}
+		#log3_auxSH2{
+			top:533vh;
+		}
+		#log3_auxSF2{
+			top:613vh;
+		}
+
+	/* Proyeccion */
+		.log3_proyeccion{
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			background-color: rgba(68, 68, 219, .25);
+			position: absolute;
+			top: 0;
+			left: calc(100% - 44px);
+			z-index: -10;
+			border: solid 4px rgba(255, 255, 255, .45);
+			visibility: hidden;
+		}
+
+	/* Indicadores */
+		.log3_indicadores{
+			position: absolute;
+			top: 10%;
+			z-index: 100;
+			/*border: solid burlywood;*/
+			right: -55%;
+			max-width: 250px;
+			font-family: 'FilsonProRegular', sans-serif;
+
+		}
+		.log3_indicadores_title{
+			font-family: 'FilsonProBold', sans-serif;
+			oBold', sans-serif;
+			margin-bottom: 30px;
+		}
+		.log3_indicadores_div{
+			display: flex;
+			margin: 15px 0;
+		}
+		.log3_indicadores_div img{
+			margin-right: 18px;
+			width: 2rem;
+			height: 2rem;
+		}
+		.log3_indicadores_variable{
+			font-family: 'FilsonProBold', sans-serif;
+		}
+
+	/* Info abajo */
+		.log3_info_abajo{
+			position: absolute;
+			bottom: 5%;
+			right: -55%;
+			display: flex;
+			font-family: 'FilsonProRegular', sans-serif;
+			z-index: 100;
+			column-gap: 1.5rem;
+			height: 200px;
+		}
+		.log3_info_abajo_title{
+			margin-bottom: 1rem;
+			font-family: 'FilsonProBold', sans-serif;
+			text-align: center;
+		}
+		.log3_info_abajo_title span{
+			font-family: 'FilsonProRegular', sans-serif;
+			margin-left: 3px;
+		}
+
+	/* Medios */
+		.log3_medio{
+			width: 300px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		.log3_img_medios{
+			width: 90%;
+			margin: auto;
+		}
+		
+
+	/* CO2 */
+		.log3_co2_toneladas{
+			width: 250px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+		.log3_co2_toneladas_div{
+			display: flex;
+			margin: .5rem 0;
+			align-items: center;
+			margin-left: 20%;
+			font-family: 'FilsonProBold', sans-serif;
+
+		}
+		.log3_co2_toneladas_div span{
+			width: 22px;
+			height: 22px;
+			border: solid var(--azul);
+			border-radius: 50%;
+			margin-right: 1rem;
+		}
+		.log3_co2_alto span{
+			background-color: var(--naranja);
+		}
+		.log3_co2_bajo span{
+			background-color: var(--azul);
+		}
+		.log3_co2_medio span{
+			background-color: var(--lima);
+		}
+
+	/* Medios */
+		.log3_energia_megajulios{
+			width: 250px;
+		}
+		.log3_img_mega{
+			width: 90%;
+		}
+		
+
+
+/* Logistica 4 */
+	.logistica4{
+		position: absolute;
+		height:100vh;
+		width: 100vw;
+		padding: 0;
+		/*bordeR: solid purple;*/
+		top: 0;
+	}
+	.log4_texto{
+		width: 90%;
+		position: relative;
+		color: #000;
+		padding-left: 5%;
+		top: 80%;
+	}
+	.log4_titulo{
+		color: var(--azul);
+		margin-bottom: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	.log4_texto p{
+		line-height: 1.4;
+	}
+	.log4_texto_abajo{
+		position: absolute;
+		line-height: 1.4;
+		right: 5%;
+		top: 150%;
+		color: #000;
+		z-index: -10;
+	}
+	/* Ruta internacional */
+		.ruta_internacional4{
+			position: absolute;
+			top: 90%;
+			left: 0;
+			height: 100%;
+			width:100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.ruta_internacional_img4{
+			width: 30%;
+			position: relative;
+		}
+
+	/* Aux Span */
+		#mapboxgl-marker-id{
+			/*visibility: hidden;*/
+		}
+		.log4_aux_int{
+			height: 20vh;
+			width: 100px;
+			position: absolute;
+			z-index: 100;
+			background-color: purple;
+			visibility: hidden;
+		}
+		#log4_auxTepito{
+			top:213vh;
+		}
+		#log4_auxCentro{
+			top:293vh;
+		}
+		#log4_auxIztapalapa{
+			top:373vh;
+		}
+		#log4_auxInsurgentes{
+			top:453vh;
+		}
+		
+
+	/* Proyeccion */
+		.log4_proyeccion{
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			background-color: rgba(68, 68, 219, .25);
+			position: absolute;
+			top: 0;
+			left: calc(100% - 44px);
+			z-index: -10;
+			border: solid 4px rgba(255, 255, 255, .45);
+			visibility: hidden;
+		}
+
+	/* Indicadores */
+		.log4_indicadores{
+			position: absolute;
+			top: 10%;
+			z-index: 100;
+			/*border: solid burlywood;*/
+			right: -55%;
+			max-width: 250px;
+			font-family: 'FilsonProRegular', sans-serif;
+
+		}
+		.log4_indicadores_title{
+			font-family: 'FilsonProBold', sans-serif;
+			oBold', sans-serif;
+			margin-bottom: 30px;
+		}
+		.log4_indicadores_div{
+			display: flex;
+			margin: 15px 0;
+		}
+		.log4_indicadores_div img{
+			margin-right: 18px;
+			width: 2rem;
+			height: 2rem;
+		}
+		.log4_indicadores_variable{
+			font-family: 'FilsonProBold', sans-serif;
+			margin-top: 4px;
+		}
+
+	/* Info abajo */
+		.log4_info_abajo{
+			position: absolute;
+			bottom: 5%;
+			right: -55%;
+			display: flex;
+			font-family: 'FilsonProRegular', sans-serif;
+			z-index: 100;
+			column-gap: 1.5rem;
+			height: 200px;
+			/*border: solid;*/
+		}
+		.log4_info_abajo_title{
+			margin-bottom: 1rem;
+			font-family: 'FilsonProBold', sans-serif;
+			text-align: center;
+		}
+		.log4_info_abajo_title span{
+			font-family: 'FilsonProRegular', sans-serif;
+			margin-left: 3px;
+		}
+
+	/* Medios */
+		.log4_medio{
+			width: 300px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			z-index: 100;
+		}
+		.log4_img_medios{
+			width: 100%;
+			margin: auto;
+		}
+		
+
+	/* CO2 */
+		.log4_co2_toneladas{
+			width: 250px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+		.log4_co2_toneladas_div{
+			display: flex;
+			margin: .5rem 0;
+			align-items: center;
+			margin-left: 20%;
+
+		}
+		.log4_co2_toneladas_div span{
+			width: 22px;
+			height: 22px;
+			border: solid var(--azul);
+			border-radius: 50%;
+			margin-right: 1rem;
+		}
+		.log4_co2_alto span{
+			background-color: var(--naranja);
+		}
+		.log4_co2_bajo span{
+			background-color: var(--azul);
+		}
+		.log4_co2_medio span{
+			background-color: var(--lima);
+		}
+
+	/* Medios */
+		.log4_energia_megajulios{
+			width: 250px;
+		}
+		.log4_img_mega{
+			width: 90%;
+		}
+	
+
+/* Logistica 5 */
+	.logistica5{
+		position: relative;
+		height: 220vh;
+	}
+	.aux_log51{
+		top: 50vh;
+	}
+	.aux_log52{
+		top: 100vh;
+	}
+	.log5_container{
+		padding: 5%;
+		text-align: center;
+		height: 100vh;
+		min-height: 600px;
+		position: sticky;
+		top: 0;
+	}
+	.log5_texto{
+		position: relative;
+		top: 80%;
+	}
+	.log5_titulo{
+		color: var(--azul);
+		margin-bottom: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	.log5_texto p{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+	.log5_grafica_rutas{
+		width: 90%;
+		margin: 5% auto;
+		position: relative;
+		top: 120vh;
+		/*border: solid;*/
+	}
+
+/* Logistica 6 */
+	.logistica6{
+		position: relative;
+		height: 220vh;
+	}
+	.aux_log61{
+		top: 70vh;
+	}
+	.aux_log62{
+		top: 120vh;
+	}
+	.log6_container{
+		text-align: center;
+		height: 100vh;
+		min-height: 600px;
+		position: sticky;
+		top: 0;
+	}
+	.log6_playeras{
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+		width: 100%;
+		height: 70%;
+	}
+	.log6_playeras_tubo{
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		top: 25%;
+		background-color: var(--azul);
+		z-index: 0;
+	}
+	.log6_playeras_img{
+		display: block;
+		z-index: 20;
+		height: 80%;
+		position: absolute;
+		top: 21%;
+		left: -100vh;
+	}
+	.log6_texto{
+		text-align: center;
+		margin: 0 auto;
+		width: 65%;
+		margin-top: 5%;
+		max-width: 800px;
+		line-height: 1.4;
+		position: relative;
+		top: 40%;
+	}
+
+
+
+@media (min-width: 576px) {
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	/* Logistica 1 */
+		
+	/* Logistica 3 */
+		.log3_texto{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 30%;
+			max-width: 450px;
+		}
+		.log3_titulo{
+			color: var(--azul);
+			width: 70%;
+			margin-bottom: 1rem;
+		}
+		.log3_texto p{
+			line-height: 1.4;
+		}
+		.log3_texto_abajo{
+			width: 30%;
+			max-width: 450px;
+		}
+		.log3_info_abajo{
+			position: absolute;
+			bottom: 5%;
+			right: -55%;
+			display: flex;
+			font-family: 'FilsonProRegular', sans-serif;
+			z-index: 100;
+			column-gap: 0;
+			margin-right: 1%;
+			height: 180px;
+		}
+	/* Logistica 4 */
+		.log4_texto{
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 30%;
+			max-width: 450px;
+		}
+		.log4_titulo{
+			width: 70%;
+			margin-bottom: 1rem;
+		}
+		.log4_texto p{
+			line-height: 1.4;
+		}
+		.log4_texto_abajo{
+			width: 30%;
+			max-width: 450px;
+		}
+		.log4_indicadores{
+			position: absolute;
+			top: 10%;
+			z-index: 100;
+			/*border: solid burlywood;*/
+			right: -55%;
+			max-width: 250px;
+			font-family: 'FilsonProRegular', sans-serif;
+		}
+		.log4_info_abajo{
+			position: absolute;
+			bottom: 5%;
+			right: -55%;
+			display: flex;
+			font-family: 'FilsonProRegular', sans-serif;
+			z-index: 100;
+			column-gap: 0;
+			height: 180px;
+			/*border: solid;*/
+		}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.log3_indicadores{
+		margin-right: 5%;
+	}
+	.log3_info_abajo{
+	}
+	.log3_info_abajo{
+		position: absolute;
+		bottom: 5%;
+		right: -55%;
+		display: flex;
+		font-family: 'FilsonProRegular', sans-serif;
+		z-index: 100;
+		height: 200px;
+		margin-right: 5%;
+	}
+	.log4_indicadores{
+		margin-right: 5%;
+	}
+	.log4_info_abajo{
+		position: absolute;
+		bottom: 5%;
+		right: -55%;
+		display: flex;
+		font-family: 'FilsonProRegular', sans-serif;
+		z-index: 100;
+		column-gap: 0;
+		height: 200px;
+		margin-right: 3%;
+		/*border: solid;*/
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+	
+}
+

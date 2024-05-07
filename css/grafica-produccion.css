@@ -1,0 +1,103 @@
+/* AXES */
+/* ticks */
+.svg_produccion_container{
+	/*border: solid palegoldenrod;*/
+	position: relative;
+}
+.axis:nth-child(4) line{
+	stroke: transparent;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+	transform: translateX(-3px);
+	opacity: .8;
+}
+.axis:nth-child(3) line{
+	stroke: #fff;
+	shape-rendering: crispEdges;
+	stroke-width: 1;
+	stroke-dasharray: 8;
+	position: relative;
+	transform: translateY(-10px);
+}
+.tick line{
+	stroke: #fff;
+	margin-left: 50px;
+}
+/* axis contour */
+.axis:nth-child(4) path {
+stroke: #fff;
+stroke-width: 0;
+stroke-dasharray: 8;
+shape-rendering: crispEdges;
+}
+.axis:nth-child(3) path {
+stroke: transparent;
+stroke-width: 0;
+}
+
+/* axis text */
+.axis text {
+fill: #fff;
+font-family: FilsonProBook, sans-serif;
+font-size: 110%;
+}
+
+/* LINE CHART */
+path.line-0 {
+fill: none;
+stroke: #de7e57;
+stroke-dasharray: 10;
+stroke-width: 2.5;
+opacity: 1;
+}
+
+path.line-1 {
+fill: none;
+stroke: #d3eb6b;
+stroke-dasharray: 10;
+stroke-width: 2.5;
+opacity: 1;
+}
+
+path.line-2 {
+fill: none;
+stroke: #9c9c9c;
+stroke-dasharray: 10;
+opacity: 1;
+}
+
+/* TOOLTIP */
+.tooltip {
+	color: #fff;
+	font-family: FilsonProMedium, sans-serif;
+	font-size: 130%;
+	opacity: 1;
+	position:  absolute;
+}
+
+/* POINTS */
+.point {
+	z-index: 500;
+	/*stroke: none;*/
+	cursor: pointer;
+	fill: #9c9c9c;
+	display: block;
+	transform-origin: center center;
+
+}
+#line01 > circle{
+	animation: blink-1 2s 3;
+}
+#line01 > circle:nth-child(23){
+	animation: blink-1 2s infinite;
+}
+.domain{
+	visibility: hidden !important;
+}
+#line01 .point2{
+	display: none;
+}
+#line02 .point2{
+	display: none;
+}
+

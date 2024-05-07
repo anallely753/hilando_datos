@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/produccion.css">
+	<link rel="stylesheet" href="./css/grafica-produccion.css">
+</head>
+<body style="background-color: var(--verde);">
+	
+		<div class="produccion_grafica_div">
+			<div id="produccion_container_grafica" class="svg_produccion_container">
+				<div class="produccion_grafica_leyendas">
+					<div class="produccion_leyendas_div artificial ">
+						<div class="produccion-dot"></div>
+						<p class="fs-09T">Fibras artificiales</p>
+					</div>
+					<div class="produccion_leyendas_div natural">
+						<div class="produccion-dot"></div>
+						<p class="fs-09T">Fibras naturales</p>
+					</div>
+				</div>
+				<img loading="lazy" src="./img/fibra/aguja.png" alt="" class="aguja aguja_left">
+				<img loading="lazy" src="./img/fibra/aguja.png" alt="" class="aguja aguja_right">
+			</div>
+		</div>
+
+
+	<script type="text/javascript" src="https://d3js.org/d3.v6.js"></script>
+	<script src="./js/grafica-produccion.js"></script>
+</body>
+</html>

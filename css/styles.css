@@ -1,0 +1,568 @@
+/* general styles */
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	:root {
+	  --lima: #cde35f; 
+	  --naranja: #ca7650;
+	  --verde: #1f4a4f;
+	  --verdeDark: #1b3339;
+	  --azul: #4646d6;
+	  --gris: #dbd7d4;
+	  --peach: #de7e57;
+	  --gris2: #ccc8c5;
+	  --grisObscuro: #333333;
+	  --amarillo: #f0e221;
+	  --turquesa: #4ba49b;
+	}
+	a{
+		text-decoration: none;
+		color: unset;
+	}
+	body.overlay-open {
+            overflow: hidden;
+        }
+    .text_azul{
+    	color: var(--azul);
+    }
+
+/* Fuentes */
+	@font-face {
+	  font-family: AcuminVariableBold;
+	  src: url('../fonts/AcuminVariableConcept.ttf');
+	}
+	@font-face {
+	  font-family: FilsonProBlack;
+	  src: url('../fonts/FilsonProBlack.otf');
+	}
+	@font-face {
+	  font-family: FilsonProBold;
+	  src: url('../fonts/FilsonProBold.otf');
+	}
+	@font-face {
+	  font-family: FilsonPro-Bold;
+	  src: url('../fonts/FilsonProBold.otf');
+	}
+	@font-face {
+	  font-family: FilsonProRegular;
+	  src: url('../fonts/FilsonProRegular.otf');
+	}
+	@font-face {
+	  font-family: FilsonProMedium;
+	  src: url('../fonts/FilsonProMedium.otf');
+	}
+	@font-face {
+	  font-family: FilsonProBook;
+	  src: url('../fonts/FilsonProBook.otf');
+	}
+	@font-face {
+	  font-family: FilsonProLight;
+	  src: url('../fonts/FilsonProLight.otf');
+	}
+	@font-face {
+	  font-family: FilsonProHeavy;
+	  src: url('../fonts/FilsonProHeavy.otf');
+	}
+	html {
+	  font-size: 100%;
+		overflow-x: hidden;
+		/*max-width: 100vw;*/
+	}
+	body{
+	  	font-family: FilsonProRegular, sans-serif;
+		scroll-behavior: smooth;
+		background-color: var(--verde);
+		/*background-image: url('../img/text9.png');*/
+		/*max-width: 100vw;*/
+		/*overflow-x: hidden;*/
+	}
+	p{
+		line-height: 1.4;
+	}
+	.desktop_content{
+		display: none;
+	}
+	.mobile_content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--lima);
+		height: 100vh;
+		text-align: center;
+		padding: 5%;
+	}
+
+/* Font size */
+	.fs-07T{
+		font-size: .7rem;
+	}
+	.fs-07{
+		font-size: .7rem;
+	}
+	.fs-08{
+		font-size: .8rem;
+	}
+	.fs-09{
+		font-size: .9rem;
+	}
+	.fs-09T{
+		font-size: .9rem;
+	}
+	.fs-09TT{
+		font-size: 1rem;
+	}
+	.fs-1-3{
+		font-size: 1.2rem;
+	}
+	.fs-13{
+		font-size: 1.3rem;
+	}
+	.fs-2-3{
+		font-size: 2rem;
+	}
+	.fs-2{
+		font-size: 2rem;
+	}
+	.fs-1-8{
+		font-size: 1.8rem;
+	}
+	.fs-2-5{
+		font-size: 3rem;
+	}
+	.fs-4{
+		font-size: 4rem;
+	}
+
+/* Aux */
+	.aux{
+		position: absolute;
+		width: 50px;
+		height: 100px;
+		background-color: violet;
+		left: 0;
+	}
+
+/* Botones */
+	.portada_pregunta-botones{
+		display: flex;
+		position: fixed;
+		z-index: 100;
+		top: 1rem;
+		padding: 0 2rem;
+		width: 100%;
+		justify-content: space-between;
+		font-family: FilsonProMedium, sans-serif;
+		opacity: 1;
+		transition: all 1s ease;
+	}
+	.btn-main{
+		background-color: rgba(255, 255, 255, .1);
+		border-radius: 2rem;
+		/*width: 9rem;*/
+		text-align: center;
+		font-size: .9rem;
+		height: 1rem;
+		width: max-content;
+		padding: 6px 18px;
+		box-sizing: content-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		font-size: .8rem;
+		font-family: FilsonProRegular, sans-serif;
+		transition: all .5s ease;
+		border: none;
+		z-index: 100;
+	}
+	.portada_btn_hilando{
+		color: #Fff;
+	}
+	.portada_btn_contacto{
+		color: #fff !important;
+	}
+
+	.btn-main img{
+		height: 100%;
+		filter: invert(0%);
+		transition: all .5s ease;
+
+	}
+	/*.portada_btn-xdata{
+		transition: all .2s ease;
+	}*/
+	.portada_btn-xdata img{
+		/*filter: invert(80%);*/
+		height: 1.5rem;
+		transition: all .5s ease;
+		opacity: 1;
+
+	}
+	.btn-main:hover{
+		cursor: pointer;
+		background-color: var(--naranja);
+	}
+	.portada_btn-xdata img:hover{
+		height: 1.6rem;
+		transform-origin: center;
+	}
+
+/* Overlay */
+
+	.overlay {
+		/* Height & width depends on how you want to reveal the overlay (see JS below) */   
+		height: 100%;
+		width: 0;
+		position: fixed; /* Stay in place */
+		z-index: 1000; /* Sit on top */
+		left: 0;
+		top: 0;
+		background-color: var(--verde);
+		background-image: url('../img/fondos/fondo_verde.png');
+		background-attachment: fixed;
+		background-size: 100%;
+		overflow-x: hidden; /* Disable horizontal scroll */
+		transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	}
+	.overlay .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		font-size: 40px;
+		font-weight: lighter;
+		z-index: 1500;
+		color: #fff;
+	}
+	/* Position the content inside the overlay */
+	.overlay-content {
+		height: 100%;
+		padding: 5% 10%;
+		color: #fff;
+	}
+	.overlay_grid{
+		display: grid;
+		grid-template-columns: 50% 40%;
+		height: 100%;
+		grid-column-gap: 10%;
+	}
+	/* overlay 1 */
+		.overlay1_logo{
+			width: 150px;
+		}
+		.overlay1_titulo{
+			color: var(--lima);
+			margin: 1.8rem 0 1rem;
+		}
+		.overlay1_texto{
+			margin-bottom: 1.5rem;
+			line-height: 1.4;
+		}
+		.overlay1_btn{
+			background-color: var(--lima);
+			color: var(--verde);
+			padding: 5px 10px;
+			border: none;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-family: 'FilsonProMedium', sans-serif;
+			border-radius: 4px;
+			margin-top: 1rem;
+			cursor: pointer;
+			position: relative;
+			transition: all .4s ease;
+		}
+	/* overlay 2 */
+		.overlay2{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			position: relative;
+		}
+		.overlay2_equipo{
+			text-transform: uppercase;
+			font-family: 'FilsonProBold', sans-serif;
+			letter-spacing: 1.5px;
+		}
+		.overlay2_linea{
+			display: block;
+			border-bottom: dashed var(--lima) 2px;
+			width: 100%;
+			height: 4px;
+			margin: 4px 0;
+		}
+		.overlay2_people_div{
+			padding-top: 1rem;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		
+		.overlay2_people_titulo{
+			font-family: 'FilsonProBook', sans-serif;
+		}
+		.overlay2_people_nombre{
+			font-family: 'FilsonProBold', sans-serif;
+			letter-spacing: .5px;
+		}
+		.overlay2_redes{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-column-gap: .5rem;
+			grid-row-gap: .5rem;
+		}
+		.overlay2_redes_div{
+			width: 40px;
+			height: 40px;
+			border: solid 1px var(--lima);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.overlay2_redes_div img{
+			width: 50%;
+		}
+	
+/* Overlay Troquer */
+	.overlayTroquer {
+	  height: 0%;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 1000;
+	  top: 0;
+	  left: 0;
+	  background-color: rgb(0,0,0);
+	  background-color: var(--naranja);
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	}
+	.typeform_form{
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.typeform_form div{
+		height: 99vh !important;
+	}
+	.overlayTroquer-content {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	}
+
+	.overlayTroquer a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 36px;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	.overlayTroquer a:hover, .overlayTroquer a:focus {
+	  color: #f1f1f1;
+	}
+
+	.overlayTroquer .closebtnTroquer {
+	  position: absolute;
+	  top: 20px;
+	  right: 45px;
+	  font-size: 60px;
+	  z-index: 1000;
+	  color: #fff;
+	}
+
+
+/* XS */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.fs-07{
+		font-size: .7rem;
+	}
+	.fs-08{
+		font-size: .9rem;
+	}
+	.fs-09{
+		font-size: 1.1rem;
+	}
+	.fs-09T{
+		font-size: .9rem;
+	}
+	.fs-1-3{
+		font-size: 1.3rem;
+	}
+	.fs-2-3{
+		font-size: 2.2rem;
+	}
+	.fs-2{
+		font-size: 2.2rem;
+	}
+	.fs-2-5{
+		font-size: 3.2rem;
+	}
+	/* Position the content inside the overlay */
+	
+	
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.fs-07{
+		font-size: .7rem;
+	}
+	.fs-08{
+		font-size: 1rem;
+	}
+	.fs-09T{
+		font-size: 1rem;
+	}
+	.fs-13{
+		font-size: 1.5rem;
+	}
+	.fs-2-3{
+		font-size: 2.6rem;
+	}
+	.fs-2{
+		font-size: 2.6rem;
+	}
+	.fs-2-5{
+		font-size: 3.4rem;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.fs-07T{
+		font-size: .7rem;
+	}
+	.fs-07{
+		font-size: .9rem;
+	}
+	.fs-09TT{
+		font-size: 1.1rem;
+	}
+	.fs-1-3{
+		font-size: 1.3rem;
+	}
+	.fs-13{
+		font-size: 1.7rem;
+	}
+	.fs-2-3{
+		font-size: 3rem;
+	}
+	.fs-2{
+		font-size: 3rem;
+	}
+	.fs-2-5{
+		font-size: 3.6rem;
+	}
+	
+	.item-creativa{
+		grid-column-start: 1;
+	}
+	.fs-1-8{
+		font-size: 2rem;
+	}
+	.mobile_content{
+		display: none;
+	}
+	.desktop_content{
+		display: block;
+	}
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.fs-07T{
+		font-size: .7rem;
+	}
+	.fs-07{
+		font-size: .7rem;
+	}
+	.fs-08{
+		font-size: 1rem;
+	}
+	.fs-09{
+		font-size: 1.2rem;
+	}
+	.fs-13{
+		font-size: 1.8rem;
+	}
+	.fs-09T{
+		font-size: 1.1rem;
+	}
+	.fs-09TT{
+		font-size: 1.2rem;
+	}
+	.fs-1-3{
+		font-size: 1.4rem;
+	}
+	.fs-2-3{
+		font-size: 3rem;
+	}
+	.fs-2{
+		font-size: 3.6rem;
+	}
+	.fs-2-5{
+		font-size: 3.3rem;
+	}
+	.fs-1-8{
+		font-size: 2.3rem;
+	}
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.fs-07T{
+		font-size: .8rem;
+	}
+	.fs-07{
+		font-size: .8rem;
+	}
+	.fs-2{
+		font-size: 4rem;
+	}
+	.fs-2-5{
+		font-size: 4.2rem;
+	}
+	.overlay_grid{
+		display: grid;
+		grid-template-columns: 55% 35%;
+		height: 100%;
+		grid-column-gap: 10%;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+	.fs-07{
+		font-size: .8rem;
+	}
+	.fs-2{
+		font-size: 4.2rem;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+	
+}
+

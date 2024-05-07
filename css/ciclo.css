@@ -1,0 +1,562 @@
+/* Ciclo de vida */
+	.section_ciclo{
+		height: 100%;
+		background-image: url('../img/fondos/fondo_verde.png');
+		background-attachment: fixed;
+		background-size: 100%;
+		transition: all 2s ease;
+		position: relative;
+		 transition: all 1s ease;
+	}
+	.kaleidoscope{
+		z-index: 0;
+	}
+
+/* 1 */
+	.ciclo1{
+		height: 200vh;
+		position: relative;
+		/*border: solid red;*/
+	}
+	.ciclo1_aux1{
+		top: 50vh;
+		visibility: hidden;
+	}
+	.ciclo1_aux2{
+		top: 20vh;
+		visibility: hidden;
+	}
+	#nave_ciclo1{
+		position: absolute;
+		top: 0;
+		background-color: red;
+		visibility: hidden;
+	}
+	.ciclo1_container{
+		height: 100vh;
+		position: sticky;
+		top: 0;
+	}
+	.ciclo_texto_intro_div{
+		/*border: solid;*/
+		position: absolute;
+		width: 60%;
+		max-width: 700px;
+		left: 10%;
+		top: 95%;
+		height: 70vh;
+		padding-top: 5%;
+	}
+	.ciclo_texto_intro{
+		color: #fff;
+	}
+	.ciclo_texto_intro_titulo{
+		font-family: 'FilsonProBold', sans-serif;
+		line-height: 1;
+	}
+	.ciclo_texto_intro_p{
+		line-height: 1.4;
+		margin-bottom: .5rem;
+	}
+	.ciclo_texto_intro_lima{
+		text-transform: uppercase;
+		color: var(--lima);
+		letter-spacing: 2px;
+		margin-top: 2rem;
+	}
+	.ciclo1_mostrador{
+		position: absolute;
+		width: 120%;
+		bottom: 0;
+		left: -10%;
+	}
+
+/* 2 */
+	.ciclo2{
+		height: 600vh;
+		 /*border: solid var(--lima);*/
+		position: relative;
+	}
+	.ciclo2_container{
+		position: sticky;
+		top: 0;
+		/*border: 3px solid pink;*/
+		height: 100vh;
+		width: 100%;
+	}
+	.ciclo2_helper{
+		position: absolute;
+		bottom: 10%;
+		left: 12%;
+		text-align: center;
+	}
+	.ciclo2_helper_img{
+		width: 50px;
+	}
+	.ciclo2_helper p{
+		font-size: .7rem;
+		letter-spacing: .5px;
+		text-transform: uppercase;
+		color: #fff;
+		width: 150px;
+	}
+
+	/* texto */
+
+		.ciclo_texto{
+			position: absolute;
+			bottom: 5%;
+			color: #fff;
+			width: 70%;
+			/*border: solid;*/
+			left: 15%;
+			/*opacity: 0;*/
+		}
+		.ciclo_texto_p{
+			font-family: 'FilsonProBook', serif;
+			line-height: 1.5;
+			margin-bottom: 1rem;
+			letter-spacing: .4px;
+		}
+		.ciclo_texto_titulo{
+			text-transform: uppercase;
+			color: var(--lima);
+			letter-spacing: 1.5px;
+			font-family: 'FilsonProBold', serif;
+			margin-bottom: .5rem;
+		}
+		.ciclo_lima_abajo{
+			text-transform: uppercase;
+			color: var(--lima);
+			letter-spacing: 1.5px;
+			font-family: 'FilsonProBold', serif;
+			display: none;
+		}
+		.ciclo_texto_btn{
+			font-family: 'FilsonProBold', serif;
+			background-color: rgba(206,241,115,.19);
+			width: 70px;
+			display: block;
+			padding: 6px 8px;
+			border-radius: 2rem;
+			color: var(--lima);
+			letter-spacing: 1.5px;
+		}
+
+	/* Circulos */
+		.ciclo_circulo{
+			position: absolute;
+			width: 125%;
+			height: 125%;
+			left: -15%;
+			top: -15%;
+			/*transition: opacity 1s ease;*/
+		}
+
+		.circulo_grande{
+			position: absolute;
+			width: 124%;
+			height: 124%;
+			left: -12%;
+			top: -12%;
+			border: solid 15px var(--verdeDark);
+			border-radius: 50%;
+			border-left-color: transparent;
+			border-top-color: transparent;
+			transform: rotate(37deg);
+			/*background-color: cyan;*/
+		}
+
+		.circulo_grande2{
+			transform: rotate(-10deg);
+			/*transform: rotate(-143deg);*/
+			/*transition: all 2s ease;*/
+		}
+		.cls-1{fill:none;stroke:#d4ec6b;stroke-miterlimit:10;stroke-width:3px;stroke-dasharray:8 12;}
+		.cls-2,.cls-3,.cls-4{;fill:#fff;font-family:FilsonProRegular, Filson Pro;font-weight:500;}
+		.cls-2{opacity:0.43;}.cls-4{opacity:0.43;}
+
+		.kaleidos_div{
+			/*border: solid palegoldenrod;*/
+			width: 70vw;
+			height: 70vw;
+			margin: 0 auto;
+			margin-top: 8vh;
+			position: relative;
+			top: 10vh;
+		}
+		
+		.k_circle_1{
+			border: 25px solid var(--verdeDark);
+			opacity: 1;
+			width: 97%;
+			height: 97%;
+			border-radius: 100%;
+			transition: all 2s ease;
+			position: absolute;
+			top: 1.5%;
+			left: 1.5%;
+			background-color: var(--verde);
+
+		}
+		.k_circle_2{
+			position: absolute;
+			border: 35px solid var(--verde);
+			/*border: 35px solid pink;*/
+			width: 91%;
+			height: 91%;
+			border-radius: 100%;
+			top: 4.5%;
+			left: 4.5%;
+			z-index: 200;
+			transition: all 2s ease;
+			/*background-color: lightblue;*/
+			opacity: 0;
+
+		}
+		.k_circle_F3{
+			position: absolute;
+			border: 1px solid var(--lima);
+			border-radius: 100%;
+			top: 9%;
+			left: 9%;
+			z-index: 600;
+			width: 82%;
+			height: 82%;
+			transition: all 2s ease;
+		}
+		.k_circle_4{
+			position: absolute;
+			border: 1px solid var(--lima);
+			width: 90%;
+			height: 90%;
+			border-radius: 100%;
+			top: 5%;
+			left: 5%;
+			/*z-index: 600;*/
+			transition: all 2s ease;
+		}
+		.slices{
+			display: flex;
+		    position: absolute;
+		    top:5%;
+		    width: 90%;
+		    height: 90%;
+		    justify-content: center;
+		    /*border: solid;*/
+		    left: 5%;
+		}
+		.slice{
+			position: absolute;
+			height: 100%;
+			width: 1px;
+			background-color: var(--lima);
+		    z-index: 600;
+		}
+		.slice1{
+			transform: rotate(0deg);
+		}
+		.slice2{
+			transform: rotate(60deg);
+		}
+		.slice3{
+			transform: rotate(120deg);
+		}
+		.slice .span1{
+			width: 12px;
+			height: 12px;
+			border: 2px solid var(--lima);
+			position: absolute;
+			border-radius: 50%;
+			left: -6px;
+			top: 3.5%;
+		}
+		.slice .span2{
+			width: 12px;
+			height: 12px;
+			border: 2px solid var(--lima);
+			position: absolute;
+			border-radius: 50%;
+			left: -6px;
+			bottom: 3.5%;
+		}
+		@keyframes rotate {
+			0% {
+			-webkit-transform: rotate3d(0, 0, 1, 45deg);
+			transform: rotate3d(0, 0, 1, 45deg);
+			}
+			25% {
+			-webkit-transform: rotate3d(0, 0, 1, 90deg);
+			transform: rotate3d(0, 0, 1, 90deg);
+			}
+			50% {
+			-webkit-transform: rotate3d(0, 0, 1, 180deg);
+			transform: rotate3d(0, 0, 1, 180deg);
+			}
+			75% {
+			-webkit-transform: rotate3d(0, 0, 1, 270deg);
+			transform: rotate3d(0, 0, 1, 270deg);
+			}
+			100% {
+			-webkit-transform: rotate3d(0, 0, 1, 360deg);
+			transform: rotate3d(0, 0, 1, 360deg);
+			}
+		}
+		@keyframes rotate2 {
+			0% {
+			-webkit-transform: rotate3d(0, 0, 1, 0deg);
+			transform: rotate3d(0, 0, 1, 0deg);
+			}
+			25% {
+			-webkit-transform: rotate3d(0, 0, 1, 90deg);
+			transform: rotate3d(0, 0, 1, 90deg);
+			}
+			50% {
+			-webkit-transform: rotate3d(0, 0, 1, 180deg);
+			transform: rotate3d(0, 0, 1, 180deg);
+			}
+			75% {
+			-webkit-transform: rotate3d(0, 0, 1, 270deg);
+			transform: rotate3d(0, 0, 1, 270deg);
+			}
+			100% {
+			-webkit-transform: rotate3d(0, 0, 1, 360deg);
+			transform: rotate3d(0, 0, 1, 360deg);
+			}
+		}
+		.cuadro{
+			position: absolute;
+			top: 22%;
+			left: 22%;
+			width: 56.5%;
+			height: 56.5%;
+			background-color: var(--lima);
+			opacity: .21;
+		}
+		.cuadro1{
+	  		/*animation: rotate 8s normal linear infinite;*/
+	  		transform: rotate(45deg);
+		}
+		
+		.kaleidos_div button{
+			position: absolute;
+			background-color: transparent;
+			top: 45%;
+			width: 10%;
+			border: none;
+			transition: all .3s ease;
+			cursor: pointer;
+		}
+		.kaleidos_div button:hover{
+			transform: scale(1.1);
+		}
+		.kaleidos_div button img{
+			width: 100%;
+			transition: all 2s ease;
+		}
+		
+		.rotor_img{
+			position: absolute;
+			width: 135%;
+			height: 135%;
+			top: -17.5%;
+			left: -17.5%;
+			font-size: .8rem;
+			transform: rotate(50deg);
+			z-index: 200;
+		}
+		.rotor_img:hover{
+		}
+		
+
+		.sliceDashed {
+		  overflow: hidden;
+		  position: absolute;
+		  top: -4%; right: -4%;
+		  /*width: 52%; height: 52%;*/
+		  width: 54%;
+		  height: 54%;
+		  transform-origin: 0% 100%;
+		  z-index: 300;
+		  /*border: solid;*/
+		}
+		.sliceDashed:first-child {
+		  /*transform: rotate(15deg);*/
+		}
+		.slice-contents {
+		  position: absolute;
+		  left: -180%;
+		  width: 200%; height: 200%;
+		  top: 0%;
+		  border-radius: 50%;
+		  border: dashed 5px var(--lima);
+		}
+		
+		.slice:hover .slice-contents { background: red; } 
+
+		/* rotor hover */
+			.g_etapa:hover{
+				cursor: pointer;
+			}
+			
+		
+	/* Aux */
+		.ciclo_aux{
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			visibility: hidden;
+			background-color: cadetblue;
+		}
+		.ciclo_aux_fibra{
+			top: 70vh;
+		}
+		.ciclo_aux_dis{
+			top: 140vh;
+		}
+
+		.ciclo_aux_manufactura{
+			top: 210vh;
+		}
+		.ciclo_aux_logistica{
+			top: 280vh;
+		}
+
+		.ciclo_aux_uso{
+			top: 350vh;
+		}
+		.ciclo_aux_nuevavida{
+			top: 420vh;
+		}
+
+	
+
+
+@media (min-width: 576px) {
+	.kaleidos_div{
+		width: 70vw;
+		height: 70vw;
+		margin: 0 auto;
+		/*border: solid yellow;*/
+	}
+	.ciclo_texto_intro{
+		width: 80%;
+		left: 10%;
+		top: 35%;
+	}
+	
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.kaleidos_div{
+		/*border: solid red;*/
+		width: 60vw;
+		height: 60vw;
+		margin: 0 auto;
+		position: absolute;
+		left: 20vw;
+	}
+	.ciclo_texto{
+		bottom: 4px
+	}
+	.ciclo_texto_p{
+		margin-bottom: .5rem;
+	}
+	.ciclo_texto_btn{
+		width: 90px;
+		padding: 8px 12px;
+	}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.kaleidos_div{
+		/*border: solid blue;*/
+		width: 50vw;
+		height: 50vw;
+		margin: 0 auto;
+		position: absolute;
+		left: 25vw;
+	}
+	.circulo_grande{
+		border-width: 20px;
+	}
+	.ciclo_texto{
+		width: 30%;
+		position: absolute;
+		right: 0;
+		left: unset;
+	}
+	.ciclo_texto_p{
+		margin-bottom: .5rem;
+	}
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.kaleidos_div{
+		/*border: solid pink;*/
+		width: 32vw;
+		height: 32vw;
+		margin: 0 auto;
+		position: absolute;
+		left: 30vw;
+		top: 12%;
+	}
+	.ciclo_texto{
+		width: 30%;
+		position: absolute;
+		right: 1rem;
+		left: unset;
+		bottom: 5%;
+	}
+	.ciclo_texto_btn{
+		width: 100px;
+		padding: 7px 12px;
+	}
+	.ciclo_texto_intro{
+		width: 78%;
+		left: 12%;
+		top: 40%;
+		top: 125%;
+	}
+	
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.kaleidos_div{
+		/*border: solid purple;*/
+		width: 35vw;
+		height: 35vw;
+		margin: 0 auto;
+		position: absolute;
+		left: 30vw;
+	}
+	.ciclo_texto{
+		width: 450px;
+		position: absolute;
+		right: 5%;
+		left: unset;
+		bottom: 10%;
+	}
+	.ciclo_texto_p{
+		margin-bottom: 1rem;
+	}
+	.ciclo_texto_intro_div{
+		padding-top: 10%;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+	
+}
+

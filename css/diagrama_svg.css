@@ -1,0 +1,296 @@
+.diagrama_svg{
+    position: absolute;
+    height: 70%;
+    left: 10%;
+    bottom: 5%;
+    padding-right: 15rem;
+    display: block;
+    right: 10%;
+}
+.clx-1 {
+                                isolation: isolate;
+                              }
+
+                              .clx-2,
+                              .clx-27,
+                              .clx-3,
+                              .clx-30,
+                              .clx-31,
+                              .clx-35,
+                              .clx-7,
+                              .clx-8 {
+                                fill: none;
+                              }
+
+                              .clx-2,
+                              .clx-30,
+                              .clx-31,
+                              .clx-35 {
+                                stroke: #fff;
+                              }
+
+                              .clx-2,
+                              .clx-3,
+                              .clx-35,
+                              .clx-6,
+                              .clx-7 {
+                                stroke-miterlimit: 10;
+                              }
+
+                              .clx-2 {
+                                stroke-width: 0.75px;
+                              }
+
+                              .clx-27,
+                              .clx-3 {
+                                stroke: #cef173;
+                              }
+
+                              .clx-3,
+                              .clx-30,
+                              .clx-31,
+                              .clx-7,
+                              .clx-8 {
+                                stroke-width: 2px;
+                              }
+
+                              .clx-14,
+                              .clx-17,
+                              .clx-21,
+                              .clx-24,
+                              .clx-4 {
+                                font-size: 12px;
+                              }
+
+                              .clx-4,
+                              .clx-5,
+                              .clx-52,
+                              .clx-55 {
+                                fill: #cef173;
+                              }
+
+                              .clx-24,
+                              .clx-4,
+                              .clx-52,
+                              .clx-55 {
+                                font-family: FilsonPro-Black, Filson Pro;
+                                font-weight: 800;
+                              }
+
+                              .clx-6 {
+                                fill: #2c4c51;
+                              }
+
+                              .clx-6,
+                              .clx-7,
+                              .clx-8 {
+                                stroke: #2c4c51;
+                              }
+
+                              .clx-8 {
+                                stroke-linecap: round;
+                                stroke-linejoin: bevel;
+                                stroke-dasharray: 2;
+                              }
+
+                              .clx-36,
+                              .clx-52,
+                              .clx-9 {
+                                font-size: 18px;
+                              }
+
+                              .clx-14,
+                              .clx-17,
+                              .clx-21,
+                              .clx-24,
+                              .clx-33,
+                              .clx-36,
+                              .clx-9 {
+                                fill: #fff;
+                              }
+
+                              .clx-9 {
+                                font-family: FilsonPro-Regular, Filson Pro;
+                              }
+
+                              .clx-10 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-11 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-12 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-13 {
+                                letter-spacing: -0.03em;
+                              }
+
+                              .clx-14,
+                              .clx-17 {
+                                font-family: FilsonPro-Bold, Filson Pro;
+                                font-weight: 700;
+                              }
+
+                              .clx-14,
+                              .clx-20,
+                              .clx-21 {
+                                letter-spacing: 0.4em;
+                              }
+
+                              .clx-15 {
+                                letter-spacing: 0.37em;
+                              }
+
+                              .clx-16 {
+                                letter-spacing: 0.37em;
+                              }
+
+                              .clx-17 {
+                                letter-spacing: 0.4em;
+                              }
+
+                              .clx-18 {
+                                letter-spacing: 0.37em;
+                              }
+
+                              .clx-19 {
+                                letter-spacing: 0.39em;
+                              }
+
+                              .clx-21 {
+                                font-family: FilsonProBold;
+                              }
+
+                              .clx-22 {
+                                letter-spacing: 0.36em;
+                              }
+
+                              .clx-23 {
+                                letter-spacing: 0.39em;
+                              }
+
+                              .clx-25 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-26 {
+                                letter-spacing: -0.02em;
+                              }
+
+                              .clx-27 {
+                                stroke-width: 0.7px;
+                              }
+
+                              .clx-28 {
+                                opacity: 0.23;
+                              }
+
+                              .clx-29 {
+                                opacity: 0.68;
+                              }
+
+                              .clx-29,
+                              .clx-34 {
+                                mix-blend-mode: multiply;
+                              }
+
+                              .clx-31 {
+                                stroke-dasharray: 11.56 11.56;
+                              }
+
+                              .clx-32 {
+                                letter-spacing: -0.03em;
+                              }
+
+                              .clx-34 {
+                                opacity: 0.75;
+                              }
+
+                              .clx-35 {
+                                stroke-width: 0.5px;
+                              }
+
+                              .clx-36 {
+                                font-family: FilsonPro-Medium, Filson Pro;
+                                font-weight: 500;
+                              }
+
+                              .clx-37 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-38 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-39 {
+                                letter-spacing: -0.03em;
+                              }
+
+                              .clx-40 {
+                                letter-spacing: -0.03em;
+                              }
+
+                              .clx-41 {
+                                letter-spacing: -0.02em;
+                              }
+
+                              .clx-42 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-43 {
+                                letter-spacing: 0em;
+                              }
+
+                              .clx-44 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-45 {
+                                letter-spacing: 0em;
+                              }
+
+                              .clx-46 {
+                                letter-spacing: 0em;
+                              }
+
+                              .clx-47 {
+                                letter-spacing: -0.02em;
+                              }
+
+                              .clx-48 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-49 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-50 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-51 {
+                                letter-spacing: -0.02em;
+                              }
+
+                              .clx-53 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-54 {
+                                letter-spacing: -0.01em;
+                              }
+
+                              .clx-55 {
+                                font-size: 60px;
+                              }
+
+                              .clx-56 {
+                                letter-spacing: -0.03em;
+                              }

@@ -1,0 +1,15 @@
+.section_usoyman{
+	background-color: var(--naranja);
+}
+
+/* 1 */
+	.usoyman_1{
+		height: 100vh;
+		background-image: url('../img/usoYman/fondo_uso_y_man.png');
+		background-size: 90%;
+	}
+	.uym1_titulo{
+		display: none;
+		color: var(--lima);
+	}
+	

@@ -1,0 +1,80 @@
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: #cef173;
+  stroke-width: 1.5px;
+}
+text{
+	fill: #fff;
+}
+.node .textsm {
+  font-size: .85rem;
+  letter-spacing: .5px;
+  font-family: 'FilsonProMedium', sans-serif;
+  color: #fff;
+}
+.node .textxs{
+  font-family: 'FilsonProLight', serif;
+  font-size: .8rem;
+}
+
+.link {
+  fill: none;
+  stroke: #cef173;
+  stroke-width: 1.5px;
+}
+#radial_graph{
+	/*background-color: royalblue;*/
+	/*border: solid;*/
+  height: 85vh;
+
+}
+#radial_graph svg{
+  display: block;
+	/*border: solid blue;*/
+  margin: 0 auto;
+  height: 150%;
+  position: relative;
+  /*top: 60%;*/
+}
+#level1{
+	transform: rotate(-10deg) translateX(-130px) translateY(-18px);
+}
+#level2{
+	transform: rotate(0) translateX(-8px) translateY(-18px);
+}
+#level3{
+	transform: rotate(195deg) translateX(110px) translateY(-26px);
+}
+
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #radial_graph svg{
+  }
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  #radial_graph svg{
+    display: block;
+    /*border: solid blue;*/
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    /*top: 60%;*/
+  }
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+  
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+  
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animate Lines</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; background-color: blue;}
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+button {
+    top: 10px;
+    left: 10px;
+}
+.div_flex{
+    position: absolute;
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="div_flex">
+    <button id="animateToSanFrancisco">Animate to San Francisco</button>
+    <button id="animateToShandong1">Animate to Shandong Part 1</button>
+    <button id="animateToShandong2">Animate to Shandong Part 2</button>
+    <button id="animateToDaca">Animate to Daca</button>
+    <button id="animateToDacaToShandong">Animate Daca to Shandong</button>
+    <button id="animateToSF1">Animate to SF Part 1</button>
+    <button id="animateToSF2">Animate to SF Part 2</button>
+
+    <button  onclick="eraseLine(1)">Reverse ToSanFrancisco</button>
+    <button  onclick="eraseLine(2)">Reverse ToShandong</button>
+    <button  onclick="eraseLine(3)">Reverse ToShandong</button>
+    <button  onclick="eraseLine(40)">Reverse ToShandong</button>
+</div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW5hbGxlbHltdHpjIiwiYSI6ImNsdWkyajlyYzAwMGsyaW8xaHF0ODhrOTcifQ.a-49qQrQ7XlMxKMWxhnRMQ';
+
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/anallelymtzc/clup0oxpb03ks01qfeamh41v6',
+    center: [-110, 39],
+    zoom: 1.2,
+});
+let lineDrawn = false; // Initially, no line is drawn
+let currentFeatureIndex = null; // Keep track of the current line feature index
+
+
+const geojson = {
+    'type': 'FeatureCollection',
+    'features': [
+        {
+            'type': 'Feature',
+            'geometry': {
+                'type': 'LineString',
+                'coordinates': [] // Empty initially
+            }
+        }
+    ]
+};
+
+map.on('load', () => {
+    map.addSource('line', {
+        'type': 'geojson',
+        'data': geojson
+    });
+
+    map.addLayer({
+        'id': 'line-animation',
+        'type': 'line',
+        'source': 'line',
+        'layout': {
+            'line-cap': 'round',
+            'line-join': 'round'
+        },
+        'paint': {
+            'line-color': '#4444db',
+            'line-width': 3,
+            'line-opacity': 0.8,
+            'line-dasharray': [2, 1.5]
+        }
+    });
+});
+
+let lineIndices = [];
+
+function addNewLineFeature(startCoord, endCoord) {
+    const feature = {
+        'type': 'Feature',
+        'geometry': {
+            'type': 'LineString',
+            'coordinates': [startCoord, endCoord]
+        }
+    };
+    geojson.features.push(feature);
+    const featureIndex = geojson.features.length - 1;
+
+    // Track this new line's index
+    lineIndices.push(featureIndex);
+
+    return featureIndex;
+}
+
+
+function animateLine(featureIndex, endCoord, duration = 1000, callback) {
+    let startTimestamp = null;
+    const startCoord = geojson.features[featureIndex].geometry.coordinates[0];
+
+    function frame(timestamp) {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = (timestamp - startTimestamp) / duration;
+        const t = Math.min(progress, 1);
+        const currentCoord = [
+            startCoord[0] * (1 - t) + endCoord[0] * t,
+            startCoord[1] * (1 - t) + endCoord[1] * t
+        ];
+        geojson.features[featureIndex].geometry.coordinates = [startCoord, currentCoord];
+        map.getSource('line').setData(geojson);
+
+        if (t < 1) {
+            requestAnimationFrame(frame);
+        } else {
+            if (callback) callback(featureIndex); // Call the callback function when the animation is complete
+        }
+    }
+
+    requestAnimationFrame(frame);
+}
+
+// Updated erase function
+function eraseLine(featureIndex) {
+    // Remove the specified line from the geojson features
+    geojson.features.splice(featureIndex, 1, {
+        'type': 'Feature',
+        'geometry': {
+            'type': 'LineString',
+            'coordinates': [] // Replace it with an empty line
+        }
+    });
+
+    // Update the map
+    map.getSource('line').setData(geojson);
+
+    // Optionally, update lineIndices if you're tracking removed lines
+}
+
+
+
+// Button event listeners
+document.getElementById('animateToSanFrancisco').onclick = function() {
+    currentFeatureIndex = addNewLineFeature([-97.7431, 30.2672], [-122.4194, 37.7749]);
+    animateLine(currentFeatureIndex, [-122.4194, 37.7749], 1000, () => {
+    });
+};
+document.getElementById('animateToShandong1').onclick = function() {
+    const featureIndex = addNewLineFeature([-122.4194, 37.7749], [-180, 37.7749]);
+    animateLine(featureIndex, [-180, 37.7749]);
+    // this.disabled = true; // Disable the button after clicking
+};
+
+document.getElementById('animateToShandong2').onclick = function() {
+    const featureIndex = addNewLineFeature([180, 37.7749], [119.2791, 36.0671]);
+    animateLine(featureIndex, [119.2791, 36.0671]);
+    // this.disabled = true; // Disable the button after clicking
+};
+
+document.getElementById('animateToDaca').onclick = function() {
+    const featureIndex = addNewLineFeature([119.2791, 36.0671], [90.4125, 23.8103]);
+    animateLine(featureIndex, [90.4125, 23.8103]);
+    // this.disabled = true; // Disable the button after clicking
+};
+
+document.getElementById('animateToDacaToShandong').onclick = function() {
+    const featureIndex = addNewLineFeature([90.4125, 23.8103], [119.2791, 36.0671]);
+    animateLine(featureIndex, [119.2791, 36.0671]);
+    // this.disabled = true; // Disable the button after clicking
+};
+
+document.getElementById('animateToSF1').onclick = function() {
+    const featureIndex = addNewLineFeature([119.2791, 36.0671],[180, 37.7749]);
+    animateLine(featureIndex, [180, 37.7749]);
+    // this.disabled = true; // Disable the button after clicking
+};
+document.getElementById('animateToSF2').onclick = function() {
+    const featureIndex = addNewLineFeature( [-180, 37.7749],[-122.4194, 37.7749]);
+    animateLine(featureIndex, [-122.4194, 37.7749]);
+    // this.disabled = true; // Disable the button after clicking
+};
+
+// 
+document.getElementById('reverseToSanFrancisco').onclick = function() {
+    eraseLine(currentFeatureIndex, 1000, () => {
+        // Erase animation complete
+    });
+};
+document.getElementById('reverseToShandong1').onclick = function() {
+    eraseLine(currentFeatureIndex, 1000, () => {
+        // Erase animation complete
+    });
+};
+</script>
+</body>
+</html>

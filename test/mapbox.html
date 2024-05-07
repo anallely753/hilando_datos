@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animate Lines</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+button {
+    position: absolute;
+    margin: 20px;
+}
+#pause::after {
+    content: 'Pause';
+}
+#pause.pause::after {
+    content: 'Play';
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<button id="pause"></button>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW5hbGxlbHltdHpjIiwiYSI6ImNsdWkyajlyYzAwMGsyaW8xaHF0ODhrOTcifQ.a-49qQrQ7XlMxKMWxhnRMQ';
+
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/anallelymtzc/clup0oxpb03ks01qfeamh41v6',
+    center: [-110, 39],
+    zoom: 1.2,
+    projection: 'equalEarth'
+});
+
+// Create a GeoJSON source with two LineStrings.
+const geojson = {
+    'type': 'FeatureCollection',
+    'features': [
+        {
+            'type': 'Feature',
+            'geometry': {
+                'type': 'LineString',
+                'coordinates': [[-97.7431, 30.2672]] // Austin, Texas
+            }
+        },
+        
+    ]
+};
+
+let animation; // to store and cancel the animation
+let startTime = 0;
+let progress = 0; // progress = timestamp - startTime
+let resetTime = false; // indicator of whether time reset is needed for the animation
+const pauseButton = document.getElementById('pause');
+
+map.on('load', () => {
+    map.addSource('line', {
+        'type': 'geojson',
+        'data': geojson
+    });
+
+    map.addLayer({
+        'id': 'line-animation',
+        'type': 'line',
+        'source': 'line',
+        'layout': {
+            'line-cap': 'round',
+            'line-join': 'round'
+        },
+        'paint': {
+            'line-color': '#ed6498',
+            'line-width': 5,
+            'line-opacity': 0.8
+        }
+    });
+
+    startTime = performance.now();
+
+    pauseButton.addEventListener('click', () => {
+        pauseButton.classList.toggle('pause');
+        if (pauseButton.classList.contains('pause')) {
+            cancelAnimationFrame(animateLineToSanFrancisco);
+        } else {
+            resetTime = true;
+            requestAnimationFrame(animateLineToSanFrancisco); // Updated to the correct function call
+        }
+    });
+
+    document.addEventListener('visibilitychange', () => {
+        resetTime = true;
+    });
+
+    // ... (rest of your HTML and initial JavaScript setup)
+
+    function animateLineToSanFrancisco(timestamp) {
+        
+
+        progress = timestamp - startTime;
+        const duration = 1000; // Duration for the first animation
+        const t = Math.min((progress % duration) / duration, 1);
+
+        const start = [-97.7431, 30.2672]; // Austin, Texas
+        const end = [-122.4194, 37.7749]; // San Francisco, California
+        
+        const x = start[0] * (1 - t) + end[0] * t;
+        const y = start[1] * (1 - t) + end[1] * t;
+        
+        geojson.features[0].geometry.coordinates = [start, [x, y]]; // Update the first feature
+        
+        map.getSource('line').setData(geojson);
+
+        requestAnimationFrame(animateLineToSanFrancisco)
+        
+        
+    }
+
+    function animateLineToShandong1(timestamp) {
+        
+        progress = timestamp - startTime;
+
+        const duration = 1000; // Duration for the first animation
+        const t = Math.min((progress % duration) / duration, 1);
+
+        const start = [-122.4194, 37.7749]; // Austin, Texas
+        const end = [-180, 37.7749]; // San Francisco, California
+        
+        const x = start[0] * (1 - t) + end[0] * t;
+        const y = start[1] * (1 - t) + end[1] * t;
+        
+        geojson.features[0].geometry.coordinates = [start, [x, y]]; // Update the first feature
+        
+        map.getSource('line').setData(geojson);
+        requestAnimationFrame(animateLineToShandong1);
+      
+    }
+      
+    function animateLineToShandong2(timestamp) {
+        if (resetTime) {
+            startTime = performance.now() - progress;
+            resetTime = false;
+        } else {
+            progress = timestamp - startTime;
+        }
+
+        const duration = 1000; // Duration for the first animation
+        const t = Math.min((progress % duration) / duration, 1);
+
+        const start = [180, 37.7749]; // Austin, Texas
+        const end = [119.2791, 36.0671]; // San Francisco, California
+        
+        const x = start[0] * (1 - t) + end[0] * t;
+        const y = start[1] * (1 - t) + end[1] * t;
+        
+        geojson.features[0].geometry.coordinates = [start, [x, y]]; // Update the first feature
+        
+        map.getSource('line').setData(geojson);
+        
+        if (t < 1) {
+            animation = requestAnimationFrame(animateLineToShandong2);
+        } else {
+            resetAnimation();
+            requestAnimationFrame(animateLineToDaca);
+        }
+    }
+    // Start the first animation from San Francisco off the screen
+
+    function animateLineToDaca(timestamp) {
+        if (resetTime) {
+            startTime = performance.now() - progress;
+            resetTime = false;
+        } else {
+            progress = timestamp - startTime;
+        }
+
+        const duration = 1000; // Duration for the first animation
+        const t = Math.min((progress % duration) / duration, 1);
+
+        const start = [119.2791, 36.0671]; // Austin, Texas
+        const end = [90.4125, 23.8103]; // San Francisco, California
+        
+        const x = start[0] * (1 - t) + end[0] * t;
+        const y = start[1] * (1 - t) + end[1] * t;
+        
+        geojson.features[0].geometry.coordinates = [start, [x, y]]; // Update the first feature
+        
+        map.getSource('line').setData(geojson);
+        
+        if (t < 1) {
+            animation = requestAnimationFrame(animateLineToDaca);
+        } else {
+           resetAnimation();
+        }
+    }
+    
+    function resetAnimation() {
+        resetTime = true;
+        progress = 0;
+        // Clear the previous line's coordinates for a fresh start
+        geojson.features[0].geometry.coordinates = [];
+    }
+    
+    
+    
+    requestAnimationFrame(animateLineToSanFrancisco);
+
+});
+</script>
+
+</body>
+</html>

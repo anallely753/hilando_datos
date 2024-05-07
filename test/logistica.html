@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hilando Datos</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<link rel="shortcut icon" href="./img/portada/gota.svg">
+	<link rel="stylesheet" href="./css/animation.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/portada.css">
+	<link rel="stylesheet" href="./css/portada_pregunta.css">
+	<link rel="stylesheet" href="./css/intro.css">
+	<link rel="stylesheet" href="./css/kaleidoscope.css">
+	<link rel="stylesheet" href="./css/ciclo.css">
+	<link rel="stylesheet" href="./css/produccion.css">
+	<link rel="stylesheet" href="./css/grafica-produccion.css">
+	<link rel="stylesheet" href="./css/diseno.css">
+	<link rel="stylesheet" href="./css/logistica.css">
+	
+
+	
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+	<link rel="stylesheet" href="./css/mapscroll.css">
+
+</head>
+<body>
+	
+	<main>
+		
+	
+	<section class="section_logistica">
+		<div class="section_logistica_div logistica1">
+			<div class="log1_texto">
+				<h2 class="log1_titulo fs-2-5">Logística y distribución</h2>
+				<p class="fs-09TT">Para esta etapa se realizó un análisis de la contaminación que ocasionan diversos medios de transporte a través de indicadores como energía consumida y emisiones CO2</p>
+				<br>
+				<p class="fs-09TT">Los mapas del trayecto refleja el trancurso de una prenda en una ruta internacinonal y el segundo una ruta local, ambas muestran el transcurso desde la fabricación hasta el aparador.</p>
+			</div>
+		</div>
+		<div class="section_logistica_div logistica2">
+			<div class="log2_texto">
+				<h2 class="log2_titulo fs-2-3">Ejercicio de simulación</h2>
+				<p class="fs-09TT">Haremos un ejercicio que nos permita ver cual es el impacto que se genera al trasladar una playera de algodón. Por un lado en una ruta internacional y por otro, una ruta local.</p>
+			</div>
+			<img src="./img/logistica/van.png" alt="" class="log2_van">
+			
+		</div>
+			
+		
+			
+		<div class="logistica3_map">
+			<div class="section_logistica_div  logistica3">
+				<div class="log3_texto">
+					<h2 class="log3_titulo fs-2-3 texto_log3">Ruta internacional</h2>
+					<p class="fs-09T texto_log3">Las marcas de moda trasnacionales, suelen llevar a cabo rutas que recorren grandes distancias a través del mundo que va desde el lugar donde se produce la materia prima hasta la distribución de la prenda confeccionada.</p>
+				</div>
+				<div class="ruta_internacional">
+					<img class="ruta_internacional_img" src="./img/logistica/globo_internacional.png" alt="">
+				</div>
+				<p class="log3_texto_abajo fs-09T texto_log3">Aquí tienes un ejemplo de un análisis que se realizó a partir de una ruta simulatoria de el país que consume más ropa a nivel mundial</p>
+			</div>
+			<div class="log3_aux_int" id="log3_auxTexas">texas</div>
+			<div class="log3_aux_int" id="log3_auxSF1">SF</div>
+			<div class="log3_aux_int" id="log3_auxSH1">SH1</div>
+			<div class="log3_aux_int" id="log3_auxDaca">Daca</div>
+			<div class="log3_aux_int" id="log3_auxSH2">SH2</div>
+			<div class="log3_aux_int" id="log3_auxSF2">SF2</div>
+
+			<div class="section_map">
+				<div id="map">
+					<div id="log3_indicadores" class="log3_indicadores">
+						<p class="fs-09TT log3_indicadores_title">Indicadores de contaminación</p>
+						<div class="log3_indicadores_div">
+							<img src="./img/logistica/km.png" alt="">
+							<div>
+								<p class="fs-08">Distancia</p>
+								<p  class="fs-09T log3_indicadores_variable"><span id="log3_distancia">0 </span> KM</p>
+							</div>
+						</div>
+						<div class="log3_indicadores_div">
+							<img src="./img/logistica/energia_consumida.png" alt="">
+							<div>
+								<p class="fs-08">Energía consumida</p>
+								<p  class="fs-09T log3_indicadores_variable"><span id="log3_energia">0 </span> MG</p>
+							</div>
+						</div>
+						<div class="log3_indicadores_div">
+							<img src="./img/logistica/nube_emision.png" alt="">
+							<div>
+								<p class="fs-08">Emisión de CO2</p>
+								<p  class="fs-09T log3_indicadores_variable"><span id="log3_co2">0 </span> T</p>
+							</div>
+						</div>
+					</div>
+					<div class="log3_info_abajo">
+						<div id="log3_medio" class="log3_medio">
+							<p class="fs-09T log3_info_abajo_title">Medios de transporte</p>
+							<img class="log3_img_medios" src="./img/logistica/van.png" alt="" id="log3_img_medios">
+						</div>
+						<div id="log3_co2_toneladas" class="log3_co2_toneladas">
+							<p class="fs-09T log3_info_abajo_title">CO2 <span class="fs-07">(toneladas)</span></p>
+							<div class="log3_co2_toneladas_div log3_co2_alto">
+								<span></span>
+								<p class="fs-07">Alto: 20-30</p>
+								
+							</div>
+							<div class="log3_co2_toneladas_div log3_co2_medio">
+								<span></span>
+								<p class="fs-07">Medio: 10-20</p>
+							</div>
+							<div class="log3_co2_toneladas_div log3_co2_bajo">
+								<span></span>
+								<p class="fs-07">Bajo: 0-10</p>
+							</div>
+						</div>
+						<div id="log3_energia_megajulios" class="log3_energia_megajulios">
+							<p class="fs-09T log3_info_abajo_title">Energía <span class="fs-07">(megajulios)</span></p>
+							<img class="log3_img_mega" src="./img/logistica/mega_julios.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="mapInset"></div>
+				<div id="story"></div>
+
+
+			</div>
+			
+		</div>
+		<div class="section_logistica_div logistica4">
+			
+			<div class="log4_texto">
+				<h2 class="log4_titulo fs-2-3">Ruta local</h2>
+				<p class="fs-09T">A diferencia de las marcas trasnacionales, los diseñadores de moda que no producen a gran escala, manejan otra lógica muy distinta.</p>
+				<p>Como ejemplo para este ejercicio, se tomará la ruta que lleva a cabo Jorge, un diseñador de moda mexicano quien se ha interesado en el mundo del upcycling.</p>
+			</div>
+			<p class="log4_texto_abajo fs-09T">Por otro lado se tomó esta ruta basados en la marca dennjs, basada en México</p>
+		</div>
+		<div class="section_logistica_div logistica5">
+			<div class="log5_texto">
+				<h2 class="log5_titulo fs-2-3">Resultados</h2>
+				<p class="fs-09T">Aquí te mostramos la comparativa de estas dos rutas, como te darás cuenta el impacto generado en cada una de ellas es evidentemente distinto.</p>
+			</div>
+		</div>
+		<div class="section_logistica_div logistica6">
+			<div class="log6_playeras">
+				<div class="log6_playeras_tubo"></div>
+				<img class="log6_playeras_img" src="./img/logistica/playeras5.png" alt="">
+			</div>
+			<p class="log6_texto fs-09T">Hay un sin fin de marcas que seguramente puedes encontrar en el lugar donde vives, y tienen iniciativas sostenibles o circulares, en las siguientes etapas te brindaremos un par de alternativas para que puedas adquirir productos desde tu localidad</p>
+		</div>
+	</section>
+	
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script> 
+
+
+<script src="js/config.js"></script>
+<script src="js/mapscroll.js"></script>
+<script src="./js/gsap-logistica.js"></script>
+
+</body>
+</html>
