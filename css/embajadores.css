@@ -1,18 +1,16 @@
 .section_embajadores{
-	height: 300vh;
+	height: 450vh;
 	background-image: url('../img/fondos/fondo_verde.png');
 	background-attachment: fixed;
 	background-size: 100%;
 	position: relative;
-	/*border: solid #fff;*/
 }
 .embajadores_container{
-	height: 200vh;
+	height: 100vh;
 	min-height: 800px;
 	position: sticky;
 	top: 0;
 	color: #fff;
-	/*border: solid white;*/
 }
 .aux_emb{
 	position: absolute;
@@ -25,13 +23,20 @@
 	top: 50vh;
 }
 .auxemb2{
-	top: 100vh;
+	top: 150vh;
+}
+.auxemb3{
+	top: 270vh;
 }
 .embajadores_texto{
 	position: relative;
-	margin-top: 4%;
 	padding-left: 10%;
-	/*border: solid yellow;*/
+	height: 20vh;
+	/*border: solid red;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	top: 120%;
 }
 .embajadores_title{
 	font-family: 'FilsonProBold', sans-serif;
@@ -46,44 +51,56 @@
 /* Influencers */
 	.embajadores_influencers{
 		position: relative;
+		/*border: solid lightblue;*/
+		width: 176.5vw;
+		min-width: 900px;
+		height: 75vh;
+		top: 100%;
+		left: 0;
+		/*left: -66%;*/
 	}
-	.influencer1{
-		padding:0 10%;
+	.influencers_grid{
+		/*border: solid yellow;*/
 		display: grid;
-		grid-template-columns: repeat(3, 33.3333%);
-		/*border: solid pink;*/
-		justify-content: space-evenly;
+		height: 75vh;
+		grid-template-columns: repeat(5, 17.7%); 
+		align-items: center;
+		padding: 0 5%;
 	}
-	.influencer2{
-		padding:0 20%;
-		display: grid;
-		grid-template-columns: repeat(2,50%);
-		/*border: solid pink;*/
-		justify-content: space-around;
-		margin-top: 5%;
-	}
+	
 	.influencer_foto_div{
-		/*border: solid red;*/
+		position: relative;
+		/*border: solid violet;*/
 		display: grid;
-		justify-content: center;
-		grid-template-rows: 64% 12% 12% 12%;
-		height: 380px;
-		flex-direction: column;
-		text-align: center;
-		margin-top: 1rem;
-	}
-
-	.influencer_foto{
 		height: 100%;
+		grid-template-rows: 70% 30%;
+	}
+	.influencer_foto_div_img{
+		width: 45%;
+		/*border: solid;*/
+		align-self: flex-end;
+		margin: 0 auto;
+	}
+	.influencer_foto{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.influencer_texto{
+		/*border: solid;*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.influencer_nombre{
 		border: solid var(--lima) 2px;
 		border-radius: 2rem;
-		width: 100%;
+		width: max-content;
+		padding: .5rem 2rem;
+		min-width: 15vw;
 		margin: 0 auto;
 		text-align: center;
 		color: var(--lima);
-		padding: .5rem;
 		margin-bottom: .5rem;
 	}
 	.influencer_info{
@@ -102,6 +119,8 @@
 		cursor: pointer;
 		margin: 0 .5rem;
 	}
+	
+
 
 
 
@@ -117,15 +136,7 @@
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-	.influencer_foto_div{
-		display: grid;
-		justify-content: center;
-		grid-template-rows: 64% 12% 12% 12%;
-		height: 600px;
-		flex-direction: column;
-		text-align: center;
-		margin-top: 2rem;
-	}
+	
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/

@@ -49,7 +49,6 @@ const intro1 = gsap.timeline({
     duration: totalScrollDuration * 0.1
   },'<');
   intro1.to('.ovalo1', {
-    zIndex:'55',
     duration: totalScrollDuration * 0.1
   },'<');
   intro1.to('.intro1_planeta_ballena', {
@@ -479,11 +478,14 @@ const intro4 = gsap.timeline({
       duration: totalScrollDuration4 * 0.1
 
   },'<');
-  intro4.to('.intro4_agua, .intro4_verde', {
-    right:'-0.5%',
+  intro4.to('.intro4_agua', {
+    right:'-1%',
       duration: totalScrollDuration4 * 0.1
-
   });
+   intro4.to('.intro4_verde', {
+    right:'0%',
+      duration: totalScrollDuration4 * 0.1
+  },'<');
   intro4.to('.intro4_del_agua, .intro4_texto', {
     opacity:'1',
       duration: totalScrollDuration4 * 0.1

@@ -1,4 +1,24 @@
+let contenidoNavegador = ''
 
+window.addEventListener('load', function() {
+    document.querySelector("#loader").style.top = "-100vh";
+    document.querySelector(".not_loader").style.visibility = "visible";
+    document.querySelector(".navegador").style.opacity = "0";
+    contenidoNavegador = ''
+});
+
+//  document.onreadystatechange = function() {
+//     if (document.readyState !== "complete") {
+//         document.querySelector("body").style.visibility = "hidden";
+//         alert('loading')
+
+//         // document.querySelector("#loader").style.visibility = "visible";
+//     } else {
+//         // document.querySelector("#loader").style.display = "none";
+//         alert('complete')
+//         document.querySelector("body").style.visibility = "visible";
+//     }
+// };
 // // Efecto para que la gota se vea que caiga un poco antes de hacerse grande
 // function handleScroll() {
 //   const portada_pregunta = document.getElementById('portada_pregunta_sticky');
@@ -47,7 +67,7 @@
 //     }
 //   });
 
- 
+
 
 // });
 

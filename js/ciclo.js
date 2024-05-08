@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".ciclo_circulo").src = "./img/ciclo/ciclo_de_vida.png";
 
         document.querySelector('.ciclo_texto_titulo').innerText = 'Producción de Fibra';
-        document.querySelector('.ciclo_texto_p').innerText = 'En un inicio es esencial decidir que tipo de fibra existen realizamos un análisis acerca de las fibras más producidas y de las principales su impacto ambiental';
+        document.querySelector('.ciclo_texto_p').innerText = 'De inicio, es fundamental entender los diferentes tipos de fibras disponibles. Realizamos un análisis detallado de las fibras más producidas y su principal impacto ambiental.';
 
     } else if (isElementVisible(ciclo_aux_dis)){
         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura-azul.png)';

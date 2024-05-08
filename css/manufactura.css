@@ -176,6 +176,10 @@
 		color: var(--azul);
 		margin-top: .5rem;
 	}
+	.text_azul_ejemplo{
+		font-family: 'FilsonProBold';
+		margin-bottom: .5rem;
+	}
 	.man3_fondo{
 		position: absolute;
 		bottom: -2%;

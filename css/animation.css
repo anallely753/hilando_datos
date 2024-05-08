@@ -124,7 +124,18 @@
     transform: translatey(0px);
   }
 }
-@keyframes vibrate-1 {
+
+@keyframes float3 {
+  0% {
+    transform: translatey(0px) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(10px) translateX(-8px) rotate(-45deg);
+  }
+  100% {
+    transform: translatey(0px) rotate(-45deg);
+  }
+}@keyframes vibrate-1 {
   0% {
     -webkit-transform: translate(0);
             transform: translate(0);

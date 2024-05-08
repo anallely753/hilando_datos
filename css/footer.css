@@ -4,16 +4,10 @@
 	background-size: 100%;
 	position: relative;
 	width: 100%;
+	height: 100%;
 }
 
-.footer1_container{
-	width: 100%;
-	height: 100vh;
-	min-height: 800px;
-	position: sticky;
-	top: 0;
-	color: #fff;
-}
+
 .aux_footer{
 	position: absolute;
 	width: 50px;
@@ -28,9 +22,25 @@
 	top: 100vh;
 }
 
-/*gracias*/
+.aux_footer3{
+	top: 150vh;
+}
 
+/*gracias*/
+	
 	.gracias_container{
+		height: 300vh;
+		position: relative;
+		/*border: solid orange;*/
+	}
+	.aux_gracias1{
+		top: 50vh;
+	}
+	.aux_gracias2{
+		top: 120vh;
+	}
+	.gracias_container_sticky{
+		overflow: hidden;
 		height: 100vh;
 		min-height: 600px;
 		display: flex;
@@ -40,6 +50,13 @@
 		color: var(--verde);
 		text-align: center;
 		position: relative;
+		/*border: solid blue;*/
+		position: sticky;
+		top: 0;
+	}
+	.gracias{
+		position: relative;
+		top: 100%;
 	}
 	.gracias_titulo{
 		width: 70%;
@@ -58,23 +75,38 @@
 	}
 	.linea_corazon{
 		width: 40%;
-		top: -15%;
+		top: -115%;
 		left: 12%;
 	}
 	.linea_footer2{
 		width: 40%;
 		bottom: -15%;
-		right: -6%;
+		right: -66%;
 	}
 
 /* 1 */
+	.footer1_container{
+		position: relative;
+		height: 300vh;
+	}
+	.footer1_container_sticky{
+		width: 100%;
+		height: 100vh;
+		min-height: 600px;
+		position: sticky;
+		top: 0;
+		color: #fff;
+	}
 	.footer1{
 		display: grid;
 		grid-template-columns: 65% 35%;
 		height: 75%;
 		padding: 5%;
+		position: relative;
+		/*top: 100%;*/
 		/*border: solid;*/
 	}
+
 
 	/* 1 1 */
 		.footer1_col1{
@@ -82,6 +114,8 @@
 			flex-direction: column;
 			justify-content: center;
 			align-content: center;
+			position: relative;
+			top: 110vh;
 		}
 		.footer_logo{
 			width: 80%;
@@ -108,6 +142,8 @@
 			grid-column-gap: 5%;
 			color: var(--verde);
 			align-items: flex-end;
+			position: relative;
+			top: 110vh;
 		}
 		.footer1_col2_div{
 			height: 100%;
@@ -133,6 +169,8 @@
 		padding: 2rem 5%;
 		color: var(--verde);
 		text-transform: uppercase;
+		position: relative;
+		top: 100%;
 	}
 	/* 2 1 */
 		.footer2_col1{

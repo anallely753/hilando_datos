@@ -17,7 +17,7 @@ var config4 = {
             alignment: 'left',
             hidden: false,
             title: 'Tepito',
-            description: 'El punto de inicio de este proceso, se encuentra en Tepito, en la Ciudad de México. Aquí el diseñador  se da a la tarea de buscar entre la ropa de paca, aquellas prendas que le parezcan más interesantes para reciclar.',
+            description: 'El punto de inicio de este proceso se encuentra en Tepito, en la Ciudad de México. Aquí el diseñador se da a la tarea de buscar entre la ropa de paca, aquellas prendas que le parezcan más interesantes para reciclar.',
             location: {
                 center: [-99.1283, 19.44],
                 zoom: 12,
@@ -38,7 +38,7 @@ var config4 = {
             alignment: 'left',
             hidden: false,
             title: 'Tepito - Centro',
-            description: 'Posteriormente se dirige al centro de la ciudad de México donde se concentra la mayo parte de materiales de confección.',
+            description: 'Luego se dirige al Centro de la Ciudad de México, donde se concentra la mayor parte de materiales de confección.',
             location: {
                 center: [-99.1373,19.43],
                 zoom: 12,
@@ -61,7 +61,7 @@ var config4 = {
             alignment: 'left',
             hidden: false,
             title: 'Centro - Iztapalapa',
-            description: 'Una vez que ha adquirido el material necesario, va hacia su taller, en Iztapalapa, donde diseña y cofecciona la prenda.',
+            description: 'Una vez que ha adquirido el material necesario va hacia su taller en Iztapalapa, donde diseña y confecciona la prenda.',
             location: {
                 center: [-99.0799, 19.3467],
                 zoom: 12,
@@ -80,7 +80,7 @@ var config4 = {
             alignment: 'left',
             hidden: false,
             title: 'Iztapalapa - Insurgentes',
-            description: 'Finalmente como último punto, se traslada a Insurgentes, lugar donde vende las prendas queél mismo ha rescatado y transformado',
+            description: 'Finalmente se traslada a Insurgentes, lugar donde vende las prendas que él mismo ha rescatado y transformado.',
             location: {
                 center: [-99.1633, 19.4236],
                 zoom: 12,

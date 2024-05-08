@@ -704,6 +704,19 @@
 		padding: 2rem 0;
 		margin-top: 5%;
 	}
+	.nv5_azul{
+		color: #fff;
+		border-radius: 1.2rem;
+		padding: 2rem 2rem;
+		position: absolute;
+		width: 60%;
+		background-color: var(--azul);
+		text-align: center;
+		left: 20%;
+		bottom: 10%;
+		/*bottom: -85%;*/
+		opacity: 0;
+	}
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/

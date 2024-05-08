@@ -182,43 +182,42 @@ main{
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 		font-size: .8rem;
-		font-family: FilsonProRegular, sans-serif;
+		font-family: FilsonProMedium, sans-serif;
 		border: none;
 		z-index: 100;
 	}
 	
-
+	/* Botones en blanco */
 	.portada_btn_hilando.btn_hilando_blanco{
 		color: #fff;
 		background-color: rgba(255, 255, 255, .1);
-	}
-	.portada_btn_hilando.btn_hilando_negro img{
-		filter: invert(0%);
 	}
 	.portada_btn_contacto.btn_contacto_blanco{
 		background-color: rgba(255, 255, 255, .1);
 		color: #fff !important;
 	}
+	.portada_btn-xdata.btn_xdata_blanco img{
+		filter: invert(0%) !important;
+	}
+	.portada_btn_hilando.btn_hilando_blanco img{
+		filter: invert(0%) !important;
+	}
 
+	/* Botones en negro */
 	.portada_btn_hilando.btn_hilando_negro{
-		color: #2c4c51;
+		color: #242424;
 		background-color: rgba(44, 76, 81, .1);
 	}
-	.portada_btn_hilando.btn_hilando_negro img{
-		filter: invert(80%) !important;
-	}
-
 	.portada_btn_contacto.btn_contacto_negro{
-		color: #2c4c51 !important;
+		color: #242424 !important;
 		background-color: rgba(44, 76, 81, .1);
 	}
 	.portada_btn-xdata.btn_xdata_negro img{
 		filter: invert(80%) !important;
 	}
-	.portada_btn-xdata.btn_xdata_blanco img{
-		filter: invert(0%) !important;
+	.portada_btn_hilando.btn_hilando_negro img{
+		filter: invert(80%) !important;
 	}
-
 
 	.btn-main img{
 		height: 100%;

@@ -85,6 +85,9 @@
 		/*left: 150vh;*/
 		top: 100%;
 	}
+	.p_negrita{
+		font-family: 'FilsonProBold';
+	}
 	.log2_titulo{
 		color: var(--azul);
 		margin-bottom: 1.2rem;
