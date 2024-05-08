@@ -128,7 +128,7 @@
 		width: 68%;
 	}
 	.portada_pregunta{
-		border: solid lightblue;
+		/*border: solid lightblue;*/
 	}
 }
 
@@ -139,7 +139,7 @@
 		width: 23rem;
 	}
 	.portada_pregunta{
-		border: solid violet;
+		/*border: solid violet;*/
 	}
 }
 

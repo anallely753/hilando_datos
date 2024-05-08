@@ -677,47 +677,47 @@ function navAzul(){
       },
     });
 
-    const gsapNavLog3 = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.log3_container',  
-        start: 'top bottom',
-        end: 'top bottom',
-        markers: false,
-         onEnter: navAzul,
-        onEnterBack: navAzul, 
-         onUpdate: function(){
-          contenidoNavegador = 'logística';
-          navTextoId.textContent=contenidoNavegador;
+    // const gsapNavLog3 = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: '.log3_container',  
+    //     start: 'top bottom',
+    //     end: 'top bottom',
+    //     markers: false,
+    //      onEnter: navAzul,
+    //     onEnterBack: navAzul, 
+    //      onUpdate: function(){
+    //       contenidoNavegador = 'logística';
+    //       navTextoId.textContent=contenidoNavegador;
 
-           elements.forEach(element => {
-                element.style.backgroundColor='transparent';
-            });
-            navegador6.style.backgroundColor='var(--azul)';
-        },
+    //        elements.forEach(element => {
+    //             element.style.backgroundColor='transparent';
+    //         });
+    //         navegador6.style.backgroundColor='var(--azul)';
+    //     },
        
-      },
-    });
+    //   },
+    // });
 
-    const gsapNavLog4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.log4_container',  
-        start: 'top bottom',
-        end: 'top bottom',
-        markers: false, 
-        onEnter: navAzul,
-        onEnterBack: navAzul,
-         onUpdate: function(){
-          contenidoNavegador = 'logística';
-          navTextoId.textContent=contenidoNavegador;
+    // const gsapNavLog4 = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: '.log4_container',  
+    //     start: 'top bottom',
+    //     end: 'top bottom',
+    //     markers: true, 
+    //     onEnter: navAzul,
+    //     onEnterBack: navAzul,
+    //      onUpdate: function(){
+    //       contenidoNavegador = 'logística24';
+    //       navTextoId.textContent=contenidoNavegador;
 
-           elements.forEach(element => {
-                element.style.backgroundColor='transparent';
-            });
-            navegador6.style.backgroundColor='var(--azul)';
-        },
+    //        elements.forEach(element => {
+    //             element.style.backgroundColor='transparent';
+    //         });
+    //         navegador6.style.backgroundColor='var(--azul)';
+    //     },
         
-      },
-    });
+    //   },
+    // });
 
     const gsapNavLog5 = gsap.timeline({
       scrollTrigger: {
