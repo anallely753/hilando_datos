@@ -683,11 +683,27 @@ function navBotonOscuro(){
                  opacity:1,
                },);
 
+
+  // Gracias
+     const gsapNavBotonesGracias1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.gracias_container',  
+        start: 'top bottom',
+        end: 'top top',
+        markers: false, 
+         onEnter: navBotonOscuro,
+        onEnterBack: navBotonOscuro,
+      },
+    });
+    gsapNavBotonesGracias1.to('.portada_btn-xdata img', {
+      opacity:1,
+    },);
+
   // Footer
      const gsapNavBotonesFooter1 = gsap.timeline({
       scrollTrigger: {
-        trigger: '.section_footer',  
-        start: 'top bottom',
+        trigger: '.footer1_container',  
+        start: 'top center',
         end: 'top top',
         markers: false, 
          onEnter: navBotonClaro,

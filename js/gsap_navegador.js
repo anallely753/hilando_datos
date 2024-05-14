@@ -83,8 +83,11 @@ function navAzul(){
   });
   gsapIntro.to('.navegador', {
     opacity:1,
-  },);
 
+  },);
+  gsapIntro.to('.skip_intro', {
+      visibility:'visible',
+  },);
 
   // Intro
 
@@ -108,6 +111,9 @@ function navAzul(){
         },
       },
     });
+    gsapIntro2.to('.skip_intro', {
+      visibility:'visible',
+    },);
     
 
 
@@ -130,6 +136,9 @@ function navAzul(){
         },
       },
     });
+    gsapIntro3.to('.skip_intro', {
+      visibility:'visible',
+    },);
    
 
     const gsapIntro4 = gsap.timeline({
@@ -153,6 +162,9 @@ function navAzul(){
         },
       },
     });
+    gsapIntro4.to('.skip_intro', {
+      visibility:'visible',
+    },);
     
 
     const gsapIntro5 = gsap.timeline({
@@ -179,6 +191,9 @@ function navAzul(){
      gsapIntro5.to('.navegador1', {
       backgroundColor:'var(--lima)'
     },);
+     gsapIntro5.to('.skip_intro', {
+      visibility:'visible',
+    },);
 
 
 
@@ -202,6 +217,9 @@ function navAzul(){
         },
       },
     });
+    gsapIntro6.to('.skip_intro', {
+      visibility:'hidden',
+    },);
     
 
     const gsapIntro7 = gsap.timeline({
@@ -225,6 +243,9 @@ function navAzul(){
         },
       },
     });
+    gsapIntro7.to('.skip_intro', {
+      visibility:'hidden',
+    },);
 
 
   // Ciclo de vida
@@ -389,7 +410,7 @@ function navAzul(){
         onEnter: navLima,
         onEnterBack: navLima,
          onUpdate: function(){
-          contenidoNavegador = 'producción';
+          contenidoNavegador = 'Fibras';
           navTextoId.textContent=contenidoNavegador;
 
           elements.forEach(element => {
@@ -411,7 +432,7 @@ function navAzul(){
          onEnter: navLima,
         onEnterBack: navLima,
          onUpdate: function(){
-          contenidoNavegador = 'producción';
+          contenidoNavegador = 'Fibras';
           navTextoId.textContent=contenidoNavegador;
 
            elements.forEach(element => {
@@ -434,7 +455,7 @@ function navAzul(){
         onEnter: navLima,
         onEnterBack: navLima,
          onUpdate: function(){
-          contenidoNavegador = 'producción';
+          contenidoNavegador = 'Fibras';
           navTextoId.textContent=contenidoNavegador;
 
           elements.forEach(element => {

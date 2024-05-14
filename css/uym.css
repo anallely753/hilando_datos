@@ -1,7 +1,7 @@
 .section_usoyman{
 	background-color: var(--naranja);
-	background-image: url('../img/fondos/textura_naranja.png');
-	background-size: 100%;
+	background-image: url('../img/fondos/naranja.png');
+	background-size: var(--bg-size);
 	background-attachment: fixed;
 	position: relative;
 }

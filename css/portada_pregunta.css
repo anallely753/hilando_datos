@@ -1,7 +1,7 @@
 .portada_pregunta{
-	background-image: url('../img/fondos/fondo_verde.png');
+	background-image: url('../img/fondos/verde.png');
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: var(--bg-size);
 	position: relative;
 	height: 200vh;
 	display: flex;
@@ -65,8 +65,8 @@
 	transform: scale(.000001);
 }
 .portada_pregunta_extra{
-	background-image: url('../img/fondos/fondo_lima.png');
-	background-size: 100%;
+	background-image: url('../img/fondos/lima.png');
+	background-size: var(--bg-size);
 	position: relative;
 	height: 100vh;
 }

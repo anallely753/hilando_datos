@@ -30,7 +30,7 @@ navCiclo.addEventListener('mouseleave', function() {
 
 
 navProduccion.addEventListener('mouseenter', function() {
-  navTexto.textContent = 'Producción';
+  navTexto.textContent = 'Fibras';
 });
 
 navProduccion.addEventListener('mouseleave', function() {

@@ -1,7 +1,7 @@
 .section_footer{
-	background-image: url('../img/fondos/fondo_lima.png');
+	background-image: url('../img/fondos/lima.png');
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: var(--bg-size);
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -31,7 +31,9 @@
 	.gracias_container{
 		height: 300vh;
 		position: relative;
-		/*border: solid orange;*/
+		background-image: url('../img/fondos/naranja.png');
+		background-attachment: fixed;
+		background-size: var(--bg-size);
 	}
 	.aux_gracias1{
 		top: 50vh;
@@ -43,45 +45,64 @@
 		overflow: hidden;
 		height: 100vh;
 		min-height: 600px;
+		position: relative;
+		position: sticky;
+		top: 0;
+		color: #fff;
+	}
+	.gracias_texto{
+		position: absolute;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		color: var(--verde);
-		text-align: center;
-		position: relative;
-		/*border: solid blue;*/
-		position: sticky;
-		top: 0;
+		max-width: 750px;
+		height: 100%;
+		left: 15vw;
+		top: 115%;
 	}
-	.gracias{
-		position: relative;
-		top: 100%;
-	}
+	
 	.gracias_titulo{
-		width: 70%;
-		display: block;
-		margin: 0 auto;
-		font-family: 'FilsonProBold', sa;
+		color: var(--lima);
+		position: relative;
+		display: flex;
+		align-items: center;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.gracias_p{
-		width: 50%;
 		display: block;
-		margin: 0 auto;
-		margin-top: 1.5rem;
+		margin-top: .5rem;
 	}
 	.gracias_container img{
 		position: absolute;
 	}
-	.linea_corazon{
+	.gracias_huella{
+		margin-top: 1rem;
+	}
+	.gracias_dataviz{
+		margin-top: 2rem;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		font-family: 'FilsonProBold', sans-serif;
+	}
+	.gracias_dataviz span{
+		color: var(--lima);
+	}
+	.gracias_hilo1{
+		position: absolute;
 		width: 40%;
 		top: -115%;
-		left: 12%;
+		left: 0%;
 	}
-	.linea_footer2{
+	.gracias_hilo2{
+		position: absolute;
 		width: 40%;
 		bottom: -15%;
 		right: -66%;
+	}
+	.gracias_corazon{
+		width: 40px;
+		position: relative;
+		left: -70px;
 	}
 
 /* 1 */

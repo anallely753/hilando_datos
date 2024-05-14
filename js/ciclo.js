@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("g_produccion").addEventListener("mouseover", function() {
 
         document.getElementById('ciclo_aux_fibra').scrollIntoView({ behavior: 'smooth' });
-        sectionCiclo.style.backgroundImage = 'url(./img/fondos/fondo_verde.png)';
+        sectionCiclo.style.backgroundImage = 'url(./img/fondos/verde.png)';
 
     });
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("g_dis").addEventListener("mouseover", function() {
         
         document.getElementById('ciclo_aux_dis').scrollIntoView({ behavior: 'smooth' });
-        sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura-azul.png)';
+        sectionCiclo.style.backgroundImage = 'url(./img/fondos/azul.png)';
 
 
     });
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("g_manufactura").addEventListener("mouseover", function() {
         
         document.getElementById('ciclo_aux_manufactura').scrollIntoView({ behavior: 'smooth' });
-        sectionCiclo.style.backgroundImage = 'url(./img/fondos/fondo_lima.png)';
+        sectionCiclo.style.backgroundImage = 'url(./img/fondos/lima.png)';
 
 
     });
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("g_logistica").addEventListener("mouseover", function() {
 
         document.getElementById('ciclo_aux_logistica').scrollIntoView({ behavior: 'smooth' });
-        sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura_gris.png)';
+        sectionCiclo.style.backgroundImage = 'url(./img/fondos/gris_claro.png)';
 
     });
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("g_uso").addEventListener("mouseover", function() {
 
         document.getElementById('ciclo_aux_uso').scrollIntoView({ behavior: 'smooth' });
-        sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura_naranja.png)';
+        sectionCiclo.style.backgroundImage = 'url(./img/fondos/naranja.png)';
 
 
     });
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("g_nueva").addEventListener("mouseover", function() {
 
         document.getElementById('ciclo_aux_nuevavida').scrollIntoView({ behavior: 'smooth' });
-        sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura_azulDos.png)';
+        sectionCiclo.style.backgroundImage = 'url(./img/fondos/azulclaro.png)';
 
     });
 
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (isElementVisible(ciclo_aux_fibra)) {
         document.querySelector('.ciclo_texto').style.opacity = '1';
 
-        section_ciclo.style.backgroundImage = 'url(./img/fondos/fondo_verde.png)';
+        section_ciclo.style.backgroundImage = 'url(./img/fondos/verde.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
             element.style.opacity = '.43';
             element.style.fontFamily='FilsonProRegular'
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector('.ciclo_texto_p').innerText = 'De inicio, es fundamental entender los diferentes tipos de fibras disponibles. Realizamos un análisis detallado de las fibras más producidas y su principal impacto ambiental.';
 
     } else if (isElementVisible(ciclo_aux_dis)){
-        section_ciclo.style.backgroundImage = 'url(./img/fondos/textura-azul.png)';
+        section_ciclo.style.backgroundImage = 'url(./img/fondos/azul.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
             element.style.opacity = '.43';
             element.style.fontFamily='FilsonProRegular'
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     }
     else if (isElementVisible(ciclo_aux_manufactura)){
-        section_ciclo.style.backgroundImage = 'url(./img/fondos/fondo_lima.png)';
+        section_ciclo.style.backgroundImage = 'url(./img/fondos/lima.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
             element.style.opacity = '.43';
             element.style.fontFamily='FilsonProRegular'
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector('.ciclo_texto_p').innerText = 'El recorrido continúa con la producción de las prendas. Descubre los impactos naturales y sociales que conlleva su fabricación. Te mostramos un evento revelador.';
     }
     else if (isElementVisible(ciclo_aux_logistica)){
-        section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_gris.png)';
+        section_ciclo.style.backgroundImage = 'url(./img/fondos/gris_claro.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
             element.style.opacity = '.43';
             element.style.fontFamily='FilsonProRegular'
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     }
     else if (isElementVisible(ciclo_aux_uso)){
-        section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_naranja.png)';
+        section_ciclo.style.backgroundImage = 'url(./img/fondos/naranja.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
             element.style.opacity = '.43';
             element.style.fontFamily='FilsonProRegular'
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".k_circle_4").style.borderColor="var(--verde)";
     }
     else if (isElementVisible(ciclo_aux_nuevavida)){
-        section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_azulDos.png)';
+        section_ciclo.style.backgroundImage = 'url(./img/fondos/azulclaro.png)';
         document.querySelectorAll('.g_etapa text').forEach((element) => {
             element.style.opacity = '.43';
             element.style.fontFamily='FilsonProRegular'
@@ -561,27 +561,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
 //     // Checking if the element is in the middle of the screen
 //     if (elementTopFibra < screenMiddle && elementBottomFibra > screenMiddle) {
 //       // Change background of .section_ciclo to blue
-//       section_ciclo.style.backgroundImage = 'url(./img/fondos/fondo_verde.png)';
+//       section_ciclo.style.backgroundImage = 'url(./img/fondos/verde.png)';
 
 //     } else if (elementTopDis < screenMiddle && elementBottomDis > screenMiddle){
 //       // Optionally, reset the background color if the element is not in the middle
-//         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura-azul.png)';
+//         section_ciclo.style.backgroundImage = 'url(./img/fondos/azul.png)';
 //     }
 //     else if (elementTopManufactura < screenMiddle && elementBottomManufactura > screenMiddle){
 //       // Optionally, reset the background color if the element is not in the middle
-//         section_ciclo.style.backgroundImage = 'url(./img/fondos/fondo_lima.png)';
+//         section_ciclo.style.backgroundImage = 'url(./img/fondos/lima.png)';
 //     }
 //     else if (elementTopLogistica < screenMiddle && elementBottomLogistica > screenMiddle){
 //       // Optionally, reset the background color if the element is not in the middle
-//         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_gris.png)';
+//         section_ciclo.style.backgroundImage = 'url(./img/fondos/gris_claro.png)';
 //     }
 //     else if (elementTopUso < screenMiddle && elementBottomUso > screenMiddle){
 //       // Optionally, reset the background color if the element is not in the middle
-//         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_naranja.png)';
+//         section_ciclo.style.backgroundImage = 'url(./img/fondos/naranja.png)';
 //     }
 //     else if (elementTopNuevavida < screenMiddle && elementBottomNuevavida > screenMiddle){
 //       // Optionally, reset the background color if the element is not in the middle
-//         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_azulDos.png)';
+//         section_ciclo.style.backgroundImage = 'url(./img/fondos/azulclaro.png)';
 //     }
 //   };
 

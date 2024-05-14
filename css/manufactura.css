@@ -1,8 +1,8 @@
 .section_manufactura{
 	background-color: #cdec51;
 	height: 100%;
-	background-image: url('../img/fondos/fondo_lima.png');
-	background-size: 100%;
+	background-image: url('../img/fondos/lima.png');
+	background-size: var(--bg-size);
 	background-attachment: fixed;
 	/*border: solid white;*/
 }
@@ -12,7 +12,7 @@
 	height: 50px;
 	background-color: var(--lima);
 	z-index: 100;
-	visibility: hidden;
+	/*visibility: hidden;*/
 }
 /* 1 */
 	.man1{
@@ -83,11 +83,15 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 	.man2_fondo_verde{
 		position: absolute;
 		bottom: 0;
 		width: 100%;
+		height: 100%;
+		object-fit: cover;
 		opacity: 0;
 	}
 	.man2_texto{
@@ -696,6 +700,48 @@
 		top: 4%;
 		color: var(--verde);
 	}
+
+/* man61 */
+	.man61{
+		height: 260vh;
+		position: relative;
+		color: var(--verde);
+	}
+	.man61{
+		height: 260vh;
+		position: relative;
+		color: var(--verde);
+	}
+	.aux_man61_1{
+		top: 90vh;
+	}
+	.aux_man61_2{
+		top: 140vh;
+	}
+	.man61_container{
+		height: 100vh;
+		position: sticky;
+		top: 0;
+		overflow: hidden;
+		min-height: 600px;
+		overflow: hidden;
+	}
+	.man61_texto{
+		/*border: solid;*/
+		width: 30%;
+		position: absolute;
+		top: 110%;
+		right: 5%;
+		padding-top: 5%;
+		height: 100%;
+	}
+	.man61_costurera{
+		width: 70%;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	
 
 /* man 6 */
 	.man6{

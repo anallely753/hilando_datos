@@ -51,7 +51,7 @@ const gracias1 = gsap.timeline({
   },
 });
 // intro1
-gracias1.to('.gracias', {
+gracias1.to('.gracias_texto', {
     top:'0%'
 }, );
 
@@ -66,12 +66,12 @@ const gracias2 = gsap.timeline({
   },
 });
 // intro1
-gracias2.to('.linea_corazon', {
-    top:'-15%'
+gracias2.to('.gracias_hilo1', {
+    top:'-18%'
 }, );
 
-gracias2.to('.linea_footer2', {
-    right:'-6%'
+gracias2.to('.gracias_hilo2', {
+    right:'10%'
 }, '<');
 
 

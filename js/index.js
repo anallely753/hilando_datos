@@ -1,7 +1,7 @@
 let contenidoNavegador = ''
 
 window.addEventListener('load', function() {
-    document.querySelector("#loader").style.top = "-100vh";
+    document.querySelector("#loader").style.visibility = "hidden";
     document.querySelector(".not_loader").style.visibility = "visible";
     document.querySelector(".navegador").style.opacity = "0";
     contenidoNavegador = ''
@@ -75,6 +75,7 @@ window.addEventListener('load', function() {
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
   document.getElementById("overlay_content").style.opacity = "1";
+  document.getElementById("botones-intro").style.display = "none";
   disableScroll()
 }
 
@@ -82,7 +83,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   document.getElementById("overlay_content").style.opacity = "0";
+  document.getElementById("botones-intro").style.display = "block";
  enableScroll();
+
 }
 
 function openNavTroquer() {

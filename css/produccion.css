@@ -1,9 +1,9 @@
 .section_produccion{
 	background-color: #1f4a4f;
-	background-image: url('../img/fondos/fondo_verde.png');	
+	background-image: url('../img/fondos/verde.png');	
 	background-attachment: fixed;
 
-	background-size: 100%;
+	background-size: var(--bg-size);
 	/*overflow: hidden;*/
 	position: relative;
 	height: 100%;

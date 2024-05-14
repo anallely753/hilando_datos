@@ -157,7 +157,7 @@ main{
 
 /* Botones */
 	.portada_pregunta-botones{
-		display: flex;
+		display: flex !important;
 		position: fixed;
 		z-index: 100;
 		top: 1rem;
@@ -165,8 +165,6 @@ main{
 		width: 100%;
 		justify-content: space-between;
 		font-family: FilsonProMedium, sans-serif;
-		opacity: 1;
-		/*border: solid;*/
 	}
 	.btn-main{
 		border-radius: 2rem;

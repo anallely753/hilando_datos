@@ -49,6 +49,7 @@ const intro1 = gsap.timeline({
     duration: totalScrollDuration * 0.1
   },'<');
   intro1.to('.ovalo1', {
+    visibility:'visible',
     duration: totalScrollDuration * 0.1
   },'<');
   intro1.to('.intro1_planeta_ballena', {
@@ -71,7 +72,7 @@ const intro1 = gsap.timeline({
     duration: totalScrollDuration * 0.1
   });
   intro1.to('.ovalo2', {
-    bottom:'135%',
+    bottom:'142%',
     duration: totalScrollDuration * 0.1
   },'<');
   intro1.to('.intro1_planeta_ballena', {
@@ -80,7 +81,7 @@ const intro1 = gsap.timeline({
     duration: totalScrollDuration * 0.1
   },'<');
   intro1.to('.intro1_planeta_nuestro', {
-    top:'-50%',
+    // top:'-50%',
     duration: totalScrollDuration * 0.1
   },'<');
   
@@ -95,7 +96,15 @@ const intro1 = gsap.timeline({
     backgroundColor:'var(--azul)',
     duration: totalScrollDuration * 0.1
   });
+  intro1.to('.intro1_planeta_nuestro', {
+    opacity:'0',
+      duration: 0
+  },'<');
   intro1.to('.sombra', {
+    opacity:0,
+    duration: 0
+  },'<');
+  intro1.to('.ovalo1', {
     opacity:0,
     duration: 0
   },'<');
@@ -109,12 +118,11 @@ const intro1 = gsap.timeline({
     bottom:'20%',
     duration: totalScrollDuration * 0.1
   },'<');
-  intro1.to('.ovalo1', {
-    visibility:'hidden'
-  },'<');
+  
   intro1.to('.ovalo_blanco', {
-    transform:'scale(1.8)',
-    bottom:'79.2%',
+    visibility:'visible',
+    transform:'scale(1.75)',
+    bottom:'77.5%',
     duration: totalScrollDuration * 0.1
   },'<');
  
@@ -130,17 +138,17 @@ const intro1 = gsap.timeline({
     backgroundImage:'url("./img/intro/textura-planeta.png")',
     backgroundSize:'100%',
     backgroundAttachment:'fixed',
-  });
+  },'<');
   intro1.to('.intro1', {
     backgroundColor:'var(--lima)',
     // duration: totalScrollDuration * 0.1
-  });
+  },'<');
  
   intro1.to('.intro1_planeta_abajo', {
     bottom:'150%',
   },'<');
   intro1.to('.ovalo_blanco', {
-    bottom:'150%',
+    bottom:'148%',
   },'<');
   intro1.to('.intro1_planeta_ballena', {
     top:'-145%',
@@ -507,7 +515,7 @@ const intro4 = gsap.timeline({
       duration: totalScrollDuration4 * 0.1
   },'<');
   intro4.to('.intro1_planeta_nuestro', {
-    visibility:'hidden',
+    // visibility:'hidden',
       duration: totalScrollDuration4 * 0.4
   },'<');
 

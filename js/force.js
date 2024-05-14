@@ -182,48 +182,6 @@ function updateUYM() {
 
 
 
-	// // Update the nodes…
-	// node = svg.selectAll(".node")
-	// 	.data(nodes)
-	// 	.style("fill", color);
-
-	// node.transition()
-	// 	.attr("r", radius);	
-
-	// // Enter any new nodes.
-	// node.enter().append("svg:circle")
-	// 	.attr("class", function(d) { return "node " + d.group + " " + d.level; })
-	// 	.attr("cx", function(d) { return d.x; })
-	// 	.attr("cy", function(d) { return d.y; })
-	// 	.attr("r", function(d) { 
-	// 	    if (d.level === "one") {
-	// 	        return 32;
-	// 	    } else if (d.level === "two") {
-	// 	        return 20;
-	// 	    } else if (d.level === "three") {
-	// 	        return 12;
-	// 	    } else {
-	// 	        // Default radius if level is not one, two, or three
-	// 	        return radius; // Replace DEFAULT_RADIUS_VALUE with your default radius
-	// 	    }
-	// 	})
-	// 	.style("fill", color)
-	// 	.on("click", click)
-	// 	.call(force.drag)
-	
-	// // Exit any old nodes.
-	// node.exit().remove();
-
-
-    // title = svg.selectAll("text.title")    
-    //      .data(nodes);
-
-    // // Enter any new titles.
-    // title.enter()
-    //     .append("text")
-    //     .attr("class", "title")
-    //   	.text(function(d) { return d.name; });
-
     
     // // Exit any old titles.
     // title.exit().remove();

@@ -234,7 +234,7 @@ function loadGraficaProduccion(){
         .style("stroke", "transparent")
         .style("fill","transparent")
 
-        tooltip.transition()        
+        tooltip      
         .style("opacity", 0);  
 
     });
@@ -262,7 +262,7 @@ function loadGraficaProduccion(){
         .style("stroke", "transparent")
         .style("fill","transparent")    
        
-         tooltip.transition()        
+         tooltip     
         .style("opacity", 0);  
     });
 

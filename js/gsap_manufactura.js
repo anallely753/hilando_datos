@@ -621,6 +621,19 @@ man5_6.to('.man5_lineas_fechas.fechas6', {
   opacity:1
 },'<');
 
+const man61_1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.aux_man61_1',  
+    start: 'top center',  
+    end: 'top top',  
+    scrub: 1,    
+    markers: false, 
+  },
+});
+man61_1.to('.man61_texto', {
+  top:0
+},'<');
+
 
 const man6_1 = gsap.timeline({
   scrollTrigger: {
@@ -632,7 +645,7 @@ const man6_1 = gsap.timeline({
   },
 });
 man6_1.to('.man6_texto', {
-  top:'0%'
+  top:'10%'
 },'<');
 man6_1.to('.contract1', {
   bottom:'-20%'

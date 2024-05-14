@@ -1,11 +1,11 @@
 .section_diseno{
 	background-color: var(--azul);
-	background-image: url('../img/fondos/textura-azul.png');
+	background-image: url('../img/fondos/azul.png');
 	background-attachment: fixed;
 	position: relative;
+	background-size: var(--bg-size);
 	/*border: solid 10px red;*/
 	height: 600vw
-
 }
 
 

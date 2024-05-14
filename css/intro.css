@@ -6,6 +6,22 @@
 	position: relative;
 	/*border:  5px solid pink !important;*/
 }
+.skip_intro{
+	background-color: var(--verde);
+	font-family: 'FilsonProRegular';
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: fixed;
+	padding: .5rem 1.5rem;
+	border-radius: 2rem;
+	font-size: .9rem;
+	bottom: 5%;
+	right: 5%;
+	cursor: pointer;
+	z-index: 2000;
+	visibility: hidden
+}
 /* sec 1 */
 	.intro1{
 		height: 300vh;
@@ -50,14 +66,16 @@
 		width:62%;
 		bottom: 51.5%;
 		left: 19.1%;
-		z-index: 5;
+		z-index: 50;
+		visibility: hidden;
 	}
 	.ovalo_blanco{
 		position: absolute;
 		width:62.5%;
 		bottom: 51.5%;
 		left: 18.5%;
-		z-index: 4;
+		z-index: 40;
+		visibility: hidden;
 	}
 	.ovalo2{
 		position: absolute;
@@ -66,12 +84,18 @@
 		width:55%;
 		bottom: 44%;
 		left: 22%;
-
-		/*bottom: 48%;
-		left: 17%;
-		transform: rotate(-6deg);*/
 	}
 	.intro1_planeta_abajo{
+		width: 72%;
+		left: 13.68%;
+		bottom: 12.2%;
+		/*background-color: var(--lima);*/
+		/*border: solid;*/
+		border-bottom-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+		z-index: 20;
+	}
+	.intro1_planeta_abajo_2{
 		width: 72%;
 		left: 13.68%;
 		bottom: 12.2%;
@@ -461,8 +485,7 @@
 		position: sticky;
 		top: 0;
 		background:  url('../img/intro/fondo_negro63.png'), url('../img/intro/fondo_pared.svg');
-		background-size: 100%;
-		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	.intro5_planeta{
 		height: 100vh;

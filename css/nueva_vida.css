@@ -1,9 +1,9 @@
 .section_nuevavida{
 	/*border: solid purple;*/
 	background-color: var(--azul);
-	background-image: url('../img/fondos/fondo_azulclaro.png');
+	background-image: url('../img/fondos/azulclaro.png');
 		background-attachment: fixed;
-		background-size: 100%;
+		background-size: var(--bg-size);
 }
 /* Nueva vida 1 */
 	.nuevavida_1{
@@ -486,10 +486,13 @@
 	.nv5_texto{
 		text-align: center;
 		color: #fff;
-		width: 550px;
+		width: 650px;
 		margin: 0 auto;
 		position: relative;
 		top: 150%;
+	}
+	.nv5_texto span{
+		color: var(--lima);
 	}
 	.nv5_titulo{
 		color: var(--lima);
@@ -497,7 +500,7 @@
 		font-family: 'FilsonProBold', sans-serif;
 	}
 	.nv5_texto p{
-		width: 90%;
+		width: 100%;
 		line-height: 1.4;
 		margin: 0 auto;
 	}
@@ -595,11 +598,10 @@
 	}
 	.nv6_texto_final{
 		text-align: center;
-		text-transform: uppercase;
 		width: 40%;
 		max-width: 460px;
 		color: var(--lima);
-		line-height: 1.5;
+		line-height: 1.6;
 		margin: 0 auto;
 		padding: .5rem 0;
 		letter-spacing: 1px;
@@ -655,7 +657,6 @@
 	}
 	.nv6_texto_final{
 		text-align: center;
-		text-transform: uppercase;
 		width: 40%;
 		max-width: 460px;
 		color: var(--lima);
@@ -693,7 +694,6 @@
 	}
 	.nv6_texto_final{
 		text-align: center;
-		text-transform: uppercase;
 		width: 40%;
 		max-width: 460px;
 		color: var(--lima);

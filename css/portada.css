@@ -10,8 +10,8 @@
 	overflow: hidden; 
 }
 .portada_lima{
-	background-image: url('../img/fondos/fondo_lima.png');
-	background-size: 100%;
+	background-image: url('../img/fondos/lima.png');
+	background-size: var(--bg-size);
 	background-repeat: repeat;
 	height: 90%;
 	position: relative;
@@ -290,8 +290,8 @@
 /* verde */
 	.portada_verde{
 		padding: 3rem 2rem;
-		background-image: url('../img/fondos/fondo_verde.png');
-		background-size: 250%;
+		background-image: url('../img/fondos/verde.png');
+		background-size: var(--bg-size);
 		height: 10%;
 		width: 100%;
 		display: flex;
@@ -388,9 +388,7 @@
 	.portada_h1{
 		font-size: 1.4rem;
 	}
-	.portada_verde{
-		background-size: 150%;
-	}
+	
 	.portada_algodon1{
 		position: absolute;
 		top: -15%;
@@ -413,9 +411,7 @@
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-	.portada_verde{
-		background-size: cover;
-	}
+	
 }
 
 /*// X-Large devices (large desktops, 1200px and up)*/
