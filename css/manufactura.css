@@ -12,7 +12,7 @@
 	height: 50px;
 	background-color: var(--lima);
 	z-index: 100;
-	/*visibility: hidden;*/
+	visibility: hidden;
 }
 /* 1 */
 	.man1{
